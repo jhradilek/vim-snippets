@@ -1,9 +1,9 @@
 " Description: DocBook snippets for Felix Ingram's SnippetsEmu according
 "              to DocBook: The Definitive Guide (version 2.0.17)
 " Maintainer:  Jaromir Hradilek <jhradile@redhat.com>
-" Version:     1.2.1
+" Version:     1.2.2
 " URL:         https://github.com/jhradile/vim-snippets/
-" Last Change: 25 March 2011
+" Last Change: 5 May 2011
 
 if !exists('loaded_snippet') || &cp
   finish
@@ -370,7 +370,7 @@ exec "Snippet symbol              <symbol>".st.et."</symbol>"
 exec "Snippet synopfragment       <synopfragment id=\"".st.et."\"><CR>".st.et."<CR></synopfragment>"
 exec "Snippet synopfragmentref    <synopfragmentref linkend=\"".st.et."\"><CR>".st.et."<CR></synopfragmentref>"
 exec "Snippet synopsis            <synopsis><CR>".st.et."<CR></synopsis>"
-exec "Snippet systemitem          <systemitem class=\"".st.et."\">".st.et."</systemitem>"
+exec "Snippet systemitem          <systemitem>".st.et."</systemitem>"
 exec "Snippet table               <table id=\"".st.et."\"><CR>".st.et."<CR></table>"
 exec "Snippet task                <task><CR>".st.et."<CR></task>"
 exec "Snippet taskprerequisites   <taskprerequisites><CR>".st.et."<CR></taskprerequisites>"
