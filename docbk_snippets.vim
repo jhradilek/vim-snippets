@@ -459,5 +459,6 @@ exec "Snippet username            <systemitem class=\"username\">".st.et."</syst
 " XML-related snippets:
 exec "Snippet doctype             <!DOCTYPE ".st.et." PUBLIC \"-//OASIS//DTD DocBook XML V4.5//EN\" \"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd\" [<CR><!ENTITY % BOOK_ENTITIES SYSTEM \"".st.et.".ent\"><CR>%BOOK_ENTITIES;<CR>]>"
 exec "Snippet entity              <!ENTITY ".st.et." \"".st.et."\">"
-exec "Snippet xi                  <xi:include href=\"".st.et.".xml\" xmlns:xi=\"http://www.w3.org/2001/XInclude\" />"
+exec "Snippet fallback            <xi:fallback xmlns:xi=\"http://www.w3.org/2001/XInclude\"><CR>".st.et."<CR></xi:fallback>"
+exec "Snippet include             <xi:include href=\"".st.et.".xml\" xmlns:xi=\"http://www.w3.org/2001/XInclude\" />"
 exec "Snippet xml                 <?xml version='1.0' encoding='utf-8' ?>".st.et
