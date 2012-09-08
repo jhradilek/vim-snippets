@@ -1,32 +1,75 @@
-Vim Snippets
-============
+# Vim Snippets
 
+## Description
 
-System Requirements
--------------------
+The **vim-snippets** repository provides a collection of code snippets for **Vim**. In particular, it provides snippets for two plug-ins: [snipMate](http://www.vim.org/scripts/script.php?script_id=2540) by Michael Sanders, and [snippetsEmu](http://www.vim.org/scripts/script.php?script_id=1318) by Felix Ingram.
 
-A working installation of Felix Ingram's SnippetsEmu plug-in is required in order to use these snippets. Refer to the [plug-in homepage](http://www.vim.org/scripts/script.php?script_id=1318) for download options and further instructions how to install it.
+For the **snipMate** plug-in, the following snippets are included in the **snipMate** directory:
 
+* **docbk.snippets** — Snippets for the DocBook XML language according to the [DocBook: The Definitive Guide, version 2.0.17](http://www.docbook.org/tdg/).
 
-Installing the Snippets on Linux
---------------------------------
+For the **snippetsEmu** plug-in, the following snippets are available in the **snippetsEmu** directory:
 
-The snippets for various file types are stored in the `~/.vim/after/ftplugin/` directory. To ensure that this directory exists, type the following commands at a shell prompt:
+* **docbk_snippets.vim** — Snippets for the DocBook XML language according to the [DocBook: The Definitive Guide, version 2.0.17](http://www.docbook.org/tdg/).
 
-    mkdir ~/.vim
-    mkdir ~/.vim/after
-    mkdir ~/.vim/after/ftplugin
+## Installation
 
-To install snippets for a particular file type, copy the relevant file to the above directory by using the following command:
+### Installing Snippets for the snipMate Plug-in
 
-    cp <filetype>_snippets.vim ~/.vim/after/ftplugin/
+To install snippets for the **snipMate** plug-in, change into the directory with your local copy of this repository and run the following command:
 
-The snippets are loaded automatically the next time you open a DocBook file.
+    cp snipMate/<filetype>.snippets ~/.vim/snippets/
 
+For example, to install the snippets for the DocBook XML language, type:
 
-Copyright
----------
+    cp snipMate/docbk.snippets ~/.vim/snippets/
 
-Copyright © 2010, 2011 Jaromir Hradilek
+This copies the selected file to the **~/.vim/snippets/** directory. Note that the directory must exist prior to running this command; to create it, type the following at a shell prompt:
+
+    install -d ~/.vim/snippets/
+
+The snippets are automatically loaded the next time you open a DocBook file.
+
+### Installing Snippets for the snippetsEmu Plug-in
+
+To install snippets for the **snippetsEmu** plug-in, change into the directory with your local copy of this repository and run the following command:
+
+    cp snippetsEmu/<filetype>_snippets.vim ~/.vim/after/ftplugin/
+
+For example, to install the snippets for the DocBook XML language, type:
+
+    cp snippetsEmu/docbk_snippets.vim ~/.vim/after/ftplugin/
+
+This copies the selected file to the **~/.vim/after/ftplugin/** directory. Note that the directory must exist prior to running this command; to create it, type the following at a shell prompt:
+
+    install -d ~/.vim/after/ftplugin/
+
+The snippets are automatically loaded the next time you open a DocBook file.
+
+## Uninstallation
+
+## Uninstalling Snippets for the snipMate Plug-in
+
+To uninstall snippets for the **snipMate** plug-in, run the following command:
+
+    rm ~/.vim/snippets/<filetype>.snippets
+
+For example, to uninstall the snippets for the DocBook XML language, type:
+
+    rm ~/.vim/snippets/docbk.snippets
+
+## Uninstalling Snippets for the snippetsEmu Plug-in
+
+To uninstall snippets for the **snippetsEmu** plug-in, run the following command:
+
+    rm ~/.vim/after/ftplugin/<filetype>_snippets.vim
+
+For example, to uninstall the snippets for the DocBook XML language, type:
+
+    rm ~/.vim/after/ftplugin/docbk_snippets.vim
+
+## Copyright
+
+Copyright © 2010—2012 Jaromir Hradilek
 
 This program is free software; see the source for copying conditions. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
