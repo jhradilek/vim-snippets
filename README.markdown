@@ -48,7 +48,7 @@ The snippets are automatically loaded the next time you open a DocBook file.
 
 ## Uninstallation
 
-## Uninstalling Snippets for the snipMate Plug-in
+### Uninstalling Snippets for the snipMate Plug-in
 
 To uninstall snippets for the **snipMate** plug-in, run the following command:
 
@@ -58,7 +58,7 @@ For example, to uninstall the snippets for the DocBook XML language, type:
 
     rm ~/.vim/snippets/docbk.snippets
 
-## Uninstalling Snippets for the snippetsEmu Plug-in
+### Uninstalling Snippets for the snippetsEmu Plug-in
 
 To uninstall snippets for the **snippetsEmu** plug-in, run the following command:
 
