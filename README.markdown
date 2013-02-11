@@ -8,7 +8,7 @@ For the **snipMate** plug-in, the following snippets are included in the **snipM
 
 * **docbk.snippets** — Snippets for the DocBook XML language according to the [DocBook: The Definitive Guide, version 2.0.17](http://www.docbook.org/tdg/).
 
-* **mallard.snippets** — Snippets for the Mallard XML language according to the [Mallard 1.0 DRAFT (as of 2013-02-11)](http://projectmallard.org/1.0/index.html).
+* **mallard.snippets** — Snippets for the Mallard XML language according to [Mallard 1.0 DRAFT (as of 2013-02-11)](http://projectmallard.org/1.0/index.html). See also my [vim-syntax](https://github.com/jhradilek/vim-syntax) repository for a syntax file for this language.
 
 For the **snippetsEmu** plug-in, the following snippets are available in the **snippetsEmu** directory:
 
