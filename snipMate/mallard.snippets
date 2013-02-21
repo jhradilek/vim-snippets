@@ -84,11 +84,11 @@ snippet license
 	</license>
 # link
 snippet link
-	<link type="${1:topic}" xref="${2}"/>
+	<link type="${1:guide}" xref="${2:index}" group="${3}"/>
 # links
 snippet links
-	<links type="${1:topic}">
-		${2}
+	<links type="${1:topic}" groups="${2}">
+		${3}
 	</links>
 # list
 snippet list
