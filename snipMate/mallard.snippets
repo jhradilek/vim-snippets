@@ -107,7 +107,7 @@ snippet media
 	</media>
 # name
 snippet name
-	<name>${1}</name>
+	<name>${1:`g:snips_author`}</name>
 # note
 snippet note
 	<note style="${1:advanced}">
@@ -205,4 +205,4 @@ snippet var
 	<var>${1}</var>
 # years
 snippet years
-	<years>${1}</years>
+	<years>${1:`strftime("%Y")`}</years>
