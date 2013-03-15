@@ -1,0 +1,2201 @@
+# DocBook 4.5 snippets according to DocBook: The Definitive Guide (v2.0.17)
+# Copyright (C) 2012, 2013 Jaromir Hradilek
+
+# Home Page:   https://github.com/jhradilek/vim-snippets
+# Last Change: 15 March 2013
+
+extends xml
+
+# -------------------------------------------------------------------------
+#                          DocBook 4.5 Elements
+# -------------------------------------------------------------------------
+
+snippet abbrev "<abbrev>" !w
+<abbrev>${VISUAL}$1</abbrev>$0
+endsnippet
+
+snippet abstract "<abstract>" !w
+<abstract>
+	${VISUAL}$0
+</abstract>
+endsnippet
+
+snippet accel "<accel>" !w
+<accel>${VISUAL}$1</accel>$0
+endsnippet
+
+snippet ackno "<ackno>" !w
+<ackno>
+	${VISUAL}$0
+</ackno>
+endsnippet
+
+snippet acronym "<acronym>" !w
+<acronym>${VISUAL}$1</acronym>$0
+endsnippet
+
+snippet action "<action>" !w
+<action>${VISUAL}$1</action>$0
+endsnippet
+
+snippet address "<address>" !w
+<address>
+	${VISUAL}$0
+</address>
+endsnippet
+
+snippet affiliation "<affiliation>" !w
+<affiliation>
+	${VISUAL}$0
+</affiliation>
+endsnippet
+
+snippet alt "<alt>" !w
+<alt>${VISUAL}$1</alt>$0
+endsnippet
+
+snippet anchor "<anchor id='...'>" !w
+<anchor id="$1" />$0
+endsnippet
+
+snippet answer "<answer>" !w
+<answer>
+	${VISUAL}$0
+</answer>
+endsnippet
+
+snippet appendix "<appendix id='...'>" !w
+<appendix id="$1">
+	${VISUAL}$0
+</appendix>
+endsnippet
+
+snippet appendixinfo "<appendixinfo>" !w
+<appendixinfo>
+	${VISUAL}$0
+</appendixinfo>
+endsnippet
+
+snippet application "<application>" !w
+<application>${VISUAL}$1</application>$0
+endsnippet
+
+snippet area "<area id='...' coords='...' />" !w
+<area id="$1" coords="$2" />$0
+endsnippet
+
+snippet areaset "<areaset id='...'>" !w
+<areaset id="$1">
+	${VISUAL}$0
+</areaset>
+endsnippet
+
+snippet areaspec "<areaspec units='...'>" !w
+<areaspec units="$1">
+	${VISUAL}$0
+</areaspec>
+endsnippet
+
+snippet arg "<arg>" !w
+<arg>${VISUAL}$1</arg>$0
+endsnippet
+
+snippet article "<article id='...'>" !w
+<article id="$1">
+	${VISUAL}$0
+</article>
+endsnippet
+
+snippet articleinfo "<articleinfo>" !w
+<articleinfo>
+	${VISUAL}$0
+</articleinfo>
+endsnippet
+
+snippet artpagenums "<artpagenums>" !w
+<artpagenums>${VISUAL}$1</artpagenums>$0
+endsnippet
+
+snippet attribution "<attribution>" !w
+<attribution>${VISUAL}$1</attribution>$0
+endsnippet
+
+snippet audiodata "<audiodata fileref='...' />" !w
+<audiodata fileref="${VISUAL}$1" />$0
+endsnippet
+
+snippet audioobject "<audioobject>" !w
+<audioobject>
+	${VISUAL}$0
+</audioobject>
+endsnippet
+
+snippet author "<author>" !w
+<author>
+	${VISUAL}$0
+</author>
+endsnippet
+
+snippet authorblurb "<authorblurb>" !w
+<authorblurb>
+	${VISUAL}$0
+</authorblurb>
+endsnippet
+
+snippet authorgroup "<authorgroup>" !w
+<authorgroup>
+	${VISUAL}$0
+</authorgroup>
+endsnippet
+
+snippet authorinitials "<authorinitials>" !w
+<authorinitials>${VISUAL}$1</authorinitials>$0
+endsnippet
+
+snippet beginpage "<beginpage pagenum='...' />" !w
+<beginpage pagenum="${VISUAL}$1" />$0
+endsnippet
+
+snippet bibliocoverage "<bibliocoverage>" !w
+<bibliocoverage>
+	${VISUAL}$0
+</bibliocoverage>
+endsnippet
+
+snippet bibliodiv "<bibliodiv>" !w
+<bibliodiv>
+	${VISUAL}$0
+</bibliodiv>
+endsnippet
+
+snippet biblioentry "<biblioentry>" !w
+<biblioentry>
+	${VISUAL}$0
+</biblioentry>
+endsnippet
+
+snippet bibliography "<bibliography>" !w
+<bibliography>
+	${VISUAL}$0
+</bibliography>
+endsnippet
+
+snippet bibliographyinfo "<bibliographyinfo>" !w
+<bibliographyinfo>
+	${VISUAL}$0
+</bibliographyinfo>
+endsnippet
+
+snippet biblioid "<biblioid class='...'>" !w
+<biblioid class="${1:isbn}">${VISUAL}$2</biblioid>$0
+endsnippet
+
+snippet bibliolist "<bibliolist>" !w
+<bibliolist>
+	${VISUAL}$0
+</bibliolist>
+endsnippet
+
+snippet bibliomisc "<bibliomisc>" !w
+<bibliomisc>
+	${VISUAL}$0
+</bibliomisc>
+endsnippet
+
+snippet bibliomixed "<bibliomixed>" !w
+<bibliomixed>
+	${VISUAL}$0
+</bibliomixed>
+endsnippet
+
+snippet bibliomset "<bibliomset>" !w
+<bibliomset relation="$1">
+	${VISUAL}$0
+</bibliomset>
+endsnippet
+
+snippet biblioref "<biblioref linkend='...' />" !w
+<biblioref linkend="$1" />$0
+endsnippet
+
+snippet bibliorelation "<bibliorelation type='...' class='...'>" !w
+<bibliorelation type="$1" class="$2">${VISUAL}$3</bibliorelation>$0
+endsnippet
+
+snippet biblioset "<biblioset relation='...'>" !w
+<biblioset relation="$1">
+	${VISUAL}$0
+</biblioset>
+endsnippet
+
+snippet bibliosource "<bibliosource class='...'>" !w
+<bibliosource class="${1:isbn}">${VISUAL}$2</bibliosource>$0
+endsnippet
+
+snippet blockinfo "<blockinfo>" !w
+<blockinfo>
+	${VISUAL}$0
+</blockinfo>
+endsnippet
+
+snippet blockquote "<blockquote>" !w
+<blockquote>
+	${VISUAL}$0
+</blockquote>
+endsnippet
+
+snippet book "<book id='...'>" !w
+<book id="$1">
+	${VISUAL}$0
+</book>
+endsnippet
+
+snippet bookinfo "<bookinfo>" !w
+<bookinfo>
+	${VISUAL}$0
+</bookinfo>
+endsnippet
+
+snippet bridgehead "<bridgehead id='...'>" !w
+<bridgehead id="$1">${VISUAL}$2</bridgehead>$0
+endsnippet
+
+snippet callout "<callout arearefs='...'>" !w
+<callout arearefs="$1">
+	${VISUAL}$0
+</callout>
+endsnippet
+
+snippet calloutlist "<calloutlist>" !w
+<calloutlist>
+	${VISUAL}$0
+</calloutlist>
+endsnippet
+
+snippet caption "<caption>" !w
+<caption>
+	${VISUAL}$0
+</caption>
+endsnippet
+
+snippet caution "<caution>" !w
+<caution>
+	${VISUAL}$0
+</caution>
+endsnippet
+
+snippet chapter "<chapter id='...'>" !w
+<chapter id="$1">
+	${VISUAL}$0
+</chapter>
+endsnippet
+
+snippet chapterinfo "<chapterinfo>" !w
+<chapterinfo>
+	${VISUAL}$0
+</chapterinfo>
+endsnippet
+
+snippet citation "<citation>" !w
+<citation>${VISUAL}$1</citation>$0
+endsnippet
+
+snippet citebiblioid "<citebiblioid class='...'>" !w
+<citebiblioid class="${1:isbn}">${VISUAL}$2</citebiblioid>$0
+endsnippet
+
+snippet citerefentry "<citerefentry>" !w
+<citerefentry>${VISUAL}$1</citerefentry>$0
+endsnippet
+
+snippet citetitle "<citetitle pubwork='...'>" !w
+<citetitle pubwork="${1:book}">${VISUAL}$2</citetitle>$0
+endsnippet
+
+snippet city "<city>" !w
+<city>${VISUAL}$1</city>$0
+endsnippet
+
+snippet classname "<classname>" !w
+<classname>${VISUAL}$1</classname>$0
+endsnippet
+
+snippet classsynopsis "<classsynopsis class='...' language='...'>" !w
+<classsynopsis class="$1" language="$2">
+	${VISUAL}$0
+</classsynopsis>
+endsnippet
+
+snippet classsynopsisinfo "<classsynopsisinfo>" !w
+<classsynopsisinfo>
+	${VISUAL}$0
+</classsynopsisinfo>
+endsnippet
+
+snippet cmdsynopsis "<cmdsynopsis>" !w
+<cmdsynopsis>
+	${VISUAL}$0
+</cmdsynopsis>
+endsnippet
+
+snippet co "<co label='...' linkends='...' />" !w
+<co label="$1" linkends="$2" />$0
+endsnippet
+
+snippet code "<code language='...'>" !w
+<code language="$1">${VISUAL}$2</code>$0
+endsnippet
+
+snippet col "<col>" !w
+<col>
+	${VISUAL}$0
+</col>
+endsnippet
+
+snippet colgroup "<colgroup>" !w
+<colgroup>
+	${VISUAL}$0
+</colgroup>
+endsnippet
+
+snippet collab "<collab>" !w
+<collab>
+	${VISUAL}$0
+</collab>
+endsnippet
+
+snippet collabname "<collabname>" !w
+<collabname>${VISUAL}$1</collabname>$0
+endsnippet
+
+snippet colophon "<colophon>" !w
+<colophon>
+	${VISUAL}$0
+</colophon>
+endsnippet
+
+snippet colspec "<colspec colname='...' colnum='...' colwidth='...' />" !w
+<colspec colname="$1" colnum="$2" colwidth="$3" />$0
+endsnippet
+
+snippet command "<command>" !w
+<command>${VISUAL}$1</command>$0
+endsnippet
+
+snippet computeroutput "<computeroutput>" !w
+<computeroutput>${VISUAL}$1</computeroutput>$0
+endsnippet
+
+snippet confdates "<confdates>" !w
+<confdates>${VISUAL}$1</confdates>$0
+endsnippet
+
+snippet confgroup "<confgroup>" !w
+<confgroup>
+	${VISUAL}$0
+</confgroup>
+endsnippet
+
+snippet confnum "<confnum>" !w
+<confnum>${VISUAL}$1</confnum>$0
+endsnippet
+
+snippet confsponsor "<confsponsor>" !w
+<confsponsor>${VISUAL}$1</confsponsor>$0
+endsnippet
+
+snippet conftitle "<conftitle>" !w
+<conftitle>${VISUAL}$1</conftitle>$0
+endsnippet
+
+snippet constant "<constant>" !w
+<constant>${VISUAL}$1</constant>$0
+endsnippet
+
+snippet constructorsynopsis "<constructorsynopsis language='...'>" !w
+<constructorsynopsis language="$1">
+	${VISUAL}$0
+</constructorsynopsis>
+endsnippet
+
+snippet contractnum "<contractnum>" !w
+<contractnum>${VISUAL}$1</contractnum>$0
+endsnippet
+
+snippet contractsponsor "<contractsponsor>" !w
+<contractsponsor>${VISUAL}$1</contractsponsor>$0
+endsnippet
+
+snippet contrib "<contrib>" !w
+<contrib>${VISUAL}$1</contrib>$0
+endsnippet
+
+snippet copyright "<copyright>" !w
+<copyright>
+	${VISUAL}$0
+</copyright>
+endsnippet
+
+snippet coref "<coref label='...' linkend='...'>" !w
+<coref label="$1" linkend="$2" />$0
+endsnippet
+
+snippet corpauthor "<corpauthor>" !w
+<corpauthor>${VISUAL}$1</corpauthor>$0
+endsnippet
+
+snippet corpcredit "<corpcredit>" !w
+<corpcredit>${VISUAL}$1</corpcredit>$0
+endsnippet
+
+snippet corpname "<corpname>" !w
+<corpname>${VISUAL}$1</corpname>$0
+endsnippet
+
+snippet country "<country>" !w
+<country>${VISUAL}$1</country>$0
+endsnippet
+
+snippet database "<database class='...'>" !w
+<database class="$1">${VISUAL}$2</database>$0
+endsnippet
+
+snippet date "<date>" !w
+<date>${1:`!v strftime("%a %d %b %Y")`}</date>$0
+endsnippet
+
+snippet dedication "<dedication>" !w
+<dedication>
+	${VISUAL}$0
+</dedication>
+endsnippet
+
+snippet destructorsynopsis "<destructorsynopsis language='...'>" !w
+<destructorsynopsis language="$1">
+	${VISUAL}$0
+</destructorsynopsis>
+endsnippet
+
+snippet edition "<edition>" !w
+<edition>${VISUAL}$1</edition>$0
+endsnippet
+
+snippet editor "<editor>" !w
+<editor>
+	${VISUAL}$0
+</editor>
+endsnippet
+
+snippet email "<email>" !w
+<email>${VISUAL}$0</email>
+endsnippet
+
+snippet emphasis "<emphasis>" !w
+<emphasis>${VISUAL}$1</emphasis>$0
+endsnippet
+
+snippet entry "<entry>" !w
+<entry>
+	${VISUAL}$0
+</entry>
+endsnippet
+
+snippet entrytbl "<entrytbl cols='...'>" !w
+<entrytbl cols="$1">
+	${VISUAL}$0
+</entrytbl>
+endsnippet
+
+snippet envar "<envar>" !w
+<envar>${VISUAL}$1</envar>$0
+endsnippet
+
+snippet epigraph "<epigraph>" !w
+<epigraph>
+	${VISUAL}$0
+</epigraph>
+endsnippet
+
+snippet equation "<equation>" !w
+<equation>
+	${VISUAL}$0
+</equation>
+endsnippet
+
+snippet errorcode "<errorcode>" !w
+<errorcode>${VISUAL}$1</errorcode>$0
+endsnippet
+
+snippet errorname "<errorname>" !w
+<errorname>${VISUAL}$1</errorname>$0
+endsnippet
+
+snippet errortext "<errortext>" !w
+<errortext>${VISUAL}$1</errortext>$0
+endsnippet
+
+snippet errortype "<errortype>" !w
+<errortype>${VISUAL}$1</errortype>$0
+endsnippet
+
+snippet example "<example id='...'>" !w
+<example id="$1">
+	${VISUAL}$0
+</example>
+endsnippet
+
+snippet exceptionname "<exceptionname>" !w
+<exceptionname>${VISUAL}$1</exceptionname>$0
+endsnippet
+
+snippet fax "<fax>" !w
+<fax>${VISUAL}$1</fax>$0
+endsnippet
+
+snippet fieldsynopsis "<fieldsynopsis language='...'>" !w
+<fieldsynopsis language="$1">
+	${VISUAL}$0
+</fieldsynopsis>
+endsnippet
+
+snippet figure "<figure id='...'>" !w
+<figure id="$1">
+	${VISUAL}$0
+</figure>
+endsnippet
+
+snippet filename "<filename>" !w
+<filename>${VISUAL}$1</filename>$0
+endsnippet
+
+snippet firstname "<firstname>" !w
+<firstname>${VISUAL}$1</firstname>$0
+endsnippet
+
+snippet firstterm "<firstterm>" !w
+<firstterm>${VISUAL}$1</firstterm>$0
+endsnippet
+
+snippet footnote "<footnote>" !w
+<footnote>
+	${VISUAL}$0
+</footnote>
+endsnippet
+
+snippet footnoteref "<footnoteref linkend='...' />" !w
+<footnoteref linkend="$1" />$0
+endsnippet
+
+snippet foreignphrase "<foreignphrase>" !w
+<foreignphrase>${VISUAL}$1</foreignphrase>$0
+endsnippet
+
+snippet formalpara "<formalpara>" !w
+<formalpara>
+	${VISUAL}$0
+</formalpara>
+endsnippet
+
+snippet funcdef "<funcdef>" !w
+<funcdef>${VISUAL}$1</funcdef>$0
+endsnippet
+
+snippet funcparams "<funcparams>" !w
+<funcparams>${VISUAL}$1</funcparams>$0
+endsnippet
+
+snippet funcprototype "<funcprototype>" !w
+<funcprototype>
+	${VISUAL}$0
+</funcprototype>
+endsnippet
+
+snippet funcsynopsis "<funcsynopsis>" !w
+<funcsynopsis>
+	${VISUAL}$0
+</funcsynopsis>
+endsnippet
+
+snippet funcsynopsisinfo "<funcsynopsisinfo>" !w
+<funcsynopsisinfo>
+	${VISUAL}$0
+</funcsynopsisinfo>
+endsnippet
+
+snippet function "<function>" !w
+<function>${VISUAL}$1</function>$0
+endsnippet
+
+snippet glossary "<glossary id='...'>" !w
+<glossary id="$1">
+	${VISUAL}$0
+</glossary>
+endsnippet
+
+snippet glossaryinfo "<glossaryinfo>" !w
+<glossaryinfo>
+	${VISUAL}$0
+</glossaryinfo>
+endsnippet
+
+snippet glossdef "<glossdef>" !w
+<glossdef>
+	${VISUAL}$0
+</glossdef>
+endsnippet
+
+snippet glossdiv "<glossdiv>" !w
+<glossdiv>
+	${VISUAL}$0
+</glossdiv>
+endsnippet
+
+snippet glossentry "<glossentry>" !w
+<glossentry>
+	${VISUAL}$0
+</glossentry>
+endsnippet
+
+snippet glosslist "<glosslist>" !w
+<glosslist>
+	${VISUAL}$0
+</glosslist>
+endsnippet
+
+snippet glosssee "<glosssee otherterm='...'>" !w
+<glosssee otherterm="$1">${VISUAL}$2</glosssee>$0
+endsnippet
+
+snippet glossseealso "<glossseealso otherterm='...'>" !w
+<glossseealso otherterm="$1">${VISUAL}$2</glossseealso>$0
+endsnippet
+
+snippet glossterm "<glossterm>" !w
+<glossterm>${VISUAL}$1</glossterm>$0
+endsnippet
+
+snippet graphic "<graphic fileref='...' />" !w
+<graphic fileref="${VISUAL}$1" />$0
+endsnippet
+
+snippet graphicco "<graphicco>" !w
+<graphicco>
+	${VISUAL}$0
+</graphicco>
+endsnippet
+
+snippet group "<group>" !w
+<group>
+	${VISUAL}$0
+</group>
+endsnippet
+
+snippet guibutton "<guibutton>" !w
+<guibutton>${VISUAL}$1</guibutton>$0
+endsnippet
+
+snippet guiicon "<guiicon>" !w
+<guiicon>${VISUAL}$1</guiicon>$0
+endsnippet
+
+snippet guilabel "<guilabel>" !w
+<guilabel>${VISUAL}$1</guilabel>$0
+endsnippet
+
+snippet guimenu "<guimenu>" !w
+<guimenu>${VISUAL}$1</guimenu>$0
+endsnippet
+
+snippet guimenuitem "<guimenuitem>" !w
+<guimenuitem>${VISUAL}$1</guimenuitem>$0
+endsnippet
+
+snippet guisubmenu "<guisubmenu>" !w
+<guisubmenu>${VISUAL}$1</guisubmenu>$0
+endsnippet
+
+snippet hardware "<hardware>" !w
+<hardware>${VISUAL}$1</hardware>$0
+endsnippet
+
+snippet highlights "<highlights>" !w
+<highlights>
+	${VISUAL}$0
+</highlights>
+endsnippet
+
+snippet holder "<holder>" !w
+<holder>${VISUAL}$1</holder>$0
+endsnippet
+
+snippet honorific "<honorific>" !w
+<honorific>${VISUAL}$1</honorific>$0
+endsnippet
+
+snippet imagedata "<imagedata fileref='...' format='...' scalefit='...' />" !w
+<imagedata fileref="${VISUAL}$1" format="${2:PNG}" scalefit="${3:0}" />$0
+endsnippet
+
+snippet imageobject "<imageobject>" !w
+<imageobject>
+	${VISUAL}$0
+</imageobject>
+endsnippet
+
+snippet imageobjectco "<imageobjectco>" !w
+<imageobjectco>
+	${VISUAL}$0
+</imageobjectco>
+endsnippet
+
+snippet important "<important>" !w
+<important>
+	${VISUAL}$0
+</important>
+endsnippet
+
+snippet index "<index>" !w
+<index>
+	${VISUAL}$0
+</index>
+endsnippet
+
+snippet indexdiv "<indexdiv>" !w
+<indexdiv>
+	${VISUAL}$0
+</indexdiv>
+endsnippet
+
+snippet indexentry "<indexentry>" !w
+<indexentry>
+	${VISUAL}$0
+</indexentry>
+endsnippet
+
+snippet indexinfo "<indexinfo>" !w
+<indexinfo>
+	${VISUAL}$0
+</indexinfo>
+endsnippet
+
+snippet indexterm "<indexterm>" !w
+<indexterm>
+	${VISUAL}$0
+</indexterm>
+endsnippet
+
+snippet informalequation "<informalequation>" !w
+<informalequation>
+	${VISUAL}$0
+</informalequation>
+endsnippet
+
+snippet informalexample "<informalexample>" !w
+<informalexample>
+	${VISUAL}$0
+</informalexample>
+endsnippet
+
+snippet informalfigure "<informalfigure>" !w
+<informalfigure>
+	${VISUAL}$0
+</informalfigure>
+endsnippet
+
+snippet informaltable "<informaltable>" !w
+<informaltable>
+	${VISUAL}$0
+</informaltable>
+endsnippet
+
+snippet initializer "<initializer>" !w
+<initializer>${VISUAL}$1</initializer>$0
+endsnippet
+
+snippet inlineequation "<inlineequation>" !w
+<inlineequation>
+	${VISUAL}$0
+</inlineequation>
+endsnippet
+
+snippet inlinegraphic "<inlinegraphic fileref='...' format='...' scalefit='...' />" !w
+<inlinegraphic fileref="${VISUAL}$1" format="${2:PNG}" scalefit="${3:0}" />$0
+endsnippet
+
+snippet inlinemediaobject "<inlinemediaobject>" !w
+<inlinemediaobject>
+	${VISUAL}$0
+</inlinemediaobject>
+endsnippet
+
+snippet interface "<interface>" !w
+<interface>${VISUAL}$1</interface>$0
+endsnippet
+
+snippet interfacename "<interfacename>" !w
+<interfacename>${VISUAL}$1</interfacename>$0
+endsnippet
+
+snippet invpartnumber "<invpartnumber>" !w
+<invpartnumber>${VISUAL}$1</invpartnumber>$0
+endsnippet
+
+snippet isbn "<isbn>" !w
+<isbn>${VISUAL}$1</isbn>$0
+endsnippet
+
+snippet issn "<issn>" !w
+<issn>${VISUAL}$1</issn>$0
+endsnippet
+
+snippet issuenum "<issuenum>" !w
+<issuenum>${VISUAL}$1</issuenum>$0
+endsnippet
+
+snippet itemizedlist "<itemizedlist>" !w
+<itemizedlist>
+	${VISUAL}$0
+</itemizedlist>
+endsnippet
+
+snippet itermset "<itermset>" !w
+<itermset>
+	${VISUAL}$0
+</itermset>
+endsnippet
+
+snippet jobtitle "<jobtitle>" !w
+<jobtitle>${VISUAL}$1</jobtitle>$0
+endsnippet
+
+snippet keycap "<keycap>" !w
+<keycap>${VISUAL}$1</keycap>$0
+endsnippet
+
+snippet keycode "<keycode>" !w
+<keycode>${VISUAL}$1</keycode>$0
+endsnippet
+
+snippet keycombo "<keycombo>" !w
+<keycombo>${VISUAL}$1</keycombo>$0
+endsnippet
+
+snippet keysym "<keysym>" !w
+<keysym>${VISUAL}$1</keysym>$0
+endsnippet
+
+snippet keyword "<keyword>" !w
+<keyword>${VISUAL}$1</keyword>$0
+endsnippet
+
+snippet keywordset "<keywordset>" !w
+<keywordset>
+	${VISUAL}$0
+</keywordset>
+endsnippet
+
+snippet label "<label>" !w
+<label>${VISUAL}$1</label>$0
+endsnippet
+
+snippet legalnotice "<legalnotice>" !w
+<legalnotice>
+	${VISUAL}$0
+</legalnotice>
+endsnippet
+
+snippet lineage "<lineage>" !w
+<lineage>${VISUAL}$1</lineage>$0
+endsnippet
+
+snippet lineannotation "<lineannotation>" !w
+<lineannotation>${VISUAL}$1</lineannotation>$0
+endsnippet
+
+snippet link "<link linkend='...'>" !w
+<link linkend="$1">${VISUAL}$2</link>$0
+endsnippet
+
+snippet listitem "<listitem>" !w
+<listitem>
+	${VISUAL}$0
+</listitem>
+endsnippet
+
+snippet literal "<literal>" !w
+<literal>${VISUAL}$1</literal>$0
+endsnippet
+
+snippet literallayout "<literallayout>" !w
+<literallayout>${VISUAL}$1</literallayout>$0
+endsnippet
+
+snippet lot "<lot>" !w
+<lot>
+	${VISUAL}$0
+</lot>
+endsnippet
+
+snippet lotentry "<lotentry linkend='...'>" !w
+<lotentry linkend="$1">
+	${VISUAL}$0
+</lotentry>
+endsnippet
+
+snippet manvolnum "<manvolnum>" !w
+<manvolnum>${VISUAL}$1</manvolnum>$0
+endsnippet
+
+snippet markup "<markup>" !w
+<markup>${VISUAL}$1</markup>$0
+endsnippet
+
+snippet mathphrase "<mathphrase>" !w
+<mathphrase>${VISUAL}$1</mathphrase>$0
+endsnippet
+
+snippet medialabel "<medialabel>" !w
+<medialabel>${VISUAL}$1</medialabel>$0
+endsnippet
+
+snippet mediaobject "<mediaobject>" !w
+<mediaobject>
+	${VISUAL}$0
+</mediaobject>
+endsnippet
+
+snippet mediaobjectco "<mediaobjectco>" !w
+<mediaobjectco>
+	${VISUAL}$0
+</mediaobjectco>
+endsnippet
+
+snippet member "<member>" !w
+<member>
+	${VISUAL}$0
+</member>
+endsnippet
+
+snippet menuchoice "<menuchoice>" !w
+<menuchoice>${VISUAL}$1</menuchoice>$0
+endsnippet
+
+snippet methodname "<methodname>" !w
+<methodname>${VISUAL}$1</methodname>$0
+endsnippet
+
+snippet methodparam "<methodparam>" !w
+<methodparam>${VISUAL}$1</methodparam>$0
+endsnippet
+
+snippet methodsynopsis "<methodsynopsis language='...'>" !w
+<methodsynopsis language="$1">
+	${VISUAL}$0
+</methodsynopsis>
+endsnippet
+
+snippet modespec "<modespec application='...'>" !w
+<modespec application="$1">${VISUAL}$2</modespec>$0
+endsnippet
+
+snippet modifier "<modifier>" !w
+<modifier>${VISUAL}$1</modifier>$0
+endsnippet
+
+snippet mousebutton "<mousebutton>" !w
+<mousebutton>${VISUAL}$1</mousebutton>$0
+endsnippet
+
+snippet msg "<msg>" !w
+<msg>
+	${VISUAL}$0
+</msg>
+endsnippet
+
+snippet msgaud "<msgaud>" !w
+<msgaud>${VISUAL}$1</msgaud>$0
+endsnippet
+
+snippet msgentry "<msgentry>" !w
+<msgentry>
+	${VISUAL}$0
+</msgentry>
+endsnippet
+
+snippet msgexplan "<msgexplan>" !w
+<msgexplan>
+	${VISUAL}$0
+</msgexplan>
+endsnippet
+
+snippet msginfo "<msginfo>" !w
+<msginfo>
+	${VISUAL}$0
+</msginfo>
+endsnippet
+
+snippet msglevel "<msglevel>" !w
+<msglevel>${VISUAL}$1</msglevel>$0
+endsnippet
+
+snippet msgmain "<msgmain>" !w
+<msgmain>
+	${VISUAL}$0
+</msgmain>
+endsnippet
+
+snippet msgorig "<msgorig>" !w
+<msgorig>${VISUAL}$1</msgorig>$0
+endsnippet
+
+snippet msgrel "<msgrel>" !w
+<msgrel>
+	${VISUAL}$0
+</msgrel>
+endsnippet
+
+snippet msgset "<msgset>" !w
+<msgset>
+	${VISUAL}$0
+</msgset>
+endsnippet
+
+snippet msgsub "<msgsub>" !w
+<msgsub>
+	${VISUAL}$0
+</msgsub>
+endsnippet
+
+snippet msgtext "<msgtext>" !w
+<msgtext>
+	${VISUAL}$0
+</msgtext>
+endsnippet
+
+snippet note "<note>" !w
+<note>
+	${VISUAL}$0
+</note>
+endsnippet
+
+snippet objectinfo "<objectinfo>" !w
+<objectinfo>
+	${VISUAL}$0
+</objectinfo>
+endsnippet
+
+snippet olink "<olink targetdocent='...'>" !w
+<olink targetdocent="$1">${VISUAL}$2</olink>$0
+endsnippet
+
+snippet ooclass "<ooclass>" !w
+<ooclass>${VISUAL}$1</ooclass>$0
+endsnippet
+
+snippet ooexception "<ooexception>" !w
+<ooexception>${VISUAL}$1</ooexception>$0
+endsnippet
+
+snippet oointerface "<oointerface>" !w
+<oointerface>${VISUAL}$1</oointerface>$0
+endsnippet
+
+snippet option "<option>" !w
+<option>${VISUAL}$1</option>$0
+endsnippet
+
+snippet optional "<optional>" !w
+<optional>${VISUAL}$1</optional>$0
+endsnippet
+
+snippet orderedlist "<orderedlist>" !w
+<orderedlist>
+	${VISUAL}$0
+</orderedlist>
+endsnippet
+
+snippet orgdiv "<orgdiv>" !w
+<orgdiv>${VISUAL}$1</orgdiv>$0
+endsnippet
+
+snippet orgname "<orgname>" !w
+<orgname>${VISUAL}$1</orgname>$0
+endsnippet
+
+snippet otheraddr "<otheraddr>" !w
+<otheraddr>${VISUAL}$1</otheraddr>$0
+endsnippet
+
+snippet othercredit "<othercredit>" !w
+<othercredit>
+	${VISUAL}$0
+</othercredit>
+endsnippet
+
+snippet othername "<othername>" !w
+<othername>${VISUAL}$1</othername>$0
+endsnippet
+
+snippet package "<package>" !w
+<package>${VISUAL}$1</package>$0
+endsnippet
+
+snippet pagenums "<pagenums>" !w
+<pagenums>${VISUAL}$1</pagenums>$0
+endsnippet
+
+snippet para "<para>" !w
+<para>
+	${VISUAL}$0
+</para>
+endsnippet
+
+snippet paramdef "<paramdef>" !w
+<paramdef>${VISUAL}$1</paramdef>$0
+endsnippet
+
+snippet parameter "<parameter class='...'>" !w
+<parameter class="${1:function}">${VISUAL}$2</parameter>$0
+endsnippet
+
+snippet part "<part id='...'>" !w
+<part id="$1">
+	${VISUAL}$0
+</part>
+endsnippet
+
+snippet partinfo "<partinfo>" !w
+<partinfo>
+	${VISUAL}$0
+</partinfo>
+endsnippet
+
+snippet partintro "<partintro>" !w
+<partintro>
+	${VISUAL}$0
+</partintro>
+endsnippet
+
+snippet personblurb "<personblurb>" !w
+<personblurb>
+	${VISUAL}$0
+</personblurb>
+endsnippet
+
+snippet personname "<personname>" !w
+<personname>${VISUAL}$1</personname>$0
+endsnippet
+
+snippet phone "<phone>" !w
+<phone>${VISUAL}$1</phone>$0
+endsnippet
+
+snippet phrase "<phrase>" !w
+<phrase>${VISUAL}$1</phrase>$0
+endsnippet
+
+snippet pob "<pob>" !w
+<pob>${VISUAL}$1</pob>$0
+endsnippet
+
+snippet postcode "<postcode>" !w
+<postcode>${VISUAL}$1</postcode>$0
+endsnippet
+
+snippet preface "<preface>" !w
+<preface id="$1">
+	${VISUAL}$0
+</preface>
+endsnippet
+
+snippet prefaceinfo "<prefaceinfo>" !w
+<prefaceinfo>
+	${VISUAL}$0
+</prefaceinfo>
+endsnippet
+
+snippet primary "<primary>" !w
+<primary>${VISUAL}$1</primary>$0
+endsnippet
+
+snippet primaryie "<primaryie>" !w
+<primaryie>${VISUAL}$1</primaryie>$0
+endsnippet
+
+snippet printhistory "<printhistory>" !w
+<printhistory>
+	${VISUAL}$0
+</printhistory>
+endsnippet
+
+snippet procedure "<procedure id='...'>" !w
+<procedure id="$1">
+	${VISUAL}$0
+</procedure>
+endsnippet
+
+snippet productname "<productname class='...'>" !w
+<productname class="${1:trade}">${VISUAL}$2</productname>$0
+endsnippet
+
+snippet productnumber "<productnumber>" !w
+<productnumber>${VISUAL}$1</productnumber>$0
+endsnippet
+
+snippet programlisting "<programlisting language='...'>" !w
+<programlisting language="$1">${VISUAL}$2</programlisting>$0
+endsnippet
+
+snippet programlistingco "<programlistingco>" !w
+<programlistingco>
+	${VISUAL}$0
+</programlistingco>
+endsnippet
+
+snippet prompt "<prompt>" !w
+<prompt>${VISUAL}$1</prompt>$0
+endsnippet
+
+snippet property "<property>" !w
+<property>${VISUAL}$1</property>$0
+endsnippet
+
+snippet pubdate "<pubdate>" !w
+<pubdate>${1:`!v strftime("%Y")`}</pubdate>$0
+endsnippet
+
+snippet publisher "<publisher>" !w
+<publisher>
+	${VISUAL}$0
+</publisher>
+endsnippet
+
+snippet publishername "<publishername>" !w
+<publishername>${VISUAL}$1</publishername>$0
+endsnippet
+
+snippet pubsnumber "<pubsnumber>" !w
+<pubsnumber>${VISUAL}$1</pubsnumber>$0
+endsnippet
+
+snippet qandadiv "<qandadiv>" !w
+<qandadiv>
+	${VISUAL}$0
+</qandadiv>
+endsnippet
+
+snippet qandaentry "<qandaentry>" !w
+<qandaentry>
+	${VISUAL}$0
+</qandaentry>
+endsnippet
+
+snippet qandaset "<qandaset>" !w
+<qandaset>
+	${VISUAL}$0
+</qandaset>
+endsnippet
+
+snippet question "<question>" !w
+<question>
+	${VISUAL}$0
+</question>
+endsnippet
+
+snippet quote "<quote>" !w
+<quote>${VISUAL}$1</quote>$0
+endsnippet
+
+snippet refclass "<refclass>" !w
+<refclass>${VISUAL}$1</refclass>$0
+endsnippet
+
+snippet refdescriptor "<refdescriptor>" !w
+<refdescriptor>${VISUAL}$1</refdescriptor>$0
+endsnippet
+
+snippet refentry "<refentry>" !w
+<refentry>
+	${VISUAL}$0
+</refentry>
+endsnippet
+
+snippet refentryinfo "<refentryinfo>" !w
+<refentryinfo>
+	${VISUAL}$0
+</refentryinfo>
+endsnippet
+
+snippet refentrytitle "<refentrytitle>" !w
+<refentrytitle>${VISUAL}$1</refentrytitle>$0
+endsnippet
+
+snippet reference "<reference>" !w
+<reference>
+	${VISUAL}$0
+</reference>
+endsnippet
+
+snippet referenceinfo "<referenceinfo>" !w
+<referenceinfo>
+	${VISUAL}$0
+</referenceinfo>
+endsnippet
+
+snippet refmeta "<refmeta>" !w
+<refmeta>
+	${VISUAL}$0
+</refmeta>
+endsnippet
+
+snippet refmiscinfo "<refmiscinfo>" !w
+<refmiscinfo>
+	${VISUAL}$0
+</refmiscinfo>
+endsnippet
+
+snippet refname "<refname>" !w
+<refname>${VISUAL}$1</refname>$0
+endsnippet
+
+snippet refnamediv "<refnamediv>" !w
+<refnamediv>
+	${VISUAL}$0
+</refnamediv>
+endsnippet
+
+snippet refpurpose "<refpurpose>" !w
+<refpurpose>${VISUAL}$1</refpurpose>$0
+endsnippet
+
+snippet refsect1 "<refsect1 id='...'>" !w
+<refsect1 id="$1">
+	${VISUAL}$0
+</refsect1>
+endsnippet
+
+snippet refsect1info "<refsect1info>" !w
+<refsect1info>
+	${VISUAL}$0
+</refsect1info>
+endsnippet
+
+snippet refsect2 "<refsect2 id='...'>" !w
+<refsect2 id="$1">
+	${VISUAL}$0
+</refsect2>
+endsnippet
+
+snippet refsect2info "<refsect2info>" !w
+<refsect2info>
+	${VISUAL}$0
+</refsect2info>
+endsnippet
+
+snippet refsect3 "<refsect3 id='...'>" !w
+<refsect3 id="$1">
+	${VISUAL}$0
+</refsect3>
+endsnippet
+
+snippet refsect3info "<refsect3info>" !w
+<refsect3info>
+	${VISUAL}$0
+</refsect3info>
+endsnippet
+
+snippet refsection "<refsection id='...'>" !w
+<refsection id="$1">
+	${VISUAL}$0
+</refsection>
+endsnippet
+
+snippet refsectioninfo "<refsectioninfo>" !w
+<refsectioninfo>
+	${VISUAL}$0
+</refsectioninfo>
+endsnippet
+
+snippet refsynopsisdiv "<refsynopsisdiv>" !w
+<refsynopsisdiv>
+	${VISUAL}$0
+</refsynopsisdiv>
+endsnippet
+
+snippet refsynopsisdivinfo "<refsynopsisdivinfo>" !w
+<refsynopsisdivinfo>
+	${VISUAL}$0
+</refsynopsisdivinfo>
+endsnippet
+
+snippet releaseinfo "<releaseinfo>" !w
+<releaseinfo>${VISUAL}$1</releaseinfo>$0
+endsnippet
+
+snippet remark "<remark>" !w
+<remark>${VISUAL}$1</remark>$0
+endsnippet
+
+snippet replaceable "<replaceable>" !w
+<replaceable>${VISUAL}$1</replaceable>$0
+endsnippet
+
+snippet returnvalue "<returnvalue>" !w
+<returnvalue>${VISUAL}$1</returnvalue>$0
+endsnippet
+
+snippet revdescription "<revdescription>" !w
+<revdescription>
+	${VISUAL}$0
+</revdescription>
+endsnippet
+
+snippet revhistory "<revhistory>" !w
+<revhistory>
+	${VISUAL}$0
+</revhistory>
+endsnippet
+
+snippet revision "<revision>" !w
+<revision>
+	${VISUAL}$0
+</revision>
+endsnippet
+
+snippet revnumber "<revnumber>" !w
+<revnumber>${VISUAL}$1</revnumber>$0
+endsnippet
+
+snippet revremark "<revremark>" !w
+<revremark>${VISUAL}$1</revremark>$0
+endsnippet
+
+snippet row "<row>" !w
+<row>
+	${VISUAL}$0
+</row>
+endsnippet
+
+snippet sbr "<sbr />" !w
+<sbr />$0
+endsnippet
+
+snippet screen "<screen>" !w
+<screen>${VISUAL}$1</screen>$0
+endsnippet
+
+snippet screenco "<screenco>" !w
+<screenco>
+	${VISUAL}$0
+</screenco>
+endsnippet
+
+snippet screeninfo "<screeninfo>" !w
+<screeninfo>${VISUAL}$1</screeninfo>$0
+endsnippet
+
+snippet screenshot "<screenshot>" !w
+<screenshot>
+	${VISUAL}$0
+</screenshot>
+endsnippet
+
+snippet secondary "<secondary>" !w
+<secondary>${VISUAL}$1</secondary>$0
+endsnippet
+
+snippet secondaryie "<secondaryie>" !w
+<secondaryie>${VISUAL}$1</secondaryie>$0
+endsnippet
+
+snippet sect1 "<sect1 id='...'>" !w
+<sect1 id="$1">
+	${VISUAL}$0
+</sect1>
+endsnippet
+
+snippet sect1info "<sect1info>" !w
+<sect1info>
+	${VISUAL}$0
+</sect1info>
+endsnippet
+
+snippet sect2 "<sect2 id='...'>" !w
+<sect2 id="$1">
+	${VISUAL}$0
+</sect2>
+endsnippet
+
+snippet sect2info "<sect2info>" !w
+<sect2info>
+	${VISUAL}$0
+</sect2info>
+endsnippet
+
+snippet sect3 "<sect3 id='...'>" !w
+<sect3 id="$1">
+	${VISUAL}$0
+</sect3>
+endsnippet
+
+snippet sect3info "<sect3info>" !w
+<sect3info>
+	${VISUAL}$0
+</sect3info>
+endsnippet
+
+snippet sect4 "<sect4 id='...'>" !w
+<sect4 id="$1">
+	${VISUAL}$0
+</sect4>
+endsnippet
+
+snippet sect4info "<sect4info>" !w
+<sect4info>
+	${VISUAL}$0
+</sect4info>
+endsnippet
+
+snippet sect5 "<sect5 id='...'>" !w
+<sect5 id="$1">
+	${VISUAL}$0
+</sect5>
+endsnippet
+
+snippet sect5info "<sect5info>" !w
+<sect5info>
+	${VISUAL}$0
+</sect5info>
+endsnippet
+
+snippet section "<section id='...'>" !w
+<section id="$1">
+	${VISUAL}$0
+</section>
+endsnippet
+
+snippet sectioninfo "<sectioninfo>" !w
+<sectioninfo>
+	${VISUAL}$0
+</sectioninfo>
+endsnippet
+
+snippet see "<see>" !w
+<see>${VISUAL}$1</see>$0
+endsnippet
+
+snippet seealso "<seealso>" !w
+<seealso>${VISUAL}$1</seealso>$0
+endsnippet
+
+snippet seealsoie "<seealsoie>" !w
+<seealsoie>${VISUAL}$1</seealsoie>$0
+endsnippet
+
+snippet seeie "<seeie>" !w
+<seeie>${VISUAL}$1</seeie>$0
+endsnippet
+
+snippet seg "<seg>" !w
+<seg>${VISUAL}$1</seg>$0
+endsnippet
+
+snippet seglistitem "<seglistitem>" !w
+<seglistitem>
+	${VISUAL}$0
+</seglistitem>
+endsnippet
+
+snippet segmentedlist "<segmentedlist>" !w
+<segmentedlist>
+	${VISUAL}$0
+</segmentedlist>
+endsnippet
+
+snippet segtitle "<segtitle>" !w
+<segtitle>${VISUAL}$1</segtitle>$0
+endsnippet
+
+snippet seriesvolnums "<seriesvolnums>" !w
+<seriesvolnums>${VISUAL}$1</seriesvolnums>$0
+endsnippet
+
+snippet set "<set>" !w
+<set>
+	${VISUAL}$0
+</set>
+endsnippet
+
+snippet setindex "<setindex>" !w
+<setindex>
+	${VISUAL}$0
+</setindex>
+endsnippet
+
+snippet setindexinfo "<setindexinfo>" !w
+<setindexinfo>
+	${VISUAL}$0
+</setindexinfo>
+endsnippet
+
+snippet setinfo "<setinfo>" !w
+<setinfo>
+	${VISUAL}$0
+</setinfo>
+endsnippet
+
+snippet sgmltag "<sgmltag>" !w
+<sgmltag>${VISUAL}$1</sgmltag>$0
+endsnippet
+
+snippet shortaffil "<shortaffil>" !w
+<shortaffil>${VISUAL}$1</shortaffil>$0
+endsnippet
+
+snippet shortcut "<shortcut>" !w
+<shortcut>${VISUAL}$1</shortcut>$0
+endsnippet
+
+snippet sidebar "<sidebar>" !w
+<sidebar>
+	${VISUAL}$0
+</sidebar>
+endsnippet
+
+snippet sidebarinfo "<sidebarinfo>" !w
+<sidebarinfo>
+	${VISUAL}$0
+</sidebarinfo>
+endsnippet
+
+snippet simpara "<simpara>" !w
+<simpara>
+	${VISUAL}$0
+</simpara>
+endsnippet
+
+snippet simplelist "<simplelist>" !w
+<simplelist>
+	${VISUAL}$0
+</simplelist>
+endsnippet
+
+snippet simplemsgentry "<simplemsgentry>" !w
+<simplemsgentry>
+	${VISUAL}$0
+</simplemsgentry>
+endsnippet
+
+snippet simplesect "<simplesect id='...'>" !w
+<simplesect id="$1">
+	${VISUAL}$0
+</simplesect>
+endsnippet
+
+snippet spanspec "<spanspec spanname='...' namest='...' nameend='...' />" !w
+<spanspec spanname="$1" namest="$2" nameend="$3" />$0
+endsnippet
+
+snippet state "<state>" !w
+<state>${VISUAL}$1</state>$0
+endsnippet
+
+snippet step "<step>" !w
+<step>
+	${VISUAL}$0
+</step>
+endsnippet
+
+snippet stepalternatives "<stepalternatives>" !w
+<stepalternatives>
+	${VISUAL}$0
+</stepalternatives>
+endsnippet
+
+snippet street "<street>" !w
+<street>${VISUAL}$1</street>$0
+endsnippet
+
+snippet structfield "<structfield>" !w
+<structfield>${VISUAL}$1</structfield>$0
+endsnippet
+
+snippet structname "<structname>" !w
+<structname>${VISUAL}$1</structname>$0
+endsnippet
+
+snippet subject "<subject>" !w
+<subject>
+	${VISUAL}$0
+</subject>
+endsnippet
+
+snippet subjectset "<subjectset>" !w
+<subjectset>
+	${VISUAL}$0
+</subjectset>
+endsnippet
+
+snippet subjectterm "<subjectterm>" !w
+<subjectterm>${VISUAL}$1</subjectterm>$0
+endsnippet
+
+snippet subscript "<subscript>" !w
+<subscript>${VISUAL}$1</subscript>$0
+endsnippet
+
+snippet substeps "<substeps>" !w
+<substeps>
+	${VISUAL}$0
+</substeps>
+endsnippet
+
+snippet subtitle "<subtitle>" !w
+<subtitle>${VISUAL}$3</subtitle>$0
+endsnippet
+
+snippet superscript "<superscript>" !w
+<superscript>${VISUAL}$1</superscript>$0
+endsnippet
+
+snippet surname "<surname>" !w
+<surname>${VISUAL}$1</surname>$0
+endsnippet
+
+snippet symbol "<symbol>" !w
+<symbol>${VISUAL}$1</symbol>$0
+endsnippet
+
+snippet synopfragment "<synopfragment id='...'>" !w
+<synopfragment id="$1">
+	${VISUAL}$0
+</synopfragment>
+endsnippet
+
+snippet synopfragmentref "<synopfragmentref linkend='...'>" !w
+<synopfragmentref linkend="$1">
+	${VISUAL}$0
+</synopfragmentref>
+endsnippet
+
+snippet synopsis "<synopsis>" !w
+<synopsis>${VISUAL}$1</synopsis>$0
+endsnippet
+
+snippet systemitem "<systemitem>" !w
+<systemitem>${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet table "<table id='...'>" !w
+<table id="$1">
+	${VISUAL}$0
+</table>
+endsnippet
+
+snippet task "<task id='...'>" !w
+<task id="$1">
+	${VISUAL}$0
+</task>
+endsnippet
+
+snippet taskprerequisites "<taskprerequisites>" !w
+<taskprerequisites>
+	${VISUAL}$0
+</taskprerequisites>
+endsnippet
+
+snippet taskrelated "<taskrelated>" !w
+<taskrelated>
+	${VISUAL}$0
+</taskrelated>
+endsnippet
+
+snippet tasksummary "<tasksummary>" !w
+<tasksummary>
+	${VISUAL}$0
+</tasksummary>
+endsnippet
+
+snippet tbody "<tbody>" !w
+<tbody>
+	${VISUAL}$0
+</tbody>
+endsnippet
+
+snippet td "<td>" !w
+<td>
+	${VISUAL}$0
+</td>
+endsnippet
+
+snippet term "<term>" !w
+<term>${VISUAL}$1</term>$0
+endsnippet
+
+snippet termdef "<termdef>" !w
+<termdef>${VISUAL}$1</termdef>$0
+endsnippet
+
+snippet tertiary "<tertiary>" !w
+<tertiary>${VISUAL}$1</tertiary>$0
+endsnippet
+
+snippet tertiaryie "<tertiaryie>" !w
+<tertiaryie>${VISUAL}$1</tertiaryie>$0
+endsnippet
+
+snippet textdata "<textdata fileref='...'>" !w
+<textdata fileref="${VISUAL}$1" />$0
+endsnippet
+
+snippet textobject "<textobject>" !w
+<textobject>
+	${VISUAL}$0
+</textobject>
+endsnippet
+
+snippet tfoot "<tfoot>" !w
+<tfoot>
+	${VISUAL}$0
+</tfoot>
+endsnippet
+
+snippet tgroup "<tgroup cols='...'>" !w
+<tgroup cols="$1">
+	${VISUAL}$0
+</tgroup>
+endsnippet
+
+snippet th "<th>" !w
+<th>
+	${VISUAL}$0
+</th>
+endsnippet
+
+snippet thead "<thead>" !w
+<thead>
+	${VISUAL}$0
+</thead>
+endsnippet
+
+snippet tip "<tip>" !w
+<tip>
+	${VISUAL}$0
+</tip>
+endsnippet
+
+snippet title "<title>" !w
+<title>${VISUAL}$1</title>$0
+endsnippet
+
+snippet titleabbrev "<titleabbrev>" !w
+<titleabbrev>${VISUAL}$1</titleabbrev>$0
+endsnippet
+
+snippet toc "<toc>" !w
+<toc>
+	${VISUAL}$0
+</toc>
+endsnippet
+
+snippet tocback "<tocback linkend='...'>" !w
+<tocback linkend="$1">${VISUAL}$2</tocback>$0
+endsnippet
+
+snippet tocchap "<tocchap>" !w
+<tocchap>
+	${VISUAL}$0
+</tocchap>
+endsnippet
+
+snippet tocentry "<tocentry linkend='...'>" !w
+<tocentry linkend="$1">${VISUAL}$2</tocentry>$0
+endsnippet
+
+snippet tocfront "<tocfront linkend='...'>" !w
+<tocfront linkend="$1">${VISUAL}$2</tocfront>$0
+endsnippet
+
+snippet toclevel1 "<toclevel1>" !w
+<toclevel1>
+	${VISUAL}$0
+</toclevel1>
+endsnippet
+
+snippet toclevel2 "<toclevel2>" !w
+<toclevel2>
+	${VISUAL}$0
+</toclevel2>
+endsnippet
+
+snippet toclevel3 "<toclevel3>" !w
+<toclevel3>
+	${VISUAL}$0
+</toclevel3>
+endsnippet
+
+snippet toclevel4 "<toclevel4>" !w
+<toclevel4>
+	${VISUAL}$0
+</toclevel4>
+endsnippet
+
+snippet toclevel5 "<toclevel5>" !w
+<toclevel5>
+	${VISUAL}$0
+</toclevel5>
+endsnippet
+
+snippet tocpart "<tocpart>" !w
+<tocpart>
+	${VISUAL}$0
+</tocpart>
+endsnippet
+
+snippet token "<token>" !w
+<token>${VISUAL}$1</token>$0
+endsnippet
+
+snippet tr "<tr>" !w
+<tr>
+	${VISUAL}$0
+</tr>
+endsnippet
+
+snippet trademark "<trademark class='...'>" !w
+<trademark class="${1:trade}">${VISUAL}$2</trademark>$0
+endsnippet
+
+snippet type "<type>" !w
+<type>${VISUAL}$1</type>$0
+endsnippet
+
+snippet ulink "<ulink url='...'>" !w
+<ulink url="$1">${VISUAL}$2</ulink>$0
+endsnippet
+
+snippet uri "<uri>" !w
+<uri>${VISUAL}$1</uri>$0
+endsnippet
+
+snippet userinput "<userinput>" !w
+<userinput>${VISUAL}$1</userinput>$0
+endsnippet
+
+snippet varargs "<varargs />" !w
+<varargs />$0
+endsnippet
+
+snippet variablelist "<variablelist>" !w
+<variablelist>
+	${VISUAL}$0
+</variablelist>
+endsnippet
+
+snippet varlistentry "<varlistentry>" !w
+<varlistentry>
+	${VISUAL}$0
+</varlistentry>
+endsnippet
+
+snippet varname "<varname>" !w
+<varname>${VISUAL}$1</varname>$0
+endsnippet
+
+snippet videodata "<videodata fileref='...' scalefit='...' />" !w
+<videodata fileref="${VISUAL}$1" scalefit="${2:0}" />$0
+endsnippet
+
+snippet videoobject "<videoobject>" !w
+<videoobject>
+	${VISUAL}$0
+</videoobject>
+endsnippet
+
+snippet void "<void />" !w
+<void />$0
+endsnippet
+
+snippet volumenum "<volumenum>" !w
+<volumenum>${VISUAL}$1</volumenum>$0
+endsnippet
+
+snippet warning "<warning>" !w
+<warning>
+	${VISUAL}$0
+</warning>
+endsnippet
+
+snippet wordasword "<wordasword>" !w
+<wordasword>${VISUAL}$1</wordasword>$0
+endsnippet
+
+snippet xref "<xref linkend='...' />" !w
+<xref linkend="$1" />$0
+endsnippet
+
+snippet year "<year>" !w
+<year>${1:`!v strftime("%Y")`}</year>$0
+endsnippet
+
+# -------------------------------------------------------------------------
+#                       DocBook 4.5 Element Aliases
+# -------------------------------------------------------------------------
+
+snippet bold "<emphasis role='bold'>" !w
+<emphasis role="bold">${VISUAL}$1</emphasis>$0
+endsnippet
+
+snippet strong "<emphasis role='strong'>" !w
+<emphasis role="strong">${VISUAL}$1</emphasis>$0
+endsnippet
+
+snippet devicefile "<filename class='devicefile'>" !w
+<filename class="devicefile">${VISUAL}$1</filename>$0
+endsnippet
+
+snippet directory "<filename class='directory'>" !w
+<filename class="directory">${VISUAL}$1</filename>$0
+endsnippet
+
+snippet extension "<filename class='extension'>" !w
+<filename class="extension">${VISUAL}$1</filename>$0
+endsnippet
+
+snippet headerfile "<filename class='headerfile'>" !w
+<filename class="headerfile">${VISUAL}$1</filename>$0
+endsnippet
+
+snippet libraryfile "<filename class='libraryfile'>" !w
+<filename class="libraryfile">${VISUAL}$1</filename>$0
+endsnippet
+
+snippet partition "<filename class='partition'>" !w
+<filename class="partition">${VISUAL}$1</filename>$0
+endsnippet
+
+snippet symlink "<filename class='symlink'>" !w
+<filename class="symlink">${VISUAL}$1</filename>$0
+endsnippet
+
+snippet cartridge "<medialabel class='cartridge'>" !w
+<medialabel class="cartridge">${VISUAL}$1</medialabel>$0
+endsnippet
+
+snippet cdrom "<medialabel class='cdrom'>" !w
+<medialabel class="cdrom">${VISUAL}$1</medialabel>$0
+endsnippet
+
+snippet disk "<medialabel class='disk'>" !w
+<medialabel class="disk">${VISUAL}$1</medialabel>$0
+endsnippet
+
+snippet tape "<medialabel class='tape'>" !w
+<medialabel class="tape">${VISUAL}$1</medialabel>$0
+endsnippet
+
+snippet daemon "<systemitem class='daemon'>" !w
+<systemitem class="daemon">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet domainname "<systemitem class='domainname'>" !w
+<systemitem class="domainname">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet etheraddress "<systemitem class='etheraddress'>" !w
+<systemitem class="etheraddress">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet eventhandler "<systemitem class='eventhandler'>" !w
+<systemitem class="eventhandler">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet event "<systemitem class='event'>" !w
+<systemitem class="event">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet filesystem "<systemitem class='filesystem'>" !w
+<systemitem class="filesystem">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet fqdomainname "<systemitem class='fqdomainname'>" !w
+<systemitem class="fqdomainname">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet groupname "<systemitem class='groupname'>" !w
+<systemitem class="groupname">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet ipaddress "<systemitem class='ipaddress'>" !w
+<systemitem class="ipaddress">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet library "<systemitem class='library'>" !w
+<systemitem class="library">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet macro "<systemitem class='macro'>" !w
+<systemitem class="macro">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet netmask "<systemitem class='netmask'>" !w
+<systemitem class="netmask">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet newsgroup "<systemitem class='newsgroup'>" !w
+<systemitem class="newsgroup">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet osname "<systemitem class='osname'>" !w
+<systemitem class="osname">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet process "<systemitem class='process'>" !w
+<systemitem class="process">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet protocol "<systemitem class='protocol'>" !w
+<systemitem class="protocol">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet resource "<systemitem class='resource'>" !w
+<systemitem class="resource">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet server "<systemitem class='server'>" !w
+<systemitem class="server">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet service "<systemitem class='service'>" !w
+<systemitem class="service">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet systemname "<systemitem class='systemname'>" !w
+<systemitem class="systemname">${VISUAL}$1</systemitem>$0
+endsnippet
+
+snippet username "<systemitem class='username'>" !w
+<systemitem class="username">${VISUAL}$1</systemitem>$0
+endsnippet
+
+# -------------------------------------------------------------------------
+#                       Commonly Used XML Elements
+# -------------------------------------------------------------------------
+
+snippet xml "<?xml version='...' encoding='...' ?>" !b
+<?xml version='${1:1.0}' encoding='${2:utf-8}' ?>$0
+endsnippet
+
+snippet doctype "<!DOCTYPE ...>" !b
+<!DOCTYPE ${1:chapter} PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">$0
+endsnippet
+
+snippet xi:include "<xi:include href='...' xmlns:xi='...' />" !w
+<xi:include href="$1" xmlns:xi="http://www.w3.org/2001/XInclude" />$0
+endsnippet
+
+snippet xi:fallback "<xi:fallback xmlns:xi='...'>" !w
+<xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
+	${VISUAL}$0
+</xi:fallback>
+endsnippet
