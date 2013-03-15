@@ -1,0 +1,403 @@
+# Mallard 1.0 snippets according to Mallard 1.0 DRAFT (as of 2013-02-11)
+# Copyright (C) 2013 Jaromir Hradilek
+
+# Home Page:   https://github.com/jhradilek/vim-snippets
+# Last Change: 15 March 2013
+
+# -------------------------------------------------------------------------
+#                           Pages and Sections
+# -------------------------------------------------------------------------
+
+snippet page "<page id='...'" !b
+<page xmlns="http://projectmallard.org/1.0/" id="$1">
+	${VISUAL}$0
+</page>
+endsnippet
+
+snippet page "<page type='...' id='...'>" b
+<page xmlns="http://projectmallard.org/1.0/" type="${1:topic}" id="$2">
+	${VISUAL}$0
+</page>
+endsnippet
+
+snippet page "<page type='...' style='...' id='...'>" b
+<page xmlns="http://projectmallard.org/1.0/" type="${1:topic}" style="$2" id="$3">
+	${VISUAL}$0
+</page>
+endsnippet
+
+snippet section "<section id='...'>" !b
+<section id="$1">
+	${VISUAL}$0
+</section>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                          Information Elements
+# -------------------------------------------------------------------------
+
+snippet credit "<credit type='...'>" !b
+<credit type="${1:author}">
+	${VISUAL}$0
+</credit>
+endsnippet
+
+snippet desc "<desc>" !b
+<desc>${VISUAL}$0</desc>
+endsnippet
+
+snippet email "<email>" !b
+<email>${VISUAL}$0</email>
+endsnippet
+
+snippet info "<info>" !b
+<info>
+	${VISUAL}$0
+</info>
+endsnippet
+
+snippet license "<license href='...'>" !b
+<license href="${1:http://creativecommons.org/licenses/by-sa/3.0/}">
+	${VISUAL}$0
+</license>
+endsnippet
+
+snippet link "<link type='...' xref='...' group='...' />" !b
+<link type="${1:guide}" xref="${2:index}" group="$3" />$0
+endsnippet
+
+snippet link "<link type='...' xref='...' />" b
+<link type="${1:guide}" xref="${2:index}" />$0
+endsnippet
+
+snippet name "<name>" !b
+<name>${VISUAL}$0</name>
+endsnippet
+
+snippet revision "<revision version='...' date='...' status='...' />" !b
+<revision version="${1:0.1}" date="${2:`!v strftime("%Y-%m-%d")`}" status="${3:stub}" />$0
+endsnippet
+
+snippet revision "<revision docversion='...' version='...' date='...' status='...' />" b
+<revision docversion="${1:0.1}" version="${2:0.1}" date="${3:`!v strftime("%Y-%m-%d")`}" status="${4:stub}" />$0
+endsnippet
+
+snippet revision "<revision pkgversion='...' version='...' date='...' status='...' />" b
+<revision pkgversion="${1:0.1}" version="${2:0.1}" date="${3:`!v strftime("%Y-%m-%d")`}" status="${4:stub}" />$0
+endsnippet
+
+snippet title "<title type='...'>" !b
+<title type="${1:link}">${VISUAL}$0</title>
+endsnippet
+
+snippet title "<title type='...' role='...'>" b
+<title type="${1:link}" role="$2">${VISUAL}$0</title>
+endsnippet
+
+snippet years "<years>" !b
+<years>${0:`!v strftime("%Y")`}</years>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                             Automatic Links
+# -------------------------------------------------------------------------
+
+snippet links "<links type='...' />" !b
+<links type="${1:topic}" />
+endsnippet
+
+snippet links "<links type='...' groups='...'>" b
+<links type="${1:topic}" groups="$2">
+	${VISUAL}$0
+</links>
+endsnippet
+
+snippet links "<links type='...' groups='...' style='...'>" b
+<links type="${1:topic}" groups="$2" style="$3">
+	${VISUAL}$0
+</links>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                             Block Elements
+# -------------------------------------------------------------------------
+
+snippet cite "<cite>" !b
+<cite>${VISUAL}$0</cite>
+endsnippet
+
+snippet cite "<cite date='...'>" b
+<cite date="${1:`!v strftime("%Y-%m-%d")`}">${VISUAL}$0</cite>
+endsnippet
+
+snippet cite "<cite date='...' href='...'>" b
+<cite date="${1:`!v strftime("%Y-%m-%d")`}" href="$2">${VISUAL}$0</cite>
+endsnippet
+
+snippet code "<code mime='...'>" !b
+<code mime="$1">
+${VISUAL}$0
+</code>
+endsnippet
+
+snippet col "<col>" !w
+<col />$0
+endsnippet
+
+snippet colgroup "<colgroup>" !b
+<colgroup>${VISUAL}$0</colgroup>
+endsnippet
+
+snippet comment "<comment>" !b
+<comment>
+	${VISUAL}$0
+</comment>
+endsnippet
+
+snippet desc "<desc>" !b
+<desc>${VISUAL}$0</desc>
+endsnippet
+
+snippet example "<example>" !b
+<example>
+	${VISUAL}$0
+</example>
+endsnippet
+
+snippet figure "<figure>" !b
+<figure>
+	${VISUAL}$0
+</figure>
+endsnippet
+
+snippet item "<item>" !b
+<item>
+	${VISUAL}$0
+</item>
+endsnippet
+
+snippet list "<list>" !b
+<list>
+	${VISUAL}$0
+</list>
+endsnippet
+
+snippet list "<list type='...'>" b
+<list type="${1:numbered}">
+	${VISUAL}$0
+</list>
+endsnippet
+
+snippet listing "<listing>" !b
+<listing>
+	${VISUAL}$0
+</listing>
+endsnippet
+
+snippet media "<media type='...' mime='...' src='...'>" !b
+<media type="${1:image}" mime="${2:image/png}" src="${3:${VISUAL}}">
+	$0
+</media>
+endsnippet
+
+snippet note "<note>" !b
+<note>
+	${VISUAL}$0
+</note>
+endsnippet
+
+snippet note "<note style='...'>" b
+<note style="${1:advanced}">
+	${VISUAL}$0
+</note>
+endsnippet
+
+snippet p "<p>" !w
+<p>${VISUAL}$0</p>
+endsnippet
+
+snippet quote "<quote>" !b
+<quote>
+	${VISUAL}$0
+</quote>
+endsnippet
+
+snippet screen "<screen>" !b
+<screen>
+${VISUAL}$0
+</screen>
+endsnippet
+
+snippet steps "<steps>" !b
+<steps>
+	${VISUAL}$0
+</steps>
+endsnippet
+
+snippet subtitle "<subtitle>" !b
+<subtitle>${VISUAL}$0</subtitle>
+endsnippet
+
+snippet synopsis "<synopsis>" !b
+<synopsis>
+	${VISUAL}$0
+</synopsis>
+endsnippet
+
+snippet table "<table>" !b
+<table>
+	${VISUAL}$0
+</table>
+endsnippet
+
+snippet table "<table frame='...' rules='...' shade='...'>" b
+<table frame="${1:all}" rules="${2:all}" shade="${3:none}">
+	${VISUAL}$0
+</table>
+endsnippet
+
+snippet tbody "<tbody>" !b
+<tbody>
+	${VISUAL}$0
+</tbody>
+endsnippet
+
+snippet td "<td>" !b
+<td>${VISUAL}$0</td>
+endsnippet
+
+snippet td "<td colspan='...'>" b
+<td colspan="${1:2}">${VISUAL}$0</td>
+endsnippet
+
+snippet td "<td colspan='...' rowspan='...'>" b
+<td colspan="${1:2}" rowspan="${2:2}">${VISUAL}$0</td>
+endsnippet
+
+snippet td "<td rowspan='...'>" b
+<td rowspan="${1:2}">${VISUAL}$0</td>
+endsnippet
+
+snippet terms "<terms>" !b
+<terms>
+	${VISUAL}$0
+</terms>
+endsnippet
+
+snippet tfoot "<tfoot>" !b
+<tfoot>
+	${VISUAL}$0
+</tfoot>
+endsnippet
+
+snippet thead "<thead>" !b
+<thead>
+	${VISUAL}$0
+</thead>
+endsnippet
+
+snippet title "<title>" b
+<title>${VISUAL}$0</title>
+endsnippet
+
+snippet tr "<tr>" !b
+<tr>
+	${VISUAL}$0
+</tr>
+endsnippet
+
+snippet tree "<tree>" !b
+<tree>
+	${VISUAL}$0
+</tree>
+endsnippet
+
+snippet tree "<tree style='...'>" b
+<tree style="${1:lines}">
+	${VISUAL}$0
+</tree>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                             Inline elements
+# -------------------------------------------------------------------------
+
+snippet app "<app>" !w
+<app>${VISUAL}$1</app>$0
+endsnippet
+
+snippet cmd "<cmd>" !w
+<cmd>${VISUAL}$1</cmd>$0
+endsnippet
+
+snippet code "<code>" !w
+<code>${VISUAL}$1</code>$0
+endsnippet
+
+snippet em "<em>" !w
+<em>${VISUAL}$1</em>$0
+endsnippet
+
+snippet file "<file>" !w
+<file>${VISUAL}$1</file>$0
+endsnippet
+
+snippet gui "<gui>" !w
+<gui>${VISUAL}$1</gui>$0
+endsnippet
+
+snippet gui "<gui style='...'>" w
+<gui style="${1:button}">${VISUAL}$2</gui>$0
+endsnippet
+
+snippet guiseq "<guiseq>" !w
+<guiseq>${VISUAL}$1</guiseq>$0
+endsnippet
+
+snippet input "<input>" !w
+<input>${VISUAL}$1</input>$0
+endsnippet
+
+snippet key "<key>" !w
+<key>${VISUAL}$1</key>$0
+endsnippet
+
+snippet keyseq "<keyseq>" !w
+<keyseq>${VISUAL}$1</keyseq>$0
+endsnippet
+
+snippet keyseq "<keyseq type='...'>" w
+<keyseq type="${1:combo}">${VISUAL}$2</keyseq>$0
+endsnippet
+
+snippet link "<link xref='...' />" !w
+<link xref="${1:${VISUAL}}" />$0
+endsnippet
+
+snippet link "<link href='...'>" w
+<link href="${1:${VISUAL}}">${2:$1}</link>$0
+endsnippet
+
+snippet media "<media type='...' mime='...' src='...' />" w
+<media type="${1:image}" mime="${2:image/png}" src="${3:${VISUAL}}" />$0
+endsnippet
+
+snippet output "<output>" !w
+<output>${VISUAL}$1</output>$0
+endsnippet
+
+snippet output "<output style='...'>" w
+<output style="${1:error}">${VISUAL}$1</output>$0
+endsnippet
+
+snippet span "<span>" !w
+<span$1>${VISUAL}$2</span>$0
+endsnippet
+
+snippet sys "<sys>" !w
+<sys>${VISUAL}$1</sys>$0
+endsnippet
+
+snippet var "<var>" !w
+<var>${VISUAL}$1</var>$0
+endsnippet
