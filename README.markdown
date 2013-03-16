@@ -10,7 +10,7 @@ The **vim-snippets** repository provides a collection of code snippets for **Vim
 
 For the **UltiSnips** and **snipMate** plug-ins, the following snippets are included in their respective directories:
 
-* **docbk.snippets** — Snippets for the DocBook XML language according to [DocBook: The Definitive Guide, version 2.0.17](http://www.docbook.org/tdg/).
+* **docbk.snippets** — Snippets for the DocBook XML language according to [DocBook: The Definitive Guide, version 2.0.17](http://www.docbook.org/tdg/). See also my [vim-syntax](https://github.com/jhradilek/vim-syntax) repository for an updated syntax file for this language.
 * **mallard.snippets** — Snippets for the Mallard XML language according to [Mallard 1.0 DRAFT (as of 2013-02-11)](http://projectmallard.org/1.0/index.html). See also my [vim-syntax](https://github.com/jhradilek/vim-syntax) repository for a syntax file for this language.
 
 For the **snippetsEmu** plug-in, the following legacy snippets are available in the **snippetsEmu** directory, but are no longer actively developed or maintained:
