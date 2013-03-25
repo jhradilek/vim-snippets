@@ -12,6 +12,7 @@ For the **UltiSnips** and **snipMate** plug-ins, the following snippets are incl
 
 * **docbk.snippets** — Snippets for the DocBook XML language according to [DocBook: The Definitive Guide, version 2.0.17](http://www.docbook.org/tdg/). See also my [vim-docbk](https://github.com/jhradilek/vim-docbk) repository for an updated syntax file for this language.
 * **mallard.snippets** — Snippets for the Mallard XML language according to [Mallard 1.0 DRAFT (as of 2013-02-11)](http://projectmallard.org/1.0/index.html). See also my [vim-mallard](https://github.com/jhradilek/vim-mallard) repository for a syntax file for this language.
+* **rng.snippets** — Snippets for the RELAX NG schema language for XML. See also my [vim-rng](https://github.com/jhradilek/vim-rng) repository for a syntax file for this language.
 
 For the **snippetsEmu** plug-in, the following legacy snippets are available in the **after/ftplugin/** directory, but are no longer actively developed or maintained:
 
