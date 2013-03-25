@@ -1,0 +1,329 @@
+# RELAX NG snippets for the RELAX NG XML schema
+# Copyright (C) 2013 Jaromir Hradilek
+
+# Home Page:   https://github.com/jhradilek/vim-snippets
+# Last Change: 25 March 2013
+
+extends xml
+
+# -------------------------------------------------------------------------
+#                          The "anyName" Element
+# -------------------------------------------------------------------------
+
+snippet anyName "<anyName />" !b
+<anyName/>
+endsnippet
+
+snippet anyName "<anyName>" b
+<anyName>
+	${VISUAL}$0
+</anyName>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                         The "attribute" Element
+# -------------------------------------------------------------------------
+
+snippet attribute "<attribute name='...' />" !b
+<attribute name="$0"/>
+endsnippet
+
+snippet attribute "<attribute name='...'>" b
+<attribute name="$1">
+	${VISUAL}$0
+</attribute>
+endsnippet
+
+snippet attribute "<attribute>" b
+<attribute>
+	${VISUAL}$0
+</attribute>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                          The "choice" Element
+# -------------------------------------------------------------------------
+
+snippet choice "<choice>" !b
+<choice>
+	${VISUAL}$0
+</choice>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "data" Element
+# -------------------------------------------------------------------------
+
+snippet data "<data type='...' />" !b
+<data type="$0"/>
+endsnippet
+
+snippet data "<data type='...'>" b
+<data type="$1">
+	${VISUAL}$0
+</data>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                          The "define" Element
+# -------------------------------------------------------------------------
+
+snippet define "<define name='...'>" !b
+<define name="$1">
+	${VISUAL}$0
+</define>
+endsnippet
+
+snippet define "<define name='...' combine='...'>" b
+<define name="$1" combine="${2:choice}">
+	${VISUAL}$0
+</define>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                            The "div" Element
+# -------------------------------------------------------------------------
+
+snippet div "<div>" !b
+<div>
+	${VISUAL}$0
+</div>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                          The "element" Element
+# -------------------------------------------------------------------------
+
+snippet element "<element name='...'>" !b
+<element name="$1">
+	${VISUAL}$0
+</element>
+endsnippet
+
+snippet element "<element>" b
+<element>
+	${VISUAL}$0
+</element>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "empty" Element
+# -------------------------------------------------------------------------
+
+snippet empty "<empty />" !b
+<empty/>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                          The "except" Element
+# -------------------------------------------------------------------------
+
+snippet except "<except>" !b
+<except>
+	${VISUAL}$0
+</except>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                        The "externalRef" Element
+# -------------------------------------------------------------------------
+
+snippet externalRef "<externalRef href='...' />" !b
+<externalRef href="$0"/>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                          The "grammar" Element
+# -------------------------------------------------------------------------
+
+snippet grammar "<grammar xmlns='...' ns='...'>" !b
+<grammar xmlns="${1:http://relaxng.org/ns/structure/1.0}" ns="$2">
+	${VISUAL}$0
+</grammar>
+endsnippet
+
+snippet grammar "<grammar xmlns='...'>" b
+<grammar xmlns="${1:http://relaxng.org/ns/structure/1.0}">
+	${VISUAL}$0
+</grammar>
+endsnippet
+
+snippet grammar "<grammar>" b
+<grammar>
+	${VISUAL}$0
+</grammar>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "group" Element
+# -------------------------------------------------------------------------
+
+snippet group "<group>" !b
+<group>
+	${VISUAL}$0
+</group>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                          The "include" Element
+# -------------------------------------------------------------------------
+
+snippet include "<include href='...' />" !b
+<include href="$0"/>
+endsnippet
+
+snippet include "<include href='...'>" b
+<include href="$1">
+	${VISUAL}$0
+</include>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                        The "interleave" Element
+# -------------------------------------------------------------------------
+
+snippet interleave "<interleave>" !b
+<interleave>
+	${VISUAL}$0
+</interleave>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "list" Element
+# -------------------------------------------------------------------------
+
+snippet list "<list>" !b
+<list>
+	${VISUAL}$0
+</list>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "mixed" Element
+# -------------------------------------------------------------------------
+
+snippet mixed "<mixed>" !b
+<mixed>
+	${VISUAL}$0
+</mixed>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "name" Element
+# -------------------------------------------------------------------------
+
+snippet name "<name>" !b
+<name>${VISUAL}$0</name>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                        The "notAllowed" Element
+# -------------------------------------------------------------------------
+
+snippet notAllowed "<notAllowed />" !b
+<notAllowed/>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                          The "nsName" Element
+# -------------------------------------------------------------------------
+
+snippet nsName "<nsName ns='...' />" !b
+<nsName ns="$0"/>
+endsnippet
+
+snippet nsName "<nsName ns='...'>" b
+<nsName ns="$1">
+	${VISUAL}$0
+</nsName>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                         The "oneOrMore" Element
+# -------------------------------------------------------------------------
+
+snippet oneOrMore "<oneOrMore>" !b
+<oneOrMore>
+	${VISUAL}$0
+</oneOrMore>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                         The "optional" Element
+# -------------------------------------------------------------------------
+
+snippet optional "<optional>" !b
+<optional>
+	${VISUAL}$0
+</optional>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "param" Element
+# -------------------------------------------------------------------------
+
+snippet param "<param name='...'>" !b
+<param name="$1">${VISUAL}$0</param>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                         The "parentRef" Element
+# -------------------------------------------------------------------------
+
+snippet parentRef "<parentRef name='...' />" !b
+<parentRef name="$0"/>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                            The "ref" Element
+# -------------------------------------------------------------------------
+
+snippet ref "<ref name='...' />" !b
+<ref name="$0"/>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "start" Element
+# -------------------------------------------------------------------------
+
+snippet start "<start combine='...'>" !b
+<start combine="${1:choice}">
+	${VISUAL}$0
+</start>
+endsnippet
+
+snippet start "<start>" b
+<start>
+	${VISUAL}$0
+</start>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "text" Element
+# -------------------------------------------------------------------------
+
+snippet text "<text />" !b
+<text/>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                           The "value" Element
+# -------------------------------------------------------------------------
+
+snippet value "<value type='...'>" !b
+<value type="$1">${VISUAL}$0</value>
+endsnippet
+
+snippet value "<value>" b
+<value>${VISUAL}$0</value>
+endsnippet
+
+# -------------------------------------------------------------------------
+#                        The "zeroOrMore" Element
+# -------------------------------------------------------------------------
+
+snippet zeroOrMore "<zeroOrMore>" !b
+<zeroOrMore>
+	${VISUAL}$0
+</zeroOrMore>
+endsnippet
