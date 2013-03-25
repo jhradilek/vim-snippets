@@ -1,0 +1,124 @@
+# RELAX NG snippets for the RELAX NG XML schema
+# Copyright (C) 2013 Jaromir Hradilek
+
+# Home Page:   https://github.com/jhradilek/vim-snippets
+# Last Change: 25 March 2013
+
+# anyName
+snippet anyName
+	<anyName>
+		${1}
+	</anyName>
+# attribute
+snippet attribute
+	<attribute name="${1}">
+		${2}
+	</attribute>
+# choice
+snippet choice
+	<choice>
+		${1}
+	</choice>
+# data
+snippet data
+	<data type="${1}">
+		${2}
+	</data>
+# define
+snippet define
+	<define name="${1}">
+		${2}
+	</define>
+# div
+snippet div
+	<div>
+		${1}
+	</div>
+# element
+snippet element
+	<element name="${1}">
+		${2}
+	</element>
+# empty
+snippet empty
+	<empty/>
+# except
+snippet except
+	<except>
+		${1}
+	</except>
+# externalRef
+snippet externalRef
+	<externalRef href="${1}"/>
+# grammar
+snippet grammar
+	<grammar xmlns="${1:http://relaxng.org/ns/structure/1.0}" ns="${2}">
+		${3}
+	</grammar>
+# group
+snippet group
+	<group>
+		${1}
+	</group>
+# include
+snippet include
+	<include href="${1}"/>
+# interleave
+snippet interleave
+	<interleave>
+		${1}
+	</interleave>
+# list
+snippet list
+	<list>
+		${1}
+	</list>
+# mixed
+snippet mixed
+	<mixed>
+		${1}
+	</mixed>
+# name
+snippet name
+	<name>${1}</name>
+# notAllowed
+snippet notAllowed
+	<notAllowed/>
+# nsName
+snippet nsName
+	<nsName ns="${1}"/>
+# oneOrMore
+snippet oneOrMore
+	<oneOrMore>
+		${1}
+	</oneOrMore>
+# optional
+snippet optional
+	<optional>
+		${1}
+	</optional>
+# param
+snippet param
+	<param name="${1}">${2}</param>
+# parentRef
+snippet parentRef
+	<parentRef name="${1}"/>
+# ref
+snippet ref
+	<ref name="${1}"/>
+# start
+snippet start
+	<start>
+		${1}
+	</start>
+# text
+snippet text
+	<text/>
+# value
+snippet value
+	<value type="${1}">${2}</value>
+# zeroOrMore
+snippet zeroOrMore
+	<zeroOrMore>
+		${1}
+	</zeroOrMore>
