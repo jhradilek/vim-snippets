@@ -71,11 +71,11 @@ snippet license "<license href='...'>" !b
 endsnippet
 
 snippet link "<link type='...' xref='...' group='...' />" !b
-<link type="${1:guide}" xref="${2:index}" group="$3" />$0
+<link type="${1:guide}" xref="${2:index}" group="$3"/>$0
 endsnippet
 
 snippet link "<link type='...' xref='...' />" b
-<link type="${1:guide}" xref="${2:index}" />$0
+<link type="${1:guide}" xref="${2:index}"/>$0
 endsnippet
 
 snippet name "<name>" !b
@@ -83,15 +83,15 @@ snippet name "<name>" !b
 endsnippet
 
 snippet revision "<revision version='...' date='...' status='...' />" !b
-<revision version="${1:0.1}" date="${2:`!v strftime("%Y-%m-%d")`}" status="${3:stub}" />$0
+<revision version="${1:0.1}" date="${2:`!v strftime("%Y-%m-%d")`}" status="${3:stub}"/>$0
 endsnippet
 
 snippet revision "<revision docversion='...' version='...' date='...' status='...' />" b
-<revision docversion="${1:0.1}" version="${2:0.1}" date="${3:`!v strftime("%Y-%m-%d")`}" status="${4:stub}" />$0
+<revision docversion="${1:0.1}" version="${2:0.1}" date="${3:`!v strftime("%Y-%m-%d")`}" status="${4:stub}"/>$0
 endsnippet
 
 snippet revision "<revision pkgversion='...' version='...' date='...' status='...' />" b
-<revision pkgversion="${1:0.1}" version="${2:0.1}" date="${3:`!v strftime("%Y-%m-%d")`}" status="${4:stub}" />$0
+<revision pkgversion="${1:0.1}" version="${2:0.1}" date="${3:`!v strftime("%Y-%m-%d")`}" status="${4:stub}"/>$0
 endsnippet
 
 snippet title "<title type='...'>" !b
@@ -111,7 +111,7 @@ endsnippet
 # -------------------------------------------------------------------------
 
 snippet links "<links type='...' />" !b
-<links type="${1:topic}" />
+<links type="${1:topic}"/>
 endsnippet
 
 snippet links "<links type='...' groups='...'>" b
@@ -148,8 +148,8 @@ ${VISUAL}$0
 </code>
 endsnippet
 
-snippet col "<col>" !w
-<col />$0
+snippet col "<col />" !w
+<col/>$0
 endsnippet
 
 snippet colgroup "<colgroup>" !b
@@ -379,7 +379,7 @@ snippet keyseq "<keyseq type='...'>" w
 endsnippet
 
 snippet link "<link xref='...' />" !w
-<link xref="${1:${VISUAL}}" />$0
+<link xref="${1:${VISUAL}}"/>$0
 endsnippet
 
 snippet link "<link href='...'>" w
@@ -387,7 +387,7 @@ snippet link "<link href='...'>" w
 endsnippet
 
 snippet media "<media type='...' mime='...' src='...' />" w
-<media type="${1:image}" mime="${2:image/png}" src="${3:${VISUAL}}" />$0
+<media type="${1:image}" mime="${2:image/png}" src="${3:${VISUAL}}"/>$0
 endsnippet
 
 snippet output "<output>" !w
