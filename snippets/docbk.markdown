@@ -1801,7 +1801,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>xi:include</strong></td>
-    <td><code>&lt;xi:include href="..." xmlns="..." /&gt;</code></td>
+    <td><code>&lt;xi:include href="..." xmlns:xi="..." /&gt;</code></td>
   </tr>
   <tr>
     <td><strong>xi:fallback</strong></td>

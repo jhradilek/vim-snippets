@@ -1789,7 +1789,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>xml</strong></td>
-    <td><code>&lt;?xml version="..." encoding="..." ?&gt;</code></td>
+    <td><code>&lt;?xml version='...' encoding='...' ?&gt;</code></td>
   </tr>
   <tr>
     <td><strong>doctype</strong></td>
