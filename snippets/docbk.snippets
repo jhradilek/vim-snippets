@@ -2,1746 +2,1746 @@
 # Copyright (C) 2012, 2013 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 16 February 2013
+# Last Change: 13 July 2013
 
-# abbrev
+# <abbrev>
 snippet abbrev
 	<abbrev>${1}</abbrev>
-# abstract
+# <abstract>
 snippet abstract
 	<abstract>
 		${1}
 	</abstract>
-# accel
+# <accel>
 snippet accel
 	<accel>${1}</accel>
-# ackno
+# <ackno>
 snippet ackno
 	<ackno>
 		${1}
 	</ackno>
-# acronym
+# <acronym>
 snippet acronym
 	<acronym>${1}</acronym>
-# action
+# <action>
 snippet action
 	<action>${1}</action>
-# address
+# <address>
 snippet address
 	<address>
 		${1}
 	</address>
-# affiliation
+# <affiliation>
 snippet affiliation
 	<affiliation>
 		${1}
 	</affiliation>
-# alt
+# <alt>
 snippet alt
 	<alt>${1}</alt>
-# anchor
+# <anchor id="..." />
 snippet anchor
 	<anchor id="${1}" />
-# answer
+# <answer>
 snippet answer
 	<answer>
 		${1}
 	</answer>
-# appendix
+# <appendix id="...">
 snippet appendix
 	<appendix id="${1}">
 		${2}
 	</appendix>
-# appendixinfo
+# <appendixinfo>
 snippet appendixinfo
 	<appendixinfo>
 		${1}
 	</appendixinfo>
-# application
+# <application>
 snippet application
 	<application>${1}</application>
-# area
+# <area id="..." coords="..." />
 snippet area
 	<area id="${1}" coords="${2}" />
-# areaset
+# <areaset id="...">
 snippet areaset
 	<areaset id="${1}">
 		${2}
 	</areaset>
-# areaspec
+# <areaspec units="...">
 snippet areaspec
 	<areaspec units="${1}">
 		${2}
 	</areaspec>
-# arg
+# <arg>
 snippet arg
 	<arg>${1}</arg>
-# article
+# <article id="...">
 snippet article
 	<article id="${1}">
 		${2}
 	</article>
-# articleinfo
+# <articleinfo>
 snippet articleinfo
 	<articleinfo>
 		${1}
 	</articleinfo>
-# artpagenums
+# <artpagenums>
 snippet artpagenums
 	<artpagenums>${1}</artpagenums>
-# attribution
+# <attribution>
 snippet attribution
 	<attribution>${1}</attribution>
-# audiodata
+# <audiodata fileref="..." />
 snippet audiodata
 	<audiodata fileref="${1}" />
-# audioobject
+# <audioobject>
 snippet audioobject
 	<audioobject>
 		${1}
 	</audioobject>
-# author
+# <author>
 snippet author
 	<author>
 		${1}
 	</author>
-# authorblurb
+# <authorblurb>
 snippet authorblurb
 	<authorblurb>
 		${1}
 	</authorblurb>
-# authorgroup
+# <authorgroup>
 snippet authorgroup
 	<authorgroup>
 		${1}
 	</authorgroup>
-# authorinitials
+# <authorinitials>
 snippet authorinitials
 	<authorinitials>${1}</authorinitials>
-# beginpage
+# <beginpage pagenum="..." />
 snippet beginpage
 	<beginpage pagenum="${1}" />
-# bibliocoverage
+# <bibliocoverage>
 snippet bibliocoverage
 	<bibliocoverage>
 		${1}
 	</bibliocoverage>
-# bibliodiv
+# <bibliodiv>
 snippet bibliodiv
 	<bibliodiv>
 		${1}
 	</bibliodiv>
-# biblioentry
+# <biblioentry>
 snippet biblioentry
 	<biblioentry>
 		${1}
 	</biblioentry>
-# bibliography
+# <bibliography>
 snippet bibliography
 	<bibliography>
 		${1}
 	</bibliography>
-# bibliographyinfo
+# <bibliographyinfo>
 snippet bibliographyinfo
 	<bibliographyinfo>
 		${1}
 	</bibliographyinfo>
-# biblioid
+# <biblioid class="...">
 snippet biblioid
 	<biblioid class="${1:isbn}">${2}</biblioid>
-# bibliolist
+# <bibliolist>
 snippet bibliolist
 	<bibliolist>
 		${1}
 	</bibliolist>
-# bibliomisc
+# <bibliomisc>
 snippet bibliomisc
 	<bibliomisc>
 		${1}
 	</bibliomisc>
-# bibliomixed
+# <bibliomixed>
 snippet bibliomixed
 	<bibliomixed>
 		${1}
 	</bibliomixed>
-# bibliomset
+# <bibliomset relation="...">
 snippet bibliomset
 	<bibliomset relation="${1}">
 		${2}
 	</bibliomset>
-# biblioref
+# <biblioref linkend="..." />
 snippet biblioref
 	<biblioref linkend="${1}" />
-# bibliorelation
+# <bibliorelation type="..." class="...">
 snippet bibliorelation
 	<bibliorelation type="${1}" class="${2}">${3}</bibliorelation>
-# biblioset
+# <biblioset relation="...">
 snippet biblioset
 	<biblioset relation="${1}">
 		${2}
 	</biblioset>
-# bibliosource
+# <bibliosource class="...">
 snippet bibliosource
 	<bibliosource class="${1:isbn}">${2}</bibliosource>
-# blockinfo
+# <blockinfo>
 snippet blockinfo
 	<blockinfo>
 		${1}
 	</blockinfo>
-# blockquote
+# <blockquote>
 snippet blockquote
 	<blockquote>
 		${1}
 	</blockquote>
-# book
+# <book id="...">
 snippet book
 	<book id="${1}">
 		${2}
 	</book>
-# bookinfo
+# <bookinfo>
 snippet bookinfo
 	<bookinfo>
 		${1}
 	</bookinfo>
-# bridgehead
+# <bridgehead id="...">
 snippet bridgehead
 	<bridgehead id="${1}">${2}</bridgehead>
-# callout
+# <callout arearefs="...">
 snippet callout
 	<callout arearefs="${1}">
 		${2}
 	</callout>
-# calloutlist
+# <calloutlist>
 snippet calloutlist
 	<calloutlist>
 		${1}
 	</calloutlist>
-# caption
+# <caption>
 snippet caption
 	<caption>
 		${1}
 	</caption>
-# caution
+# <caution>
 snippet caution
 	<caution>
 		${1}
 	</caution>
-# chapter
+# <chapter id="...">
 snippet chapter
 	<chapter id="${1}">
 		${2}
 	</chapter>
-# chapterinfo
+# <chapterinfo>
 snippet chapterinfo
 	<chapterinfo>
 		${1}
 	</chapterinfo>
-# citation
+# <citation>
 snippet citation
 	<citation>${1}</citation>
-# citebiblioid
+# <citebiblioid class="...">
 snippet citebiblioid
 	<citebiblioid class="${1:isbn}">${2}</citebiblioid>
-# citerefentry
+# <citerefentry>
 snippet citerefentry
 	<citerefentry>${1}</citerefentry>
-# citetitle
+# <citetitle pubwork="...">
 snippet citetitle
 	<citetitle pubwork="${1:book}">${2}</citetitle>
-# city
+# <city>
 snippet city
 	<city>${1}</city>
-# classname
+# <classname>
 snippet classname
 	<classname>${1}</classname>
-# classsynopsis
+# <classsynopsis class="..." language="...">
 snippet classsynopsis
 	<classsynopsis class="${1}" language="${2}">
 		${3}
 	</classsynopsis>
-# classsynopsisinfo
+# <classsynopsisinfo>
 snippet classsynopsisinfo
 	<classsynopsisinfo>
 		${1}
 	</classsynopsisinfo>
-# cmdsynopsis
+# <cmdsynopsis>
 snippet cmdsynopsis
 	<cmdsynopsis>
 		${1}
 	</cmdsynopsis>
-# co
+# <co label="..." linkends="..." />
 snippet co
 	<co label="${1}" linkends="${2}" />
-# code
+# <code language="...">
 snippet code
 	<code language="${1}">${2}</code>
-# col
+# <col>
 snippet col
 	<col>
 		${1}
 	</col>
-# colgroup
+# <colgroup>
 snippet colgroup
 	<colgroup>
 		${1}
 	</colgroup>
-# collab
+# <collab>
 snippet collab
 	<collab>
 		${1}
 	</collab>
-# collabname
+# <collabname>
 snippet collabname
 	<collabname>${1}</collabname>
-# colophon
+# <colophon>
 snippet colophon
 	<colophon>
 		${1}
 	</colophon>
-# colspec
+# <colspec colname="..." colnum="..." colwidth="..." />
 snippet colspec
 	<colspec colname="${1}" colnum="${2}" colwidth="${3}" />
-# command
+# <command>
 snippet command
 	<command>${1}</command>
-# computeroutput
+# <computeroutput>
 snippet computeroutput
 	<computeroutput>${1}</computeroutput>
-# confdates
+# <confdates>
 snippet confdates
 	<confdates>${1}</confdates>
-# confgroup
+# <confgroup>
 snippet confgroup
 	<confgroup>
 		${1}
 	</confgroup>
-# confnum
+# <confnum>
 snippet confnum
 	<confnum>${1}</confnum>
-# confsponsor
+# <confsponsor>
 snippet confsponsor
 	<confsponsor>${1}</confsponsor>
-# conftitle
+# <conftitle>
 snippet conftitle
 	<conftitle>${1}</conftitle>
-# constant
+# <constant>
 snippet constant
 	<constant>${1}</constant>
-# constructorsynopsis
+# <constructorsynopsis language="...">
 snippet constructorsynopsis
 	<constructorsynopsis language="${1}">
 		${2}
 	</constructorsynopsis>
-# contractnum
+# <contractnum>
 snippet contractnum
 	<contractnum>${1}</contractnum>
-# contractsponsor
+# <contractsponsor>
 snippet contractsponsor
 	<contractsponsor>${1}</contractsponsor>
-# contrib
+# <contrib>
 snippet contrib
 	<contrib>${1}</contrib>
-# copyright
+# <copyright>
 snippet copyright
 	<copyright>
 		${1}
 	</copyright>
-# coref
+# <coref label="..." linkend="..." />
 snippet coref
 	<coref label="${1}" linkend="${2}" />
-# corpauthor
+# <corpauthor>
 snippet corpauthor
 	<corpauthor>${1}</corpauthor>
-# corpcredit
+# <corpcredit>
 snippet corpcredit
 	<corpcredit>${1}</corpcredit>
-# corpname
+# <corpname>
 snippet corpname
 	<corpname>${1}</corpname>
-# country
+# <country>
 snippet country
 	<country>${1}</country>
-# database
+# <database class="...">
 snippet database
 	<database class="${1}">${2}</database>
-# date
+# <date>
 snippet date
 	<date>${1}</date>
-# dedication
+# <dedication>
 snippet dedication
 	<dedication>
 		${1}
 	</dedication>
-# destructorsynopsis
+# <destructorsynopsis language="...">
 snippet destructorsynopsis
 	<destructorsynopsis language="${1}">
 		${2}
 	</destructorsynopsis>
-# edition
+# <edition>
 snippet edition
 	<edition>${1}</edition>
-# editor
+# <editor>
 snippet editor
 	<editor>
 		${1}
 	</editor>
-# email
+# <email>
 snippet email
 	<email>${1}</email>
-# emphasis
+# <emphasis>
 snippet emphasis
 	<emphasis>${1}</emphasis>
-# entry
+# <entry>
 snippet entry
 	<entry>
 		${1}
 	</entry>
-# entrytbl
+# <entrytbl cols="...">
 snippet entrytbl
 	<entrytbl cols="${1}">
 		${2}
 	</entrytbl>
-# envar
+# <envar>
 snippet envar
 	<envar>${1}</envar>
-# epigraph
+# <epigraph>
 snippet epigraph
 	<epigraph>
 		${1}
 	</epigraph>
-# equation
+# <equation>
 snippet equation
 	<equation>
 		${1}
 	</equation>
-# errorcode
+# <errorcode>
 snippet errorcode
 	<errorcode>${1}</errorcode>
-# errorname
+# <errorname>
 snippet errorname
 	<errorname>${1}</errorname>
-# errortext
+# <errortext>
 snippet errortext
 	<errortext>${1}</errortext>
-# errortype
+# <errortype>
 snippet errortype
 	<errortype>${1}</errortype>
-# example
+# <example id="...">
 snippet example
 	<example id="${1}">
 		${2}
 	</example>
-# exceptionname
+# <exceptionname>
 snippet exceptionname
 	<exceptionname>${1}</exceptionname>
-# fax
+# <fax>
 snippet fax
 	<fax>${1}</fax>
-# fieldsynopsis
+# <fieldsynopsis language="...">
 snippet fieldsynopsis
 	<fieldsynopsis language="${1}">
 		${2}
 	</fieldsynopsis>
-# figure
+# <figure id="...">
 snippet figure
 	<figure id="${1}">
 		${2}
 	</figure>
-# filename
+# <filename>
 snippet filename
 	<filename>${1}</filename>
-# firstname
+# <firstname>
 snippet firstname
 	<firstname>${1}</firstname>
-# firstterm
+# <firstterm>
 snippet firstterm
 	<firstterm>${1}</firstterm>
-# footnote
+# <footnote>
 snippet footnote
 	<footnote>
 		${1}
 	</footnote>
-# footnoteref
+# <footnoteref linkend="..." />
 snippet footnoteref
 	<footnoteref linkend="${1}" />
-# foreignphrase
+# <foreignphrase>
 snippet foreignphrase
 	<foreignphrase>${1}</foreignphrase>
-# formalpara
+# <formalpara>
 snippet formalpara
 	<formalpara>
 		${1}
 	</formalpara>
-# funcdef
+# <funcdef>
 snippet funcdef
 	<funcdef>${1}</funcdef>
-# funcparams
+# <funcparams>
 snippet funcparams
 	<funcparams>${1}</funcparams>
-# funcprototype
+# <funcprototype>
 snippet funcprototype
 	<funcprototype>
 		${1}
 	</funcprototype>
-# funcsynopsis
+# <funcsynopsis>
 snippet funcsynopsis
 	<funcsynopsis>
 		${1}
 	</funcsynopsis>
-# funcsynopsisinfo
+# <funcsynopsisinfo>
 snippet funcsynopsisinfo
 	<funcsynopsisinfo>
 		${1}
 	</funcsynopsisinfo>
-# function
+# <function>
 snippet function
 	<function>${1}</function>
-# glossary
+# <glossary id="...">
 snippet glossary
 	<glossary id="${1}">
 		${2}
 	</glossary>
-# glossaryinfo
+# <glossaryinfo>
 snippet glossaryinfo
 	<glossaryinfo>
 		${1}
 	</glossaryinfo>
-# glossdef
+# <glossdef>
 snippet glossdef
 	<glossdef>
 		${1}
 	</glossdef>
-# glossdiv
+# <glossdiv>
 snippet glossdiv
 	<glossdiv>
 		${1}
 	</glossdiv>
-# glossentry
+# <glossentry>
 snippet glossentry
 	<glossentry>
 		${1}
 	</glossentry>
-# glosslist
+# <glosslist>
 snippet glosslist
 	<glosslist>
 		${1}
 	</glosslist>
-# glosssee
+# <glosssee otherterm="...">
 snippet glosssee
 	<glosssee otherterm="${1}">${2}</glosssee>
-# glossseealso
+# <glossseealso otherterm="...">
 snippet glossseealso
 	<glossseealso otherterm="${1}">${2}</glossseealso>
-# glossterm
+# <glossterm>
 snippet glossterm
 	<glossterm>${1}</glossterm>
-# graphic
+# <graphic fileref="..." />
 snippet graphic
 	<graphic fileref="${1}" />
-# graphicco
+# <graphicco>
 snippet graphicco
 	<graphicco>
 		${1}
 	</graphicco>
-# group
+# <group>
 snippet group
 	<group>
 		${1}
 	</group>
-# guibutton
+# <guibutton>
 snippet guibutton
 	<guibutton>${1}</guibutton>
-# guiicon
+# <guiicon>
 snippet guiicon
 	<guiicon>${1}</guiicon>
-# guilabel
+# <guilabel>
 snippet guilabel
 	<guilabel>${1}</guilabel>
-# guimenu
+# <guimenu>
 snippet guimenu
 	<guimenu>${1}</guimenu>
-# guimenuitem
+# <guimenuitem>
 snippet guimenuitem
 	<guimenuitem>${1}</guimenuitem>
-# guisubmenu
+# <guisubmenu>
 snippet guisubmenu
 	<guisubmenu>${1}</guisubmenu>
-# hardware
+# <hardware>
 snippet hardware
 	<hardware>${1}</hardware>
-# highlights
+# <highlights>
 snippet highlights
 	<highlights>
 		${1}
 	</highlights>
-# holder
+# <holder>
 snippet holder
 	<holder>${1}</holder>
-# honorific
+# <honorific>
 snippet honorific
 	<honorific>${1}</honorific>
-# imagedata
+# <imagedata fileref="..." format="..." scalefit="..." />
 snippet imagedata
 	<imagedata fileref="${1}" format="${2:PNG}" scalefit="${3:0}" />
-# imageobject
+# <imageobject>
 snippet imageobject
 	<imageobject>
 		${1}
 	</imageobject>
-# imageobjectco
+# <imageobjectco>
 snippet imageobjectco
 	<imageobjectco>
 		${1}
 	</imageobjectco>
-# important
+# <important>
 snippet important
 	<important>
 		${1}
 	</important>
-# index
+# <index>
 snippet index
 	<index>
 		${1}
 	</index>
-# indexdiv
+# <indexdiv>
 snippet indexdiv
 	<indexdiv>
 		${1}
 	</indexdiv>
-# indexentry
+# <indexentry>
 snippet indexentry
 	<indexentry>
 		${1}
 	</indexentry>
-# indexinfo
+# <indexinfo>
 snippet indexinfo
 	<indexinfo>
 		${1}
 	</indexinfo>
-# indexterm
+# <indexterm>
 snippet indexterm
 	<indexterm>
 		${1}
 	</indexterm>
-# informalequation
+# <informalequation>
 snippet informalequation
 	<informalequation>
 		${1}
 	</informalequation>
-# informalexample
+# <informalexample>
 snippet informalexample
 	<informalexample>
 		${1}
 	</informalexample>
-# informalfigure
+# <informalfigure>
 snippet informalfigure
 	<informalfigure>
 		${1}
 	</informalfigure>
-# informaltable
+# <informaltable>
 snippet informaltable
 	<informaltable>
 		${1}
 	</informaltable>
-# initializer
+# <initializer>
 snippet initializer
 	<initializer>${1}</initializer>
-# inlineequation
+# <inlineequation>
 snippet inlineequation
 	<inlineequation>
 		${1}
 	</inlineequation>
-# inlinegraphic
+# <inlinegraphic fileref="..." format="..." scalefit="..." />
 snippet inlinegraphic
 	<inlinegraphic fileref="${1}" format="${2:PNG}" scalefit="${3:0}" />
-# inlinemediaobject
+# <inlinemediaobject>
 snippet inlinemediaobject
 	<inlinemediaobject>
 		${1}
 	</inlinemediaobject>
-# interface
+# <interface>
 snippet interface
 	<interface>${1}</interface>
-# interfacename
+# <interfacename>
 snippet interfacename
 	<interfacename>${1}</interfacename>
-# invpartnumber
+# <invpartnumber>
 snippet invpartnumber
 	<invpartnumber>${1}</invpartnumber>
-# isbn
+# <isbn>
 snippet isbn
 	<isbn>${1}</isbn>
-# issn
+# <issn>
 snippet issn
 	<issn>${1}</issn>
-# issuenum
+# <issuenum>
 snippet issuenum
 	<issuenum>${1}</issuenum>
-# itemizedlist
+# <itemizedlist>
 snippet itemizedlist
 	<itemizedlist>
 		${1}
 	</itemizedlist>
-# itermset
+# <itermset>
 snippet itermset
 	<itermset>
 		${1}
 	</itermset>
-# jobtitle
+# <jobtitle>
 snippet jobtitle
 	<jobtitle>${1}</jobtitle>
-# keycap
+# <keycap>
 snippet keycap
 	<keycap>${1}</keycap>
-# keycode
+# <keycode>
 snippet keycode
 	<keycode>${1}</keycode>
-# keycombo
+# <keycombo>
 snippet keycombo
 	<keycombo>${1}</keycombo>
-# keysym
+# <keysym>
 snippet keysym
 	<keysym>${1}</keysym>
-# keyword
+# <keyword>
 snippet keyword
 	<keyword>${1}</keyword>
-# keywordset
+# <keywordset>
 snippet keywordset
 	<keywordset>
 		${1}
 	</keywordset>
-# label
+# <label>
 snippet label
 	<label>${1}</label>
-# legalnotice
+# <legalnotice>
 snippet legalnotice
 	<legalnotice>
 		${1}
 	</legalnotice>
-# lineage
+# <lineage>
 snippet lineage
 	<lineage>${1}</lineage>
-# lineannotation
+# <lineannotation>
 snippet lineannotation
 	<lineannotation>${1}</lineannotation>
-# link
+# <link linkend="...">
 snippet link
 	<link linkend="${1}">${2}</link>
-# listitem
+# <listitem>
 snippet listitem
 	<listitem>
 		${1}
 	</listitem>
-# literal
+# <literal>
 snippet literal
 	<literal>${1}</literal>
-# literallayout
+# <literallayout>
 snippet literallayout
 	<literallayout>${1}</literallayout>
-# lot
+# <lot>
 snippet lot
 	<lot>
 		${1}
 	</lot>
-# lotentry
+# <lotentry linkend="...">
 snippet lotentry
 	<lotentry linkend="${1}">
 		${2}
 	</lotentry>
-# manvolnum
+# <manvolnum>
 snippet manvolnum
 	<manvolnum>${1}</manvolnum>
-# markup
+# <markup>
 snippet markup
 	<markup>${1}</markup>
-# mathphrase
+# <mathphrase>
 snippet mathphrase
 	<mathphrase>${1}</mathphrase>
-# medialabel
+# <medialabel>
 snippet medialabel
 	<medialabel>${1}</medialabel>
-# mediaobject
+# <mediaobject>
 snippet mediaobject
 	<mediaobject>
 		${1}
 	</mediaobject>
-# mediaobjectco
+# <mediaobjectco>
 snippet mediaobjectco
 	<mediaobjectco>
 		${1}
 	</mediaobjectco>
-# member
+# <member>
 snippet member
 	<member>
 		${1}
 	</member>
-# menuchoice
+# <menuchoice>
 snippet menuchoice
 	<menuchoice>${1}</menuchoice>
-# methodname
+# <methodname>
 snippet methodname
 	<methodname>${1}</methodname>
-# methodparam
+# <methodparam>
 snippet methodparam
 	<methodparam>${1}</methodparam>
-# methodsynopsis
+# <methodsynopsis language="...">
 snippet methodsynopsis
 	<methodsynopsis language="${1}">
 		${2}
 	</methodsynopsis>
-# modespec
+# <modespec application="...">
 snippet modespec
 	<modespec application="${1}">${2}</modespec>
-# modifier
+# <modifier>
 snippet modifier
 	<modifier>${1}</modifier>
-# mousebutton
+# <mousebutton>
 snippet mousebutton
 	<mousebutton>${1}</mousebutton>
-# msg
+# <msg>
 snippet msg
 	<msg>
 		${1}
 	</msg>
-# msgaud
+# <msgaud>
 snippet msgaud
 	<msgaud>${1}</msgaud>
-# msgentry
+# <msgentry>
 snippet msgentry
 	<msgentry>
 		${1}
 	</msgentry>
-# msgexplan
+# <msgexplan>
 snippet msgexplan
 	<msgexplan>
 		${1}
 	</msgexplan>
-# msginfo
+# <msginfo>
 snippet msginfo
 	<msginfo>
 		${1}
 	</msginfo>
-# msglevel
+# <msglevel>
 snippet msglevel
 	<msglevel>${1}</msglevel>
-# msgmain
+# <msgmain>
 snippet msgmain
 	<msgmain>
 		${1}
 	</msgmain>
-# msgorig
+# <msgorig>
 snippet msgorig
 	<msgorig>${1}</msgorig>
-# msgrel
+# <msgrel>
 snippet msgrel
 	<msgrel>
 		${1}
 	</msgrel>
-# msgset
+# <msgset>
 snippet msgset
 	<msgset>
 		${1}
 	</msgset>
-# msgsub
+# <msgsub>
 snippet msgsub
 	<msgsub>
 		${1}
 	</msgsub>
-# msgtext
+# <msgtext>
 snippet msgtext
 	<msgtext>
 		${1}
 	</msgtext>
-# note
+# <note>
 snippet note
 	<note>
 		${1}
 	</note>
-# objectinfo
+# <objectinfo>
 snippet objectinfo
 	<objectinfo>
 		${1}
 	</objectinfo>
-# olink
+# <olink targetdocent="...">
 snippet olink
 	<olink targetdocent="${1}">${2}</olink>
-# ooclass
+# <ooclass>
 snippet ooclass
 	<ooclass>${1}</ooclass>
-# ooexception
+# <ooexception>
 snippet ooexception
 	<ooexception>${1}</ooexception>
-# oointerface
+# <oointerface>
 snippet oointerface
 	<oointerface>${1}</oointerface>
-# option
+# <option>
 snippet option
 	<option>${1}</option>
-# optional
+# <optional>
 snippet optional
 	<optional>${1}</optional>
-# orderedlist
+# <orderedlist>
 snippet orderedlist
 	<orderedlist>
 		${1}
 	</orderedlist>
-# orgdiv
+# <orgdiv>
 snippet orgdiv
 	<orgdiv>${1}</orgdiv>
-# orgname
+# <orgname>
 snippet orgname
 	<orgname>${1}</orgname>
-# otheraddr
+# <otheraddr>
 snippet otheraddr
 	<otheraddr>${1}</otheraddr>
-# othercredit
+# <othercredit>
 snippet othercredit
 	<othercredit>
 		${1}
 	</othercredit>
-# othername
+# <othername>
 snippet othername
 	<othername>${1}</othername>
-# package
+# <package>
 snippet package
 	<package>${1}</package>
-# pagenums
+# <pagenums>
 snippet pagenums
 	<pagenums>${1}</pagenums>
-# para
+# <para>
 snippet para
 	<para>
 		${1}
 	</para>
-# paramdef
+# <paramdef>
 snippet paramdef
 	<paramdef>${1}</paramdef>
-# parameter
+# <parameter class="...">
 snippet parameter
 	<parameter class="${1:function}">${2}</parameter>
-# part
+# <part id="...">
 snippet part
 	<part id="${1}">
 		${2}
 	</part>
-# partinfo
+# <partinfo>
 snippet partinfo
 	<partinfo>
 		${1}
 	</partinfo>
-# partintro
+# <partintro>
 snippet partintro
 	<partintro>
 		${1}
 	</partintro>
-# personblurb
+# <personblurb>
 snippet personblurb
 	<personblurb>
 		${1}
 	</personblurb>
-# personname
+# <personname>
 snippet personname
 	<personname>${1}</personname>
-# phone
+# <phone>
 snippet phone
 	<phone>${1}</phone>
-# phrase
+# <phrase>
 snippet phrase
 	<phrase>${1}</phrase>
-# pob
+# <pob>
 snippet pob
 	<pob>${1}</pob>
-# postcode
+# <postcode>
 snippet postcode
 	<postcode>${1}</postcode>
-# preface
+# <preface id="...">
 snippet preface
 	<preface id="${1}">
 		${2}
 	</preface>
-# prefaceinfo
+# <prefaceinfo>
 snippet prefaceinfo
 	<prefaceinfo>
 		${1}
 	</prefaceinfo>
-# primary
+# <primary>
 snippet primary
 	<primary>${1}</primary>
-# primaryie
+# <primaryie>
 snippet primaryie
 	<primaryie>${1}</primaryie>
-# printhistory
+# <printhistory>
 snippet printhistory
 	<printhistory>
 		${1}
 	</printhistory>
-# procedure
+# <procedure id="...">
 snippet procedure
 	<procedure id="${1}">
 		${2}
 	</procedure>
-# productname
+# <productname class="...">
 snippet productname
 	<productname class="${1:trade}">${2}</productname>
-# productnumber
+# <productnumber>
 snippet productnumber
 	<productnumber>${1}</productnumber>
-# programlisting
+# <programlisting language="...">
 snippet programlisting
 	<programlisting language="${1}">${2}</programlisting>
-# programlistingco
+# <programlistingco>
 snippet programlistingco
 	<programlistingco>
 		${1}
 	</programlistingco>
-# prompt
+# <prompt>
 snippet prompt
 	<prompt>${1}</prompt>
-# property
+# <property>
 snippet property
 	<property>${1}</property>
-# pubdate
+# <pubdate>
 snippet pubdate
 	<pubdate>${1}</pubdate>
-# publisher
+# <publisher>
 snippet publisher
 	<publisher>
 		${1}
 	</publisher>
-# publishername
+# <publishername>
 snippet publishername
 	<publishername>${1}</publishername>
-# pubsnumber
+# <pubsnumber>
 snippet pubsnumber
 	<pubsnumber>${1}</pubsnumber>
-# qandadiv
+# <qandadiv>
 snippet qandadiv
 	<qandadiv>
 		${1}
 	</qandadiv>
-# qandaentry
+# <qandaentry>
 snippet qandaentry
 	<qandaentry>
 		${1}
 	</qandaentry>
-# qandaset
+# <qandaset>
 snippet qandaset
 	<qandaset>
 		${1}
 	</qandaset>
-# question
+# <question>
 snippet question
 	<question>
 		${1}
 	</question>
-# quote
+# <quote>
 snippet quote
 	<quote>${1}</quote>
-# refclass
+# <refclass>
 snippet refclass
 	<refclass>${1}</refclass>
-# refdescriptor
+# <refdescriptor>
 snippet refdescriptor
 	<refdescriptor>${1}</refdescriptor>
-# refentry
+# <refentry>
 snippet refentry
 	<refentry>
 		${1}
 	</refentry>
-# refentryinfo
+# <refentryinfo>
 snippet refentryinfo
 	<refentryinfo>
 		${1}
 	</refentryinfo>
-# refentrytitle
+# <refentrytitle>
 snippet refentrytitle
 	<refentrytitle>${1}</refentrytitle>
-# reference
+# <reference>
 snippet reference
 	<reference>
 		${1}
 	</reference>
-# referenceinfo
+# <referenceinfo>
 snippet referenceinfo
 	<referenceinfo>
 		${1}
 	</referenceinfo>
-# refmeta
+# <refmeta>
 snippet refmeta
 	<refmeta>
 		${1}
 	</refmeta>
-# refmiscinfo
+# <refmiscinfo>
 snippet refmiscinfo
 	<refmiscinfo>
 		${1}
 	</refmiscinfo>
-# refname
+# <refname>
 snippet refname
 	<refname>${1}</refname>
-# refnamediv
+# <refnamediv>
 snippet refnamediv
 	<refnamediv>
 		${1}
 	</refnamediv>
-# refpurpose
+# <refpurpose>
 snippet refpurpose
 	<refpurpose>${1}</refpurpose>
-# refsect1
+# <refsect1>
 snippet refsect1
 	<refsect1 id="${1}">
 		${2}
 	</refsect1>
-# refsect1info
+# <refsect1info>
 snippet refsect1info
 	<refsect1info>
 		${1}
 	</refsect1info>
-# refsect2
+# <refsect2>
 snippet refsect2
 	<refsect2 id="${1}">
 		${2}
 	</refsect2>
-# refsect2info
+# <refsect2info>
 snippet refsect2info
 	<refsect2info>
 		${1}
 	</refsect2info>
-# refsect3
+# <refsect3>
 snippet refsect3
 	<refsect3 id="${1}">
 		${2}
 	</refsect3>
-# refsect3info
+# <refsect3info>
 snippet refsect3info
 	<refsect3info>
 		${1}
 	</refsect3info>
-# refsection
+# <refsection id="...">
 snippet refsection
 	<refsection id="${1}">
 		${2}
 	</refsection>
-# refsectioninfo
+# <refsectioninfo>
 snippet refsectioninfo
 	<refsectioninfo>
 		${1}
 	</refsectioninfo>
-# refsynopsisdiv
+# <refsynopsisdiv>
 snippet refsynopsisdiv
 	<refsynopsisdiv>
 		${1}
 	</refsynopsisdiv>
-# refsynopsisdivinfo
+# <refsynopsisdivinfo>
 snippet refsynopsisdivinfo
 	<refsynopsisdivinfo>
 		${1}
 	</refsynopsisdivinfo>
-# releaseinfo
+# <releaseinfo>
 snippet releaseinfo
 	<releaseinfo>${1}</releaseinfo>
-# remark
+# <remark>
 snippet remark
 	<remark>${1}</remark>
-# replaceable
+# <replaceable>
 snippet replaceable
 	<replaceable>${1}</replaceable>
-# returnvalue
+# <returnvalue>
 snippet returnvalue
 	<returnvalue>${1}</returnvalue>
-# revdescription
+# <revdescription>
 snippet revdescription
 	<revdescription>
 		${1}
 	</revdescription>
-# revhistory
+# <revhistory>
 snippet revhistory
 	<revhistory>
 		${1}
 	</revhistory>
-# revision
+# <revision>
 snippet revision
 	<revision>
 		${1}
 	</revision>
-# revnumber
+# <revnumber>
 snippet revnumber
 	<revnumber>${1}</revnumber>
-# revremark
+# <revremark>
 snippet revremark
 	<revremark>${1}</revremark>
-# row
+# <row>
 snippet row
 	<row>
 		${1}
 	</row>
-# sbr
+# <sbr />
 snippet sbr
 	<sbr />
-# screen
+# <screen>
 snippet screen
 	<screen>${1}</screen>
-# screenco
+# <screenco>
 snippet screenco
 	<screenco>
 		${1}
 	</screenco>
-# screeninfo
+# <screeninfo>
 snippet screeninfo
 	<screeninfo>${1}</screeninfo>
-# screenshot
+# <screenshot>
 snippet screenshot
 	<screenshot>
 		${1}
 	</screenshot>
-# secondary
+# <secondary>
 snippet secondary
 	<secondary>${1}</secondary>
-# secondaryie
+# <secondaryie>
 snippet secondaryie
 	<secondaryie>${1}</secondaryie>
-# sect1
+# <sect1>
 snippet sect1
 	<sect1 id="${1}">
 		${2}
 	</sect1>
-# sect1info
+# <sect1info>
 snippet sect1info
 	<sect1info>
 		${1}
 	</sect1info>
-# sect2
+# <sect2>
 snippet sect2
 	<sect2 id="${1}">
 		${2}
 	</sect2>
-# sect2info
+# <sect2info>
 snippet sect2info
 	<sect2info>
 		${1}
 	</sect2info>
-# sect3
+# <sect3>
 snippet sect3
 	<sect3 id="${1}">
 		${2}
 	</sect3>
-# sect3info
+# <sect3info>
 snippet sect3info
 	<sect3info>
 		${1}
 	</sect3info>
-# sect4
+# <sect4>
 snippet sect4
 	<sect4 id="${1}">
 		${2}
 	</sect4>
-# sect4info
+# <sect4info>
 snippet sect4info
 	<sect4info>
 		${1}
 	</sect4info>
-# sect5
+# <sect5>
 snippet sect5
 	<sect5 id="${1}">
 		${2}
 	</sect5>
-# sect5info
+# <sect5info>
 snippet sect5info
 	<sect5info>
 		${1}
 	</sect5info>
-# section
+# <section id="...">
 snippet section
 	<section id="${1}">
 		${2}
 	</section>
-# sectioninfo
+# <sectioninfo>
 snippet sectioninfo
 	<sectioninfo>
 		${1}
 	</sectioninfo>
-# see
+# <see>
 snippet see
 	<see>${1}</see>
-# seealso
+# <seealso>
 snippet seealso
 	<seealso>${1}</seealso>
-# seealsoie
+# <seealsoie>
 snippet seealsoie
 	<seealsoie>${1}</seealsoie>
-# seeie
+# <seeie>
 snippet seeie
 	<seeie>${1}</seeie>
-# seg
+# <seg>
 snippet seg
 	<seg>${1}</seg>
-# seglistitem
+# <seglistitem>
 snippet seglistitem
 	<seglistitem>
 		${1}
 	</seglistitem>
-# segmentedlist
+# <segmentedlist>
 snippet segmentedlist
 	<segmentedlist>
 		${1}
 	</segmentedlist>
-# segtitle
+# <segtitle>
 snippet segtitle
 	<segtitle>${1}</segtitle>
-# seriesvolnums
+# <seriesvolnums>
 snippet seriesvolnums
 	<seriesvolnums>${1}</seriesvolnums>
-# set
+# <set>
 snippet set
 	<set>
 		${1}
 	</set>
-# setindex
+# <setindex>
 snippet setindex
 	<setindex>
 		${1}
 	</setindex>
-# setindexinfo
+# <setindexinfo>
 snippet setindexinfo
 	<setindexinfo>
 		${1}
 	</setindexinfo>
-# setinfo
+# <setinfo>
 snippet setinfo
 	<setinfo>
 		${1}
 	</setinfo>
-# sgmltag
+# <sgmltag>
 snippet sgmltag
 	<sgmltag>${1}</sgmltag>
-# shortaffil
+# <shortaffil>
 snippet shortaffil
 	<shortaffil>${1}</shortaffil>
-# shortcut
+# <shortcut>
 snippet shortcut
 	<shortcut>${1}</shortcut>
-# sidebar
+# <sidebar>
 snippet sidebar
 	<sidebar>
 		${1}
 	</sidebar>
-# sidebarinfo
+# <sidebarinfo>
 snippet sidebarinfo
 	<sidebarinfo>
 		${1}
 	</sidebarinfo>
-# simpara
+# <simpara>
 snippet simpara
 	<simpara>
 		${1}
 	</simpara>
-# simplelist
+# <simplelist>
 snippet simplelist
 	<simplelist>
 		${1}
 	</simplelist>
-# simplemsgentry
+# <simplemsgentry>
 snippet simplemsgentry
 	<simplemsgentry>
 		${1}
 	</simplemsgentry>
-# simplesect
+# <simplesect id="...">
 snippet simplesect
 	<simplesect id="${1}">
 		${2}
 	</simplesect>
-# spanspec
+# <spanspec spanname="..." namest="..." nameend="..." />
 snippet spanspec
 	<spanspec spanname="${1}" namest="${2}" nameend="${3}" />
-# state
+# <state>
 snippet state
 	<state>${1}</state>
-# step
+# <step>
 snippet step
 	<step>
 		${1}
 	</step>
-# stepalternatives
+# <stepalternatives>
 snippet stepalternatives
 	<stepalternatives>
 		${1}
 	</stepalternatives>
-# street
+# <street>
 snippet street
 	<street>${1}</street>
-# structfield
+# <structfield>
 snippet structfield
 	<structfield>${1}</structfield>
-# structname
+# <structname>
 snippet structname
 	<structname>${1}</structname>
-# subject
+# <subject>
 snippet subject
 	<subject>
 		${1}
 	</subject>
-# subjectset
+# <subjectset>
 snippet subjectset
 	<subjectset>
 		${1}
 	</subjectset>
-# subjectterm
+# <subjectterm>
 snippet subjectterm
 	<subjectterm>${1}</subjectterm>
-# subscript
+# <subscript>
 snippet subscript
 	<subscript>${1}</subscript>
-# substeps
+# <substeps>
 snippet substeps
 	<substeps>
 		${1}
 	</substeps>
-# subtitle
+# <subtitle>
 snippet subtitle
 	<subtitle>${1}</subtitle>
-# superscript
+# <superscript>
 snippet superscript
 	<superscript>${1}</superscript>
-# surname
+# <surname>
 snippet surname
 	<surname>${1}</surname>
-# symbol
+# <symbol>
 snippet symbol
 	<symbol>${1}</symbol>
-# synopfragment
+# <synopfragment id="...">
 snippet synopfragment
 	<synopfragment id="${1}">
 		${2}
 	</synopfragment>
-# synopfragmentref
+# <synopfragmentref linkend="...">
 snippet synopfragmentref
 	<synopfragmentref linkend="${1}">
 		${2}
 	</synopfragmentref>
-# synopsis
+# <synopsis>
 snippet synopsis
 	<synopsis>${1}</synopsis>
-# systemitem
+# <systemitem>
 snippet systemitem
 	<systemitem>${1}</systemitem>
-# table
+# <table id="...">
 snippet table
 	<table id="${1}">
 		${2}
 	</table>
-# task
+# <task id="...">
 snippet task
 	<task id="${1}">
 		${2}
 	</task>
-# taskprerequisites
+# <taskprerequisites>
 snippet taskprerequisites
 	<taskprerequisites>
 		${1}
 	</taskprerequisites>
-# taskrelated
+# <taskrelated>
 snippet taskrelated
 	<taskrelated>
 		${1}
 	</taskrelated>
-# tasksummary
+# <tasksummary>
 snippet tasksummary
 	<tasksummary>
 		${1}
 	</tasksummary>
-# tbody
+# <tbody>
 snippet tbody
 	<tbody>
 		${1}
 	</tbody>
-# td
+# <td>
 snippet td
 	<td>
 		${1}
 	</td>
-# term
+# <term>
 snippet term
 	<term>${1}</term>
-# termdef
+# <termdef>
 snippet termdef
 	<termdef>${1}</termdef>
-# tertiary
+# <tertiary>
 snippet tertiary
 	<tertiary>${1}</tertiary>
-# tertiaryie
+# <tertiaryie>
 snippet tertiaryie
 	<tertiaryie>${1}</tertiaryie>
-# textdata
+# <textdata fileref="..." />
 snippet textdata
 	<textdata fileref="${1}" />
-# textobject
+# <textobject>
 snippet textobject
 	<textobject>
 		${1}
 	</textobject>
-# tfoot
+# <tfoot>
 snippet tfoot
 	<tfoot>
 		${1}
 	</tfoot>
-# tgroup
+# <tgroup cols="...">
 snippet tgroup
 	<tgroup cols="${1}">
 		${2}
 	</tgroup>
-# th
+# <th>
 snippet th
 	<th>
 		${1}
 	</th>
-# thead
+# <thead>
 snippet thead
 	<thead>
 		${1}
 	</thead>
-# tip
+# <tip>
 snippet tip
 	<tip>
 		${1}
 	</tip>
-# title
+# <title>
 snippet title
 	<title>${1}</title>
-# titleabbrev
+# <titleabbrev>
 snippet titleabbrev
 	<titleabbrev>${1}</titleabbrev>
-# toc
+# <toc>
 snippet toc
 	<toc>
 		${1}
 	</toc>
-# tocback
+# <tocback linkend="...">
 snippet tocback
 	<tocback linkend="${1}">${2}</tocback>
-# tocchap
+# <tocchap>
 snippet tocchap
 	<tocchap>
 		${1}
 	</tocchap>
-# tocentry
+# <tocentry linkend="...">
 snippet tocentry
 	<tocentry linkend="${1}">${2}</tocentry>
-# tocfront
+# <tocfront linkend="...">
 snippet tocfront
 	<tocfront linkend="${1}">${2}</tocfront>
-# toclevel1
+# <toclevel1>
 snippet toclevel1
 	<toclevel1>
 		${1}
 	</toclevel1>
-# toclevel2
+# <toclevel2>
 snippet toclevel2
 	<toclevel2>
 		${1}
 	</toclevel2>
-# toclevel3
+# <toclevel3>
 snippet toclevel3
 	<toclevel3>
 		${1}
 	</toclevel3>
-# toclevel4
+# <toclevel4>
 snippet toclevel4
 	<toclevel4>
 		${1}
 	</toclevel4>
-# toclevel5
+# <toclevel5>
 snippet toclevel5
 	<toclevel5>
 		${1}
 	</toclevel5>
-# tocpart
+# <tocpart>
 snippet tocpart
 	<tocpart>
 		${1}
 	</tocpart>
-# token
+# <token>
 snippet token
 	<token>${1}</token>
-# tr
+# <tr>
 snippet tr
 	<tr>
 		${1}
 	</tr>
-# trademark
+# <trademark class="...">
 snippet trademark
 	<trademark class="${1:trade}">${2}</trademark>
-# type
+# <type>
 snippet type
 	<type>${1}</type>
-# ulink
+# <ulink url="...">
 snippet ulink
 	<ulink url="${1}">${2}</ulink>
-# uri
+# <uri>
 snippet uri
 	<uri>${1}</uri>
-# userinput
+# <userinput>
 snippet userinput
 	<userinput>${1}</userinput>
-# varargs
+# <varargs />
 snippet varargs
 	<varargs />
-# variablelist
+# <variablelist>
 snippet variablelist
 	<variablelist>
 		${1}
 	</variablelist>
-# varlistentry
+# <varlistentry>
 snippet varlistentry
 	<varlistentry>
 		${1}
 	</varlistentry>
-# varname
+# <varname>
 snippet varname
 	<varname>${1}</varname>
-# videodata
+# <videodata fileref="..." scalefit="..." />
 snippet videodata
 	<videodata fileref="${1}" scalefit="${2:0}" />
-# videoobject
+# <videoobject>
 snippet videoobject
 	<videoobject>
 		${1}
 	</videoobject>
-# void
+# <void />
 snippet void
 	<void />
-# volumenum
+# <volumenum>
 snippet volumenum
 	<volumenum>${1}</volumenum>
-# warning
+# <warning>
 snippet warning
 	<warning>
 		${1}
 	</warning>
-# wordasword
+# <wordasword>
 snippet wordasword
 	<wordasword>${1}</wordasword>
-# xref
+# <xref linkend="..." />
 snippet xref
 	<xref linkend="${1}" />
-# year
+# <year>
 snippet year
 	<year>${1}</year>
-# emphasis, role bold
+# <emphasis role="bold">
 snippet bold
 	<emphasis role="bold">${1}</emphasis>
-# emphasis, role strong
+# <emphasis role="strong">
 snippet strong
 	<emphasis role="strong">${1}</emphasis>
-# filename, class devicefile
+# <filename class="devicefile">
 snippet devicefile
 	<filename class="devicefile">${1}</filename>
-# filename, class directory
+# <filename class="directory">
 snippet directory
 	<filename class="directory">${1}</filename>
-# filename, class extension
+# <filename class="extension">
 snippet extension
 	<filename class="extension">${1}</filename>
-# filename, class headerfile
+# <filename class="headerfile">
 snippet headerfile
 	<filename class="headerfile">${1}</filename>
-# filename, class libraryfile
+# <filename class="libraryfile">
 snippet libraryfile
 	<filename class="libraryfile">${1}</filename>
-# filename, class partition
+# <filename class="partition">
 snippet partition
 	<filename class="partition">${1}</filename>
-# filename, class symlink
+# <filename class="symlink">
 snippet symlink
 	<filename class="symlink">${1}</filename>
-# medialabel, class cartridge
+# <medialabel class="cartridge">
 snippet cartridge
 	<medialabel class="cartridge">${1}</medialabel>
-# medialabel, class cdrom
+# <medialabel class="cdrom">
 snippet cdrom
 	<medialabel class="cdrom">${1}</medialabel>
-# medialabel, class disk
+# <medialabel class="disk">
 snippet disk
 	<medialabel class="disk">${1}</medialabel>
-# medialabel, class tape
+# <medialabel class="tape">
 snippet tape
 	<medialabel class="tape">${1}</medialabel>
-# systemitem, class daemon
+# <systemitem class="daemon">
 snippet daemon
 	<systemitem class="daemon">${1}</systemitem>
-# systemitem, class domainname
+# <systemitem class="domainname">
 snippet domainname
 	<systemitem class="domainname">${1}</systemitem>
-# systemitem, class etheraddress
+# <systemitem class="etheraddress">
 snippet etheraddress
 	<systemitem class="etheraddress">${1}</systemitem>
-# systemitem, class eventhandler
+# <systemitem class="eventhandler">
 snippet eventhandler
 	<systemitem class="eventhandler">${1}</systemitem>
-# systemitem, class event
+# <systemitem class="event">
 snippet event
 	<systemitem class="event">${1}</systemitem>
-# systemitem, class filesystem
+# <systemitem class="filesystem">
 snippet filesystem
 	<systemitem class="filesystem">${1}</systemitem>
-# systemitem, class fqdomainname
+# <systemitem class="fqdomainname">
 snippet fqdomainname
 	<systemitem class="fqdomainname">${1}</systemitem>
-# systemitem, class groupname
+# <systemitem class="groupname">
 snippet groupname
 	<systemitem class="groupname">${1}</systemitem>
-# systemitem, class ipaddress
+# <systemitem class="ipaddress">
 snippet ipaddress
 	<systemitem class="ipaddress">${1}</systemitem>
-# systemitem, class library
+# <systemitem class="library">
 snippet library
 	<systemitem class="library">${1}</systemitem>
-# systemitem, class macro
+# <systemitem class="macro">
 snippet macro
 	<systemitem class="macro">${1}</systemitem>
-# systemitem, class netmask
+# <systemitem class="netmask">
 snippet netmask
 	<systemitem class="netmask">${1}</systemitem>
-# systemitem, class newsgroup
+# <systemitem class="newsgroup">
 snippet newsgroup
 	<systemitem class="newsgroup">${1}</systemitem>
-# systemitem, class osname
+# <systemitem class="osname">
 snippet osname
 	<systemitem class="osname">${1}</systemitem>
-# systemitem, class process
+# <systemitem class="process">
 snippet process
 	<systemitem class="process">${1}</systemitem>
-# systemitem, class protocol
+# <systemitem class="protocol">
 snippet protocol
 	<systemitem class="protocol">${1}</systemitem>
-# systemitem, class resource
+# <systemitem class="resource">
 snippet resource
 	<systemitem class="resource">${1}</systemitem>
-# systemitem, class server
+# <systemitem class="server">
 snippet server
 	<systemitem class="server">${1}</systemitem>
-# systemitem, class service
+# <systemitem class="service">
 snippet service
 	<systemitem class="service">${1}</systemitem>
-# systemitem, class systemname
+# <systemitem class="systemname">
 snippet systemname
 	<systemitem class="systemname">${1}</systemitem>
-# systemitem, class username
+# <systemitem class="username">
 snippet username
 	<systemitem class="username">${1}</systemitem>
-# xi:include
+# <xi:include href="..." xmlns="..." />
 snippet xi:include
 	<xi:include href="${1}.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-# xi:fallback
+# <xi:fallback xmlns:xi="...">
 snippet xi:fallback
 	<xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
 		${1}
 	</xi:fallback>
-# ?xml
+# <?xml version='...' encoding='...' ?>
 snippet xml
 	<?xml version='${1:1.0}' encoding='${2:utf-8}' ?>
-# !DOCTYPE
+# <!DOCTYPE ...>
 snippet doctype
 	<!DOCTYPE ${1:chapter} PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
-# ![CDATA[
+# <![CDATA[...]]>
 snippet cdata
 	<![CDATA[${1}]]>
