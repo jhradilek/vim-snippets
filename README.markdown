@@ -15,7 +15,7 @@ The following snippets are available for the **UltiSnips** plug-in in the **Ulti
 
 The following snippets are available for the **snipMate** plug-in in the **snippets** directories:
 
-* **docbk.snippets** — Snippets for the DocBook XML language.
+* **docbk.snippets** — Snippets for the DocBook XML language. [Read more…](snippets/docbk.markdown)
 * **mallard.snippets** — Snippets for the Mallard XML language. [Read more…](snippets/mallard.markdown)
 * **rng.snippets** — Snippets for the RELAX NG schema language for XML. [Read more…](snippets/rng.markdown)
 
