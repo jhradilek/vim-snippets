@@ -2,209 +2,209 @@
 # Copyright (C) 2013 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 12 July 2013
+# Last Change: 13 July 2013
 
-# app
+# <app>
 snippet app
 	<app>${1}</app>
-# cite
+# <cite>
 snippet cite
 	<cite>${1}</cite>
-# cmd
+# <cmd>
 snippet cmd
 	<cmd>${1}</cmd>
-# code
+# <code>
 snippet code
 	<code>${1}</code>
-# col
+# <col />
 snippet col
 	<col/>${1}
-# colgroup
+# <colgroup>
 snippet colgroup
 	<colgroup>${1}</colgroup>
-# comment
+# <comment>
 snippet comment
 	<comment>
 		${1}
 	</comment>
-# credit
+# <credit type="...">
 snippet credit
 	<credit type="${1:author}">
 		${2}
 	</credit>
-# desc
+# <desc>
 snippet desc
 	<desc>${1}</desc>
-# em
+# <em>
 snippet em
 	<em>${1}</em>
-# email
+# <email>
 snippet email
 	<email>${1}</email>
-# example
+# <example>
 snippet example
 	<example>
 		${1}
 	</example>
-# figure
+# <figure>
 snippet figure
 	<figure>
 		${1}
 	</figure>
-# file
+# <file>
 snippet file
 	<file>${1}</file>
-# gui
+# <gui>
 snippet gui
 	<gui>${1}</gui>
-# guiseq
+# <guiseq>
 snippet guiseq
 	<guiseq>${1}</guiseq>
-# info
+# <info>
 snippet info
 	<info>
 		${1}
 	</info>
-# input
+# <input>
 snippet input
 	<input>${1}</input>
-# item
+# <item>
 snippet item
 	<item>${1}</item>
-# key
+# <key>
 snippet key
 	<key>${1}</key>
-# keyseq
+# <keyseq type="...">
 snippet keyseq
 	<keyseq type="${1:combo}">${2}</keyseq>
-# license
+# <license href="...">
 snippet license
 	<license href="${1:http://creativecommons.org/licenses/by-sa/3.0/}">
 		${2}
 	</license>
-# link
+# <link type="..." xref="..." group="..." />
 snippet link
 	<link type="${1:guide}" xref="${2:index}" group="${3}"/>
-# links
+# <links type="..." groups="...">
 snippet links
 	<links type="${1:topic}" groups="${2}">
 		${3}
 	</links>
-# list
+# <list type="...">
 snippet list
 	<list type="${1:disc}">
 		${2}
 	</list>
-# listing
+# <listing>
 snippet listing
 	<listing>
 		${1}
 	</listing>
-# media
+# <media type="..." mime="..." src="...">
 snippet media
 	<media type="${1:image}" mime="${2:image/png}" src="${3}">
 		${4}
 	</media>
-# name
+# <name>
 snippet name
 	<name>${1:`g:snips_author`}</name>
-# note
+# <note style="...">
 snippet note
 	<note style="${1:advanced}">
 		${2}
 	</note>
-# output
+# <output>
 snippet output
 	<output>${1}</output>
-# p
+# <p>
 snippet p
 	<p>${1}</p>
-# page
+# <page xmlns="..." type="..." id="...">
 snippet page
 	<page xmlns="http://projectmallard.org/1.0/"
 	      type="${1:topic}"
 	      id="${2}">
 		${3}
 	</page>
-# quote
+# <quote>
 snippet quote
 	<quote>
 		${1}
 	</quote>
-# revision
+# <revision version="..." date="..." status="..." />
 snippet revision
 	<revision version="${1:0.1}" date="${2:`strftime("%Y-%m-%d")`}" status="${3:stub}"/>
-# screen
+# <screen>
 snippet screen
 	<screen>${1}</screen>
-# section
+# <section id="...">
 snippet section
 	<section id="${1}">
 		${2}
 	</section>
-# span
+# <span>
 snippet span
 	<span>${1}</span>
-# steps
+# <steps>
 snippet steps
 	<steps>
 		${1}
 	</steps>
-# subtitle
+# <subtitle>
 snippet subtitle
 	<subtitle>${1}</subtitle>
-# synopsis
+# <synopsis>
 snippet synopsis
 	<synopsis>
 		${1}
 	</synopsis>
-# sys
+# <sys>
 snippet sys
 	<sys>${1}</sys>
-# table
+# <table frame="..." rules="..." shade="...">
 snippet table
 	<table frame="${1:all}" rules="${2:all}" shade="${3:none}">
 		${4}
 	</table>
-# tbody
+# <tbody>
 snippet tbody
 	<tbody>
 		${1}
 	</tbody>
-# td
+# <td>
 snippet td
 	<td>${1}</td>
-# terms
+# <terms>
 snippet terms
 	<terms>
 		${1}
 	</terms>
-# tfoot
+# <tfoot>
 snippet tfoot
 	<tfoot>
 		${1}
 	</tfoot>
-# thead
+# <thead>
 snippet thead
 	<thead>
 		${1}
 	</thead>
-# title
+# <title>
 snippet title
 	<title>${1}</title>
-# tr
+# <tr>
 snippet tr
 	<tr>
 		${1}
 	</tr>
-# tree
+# <tree>
 snippet tree
 	<tree>
 		${1}
 	</tree>
-# var
+# <var>
 snippet var
 	<var>${1}</var>
-# years
+# <years>
 snippet years
 	<years>${1:`strftime("%Y")`}</years>
