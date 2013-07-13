@@ -1,22 +1,23 @@
-# vim-snippets
+# Snippets for Vim
 
 ## Description
 
-The **vim-snippets** repository provides a collection of code snippets for **Vim**. In particular, it contains snippets for the following three frequently used plug-ins:
+The **vim-snippets** repository provides a collection of code snippets for **Vim**. In particular, it contains snippets for the following two frequently used plug-ins:
 
-* [UltiSnips](https://github.com/SirVer/ultisnips) by [Holger Rapp](https://github.com/SirVer),
-* [snipMate](https://github.com/msanders/snipmate.vim) by [Michael Sanders](https://github.com/msanders), [Rok Garbas](https://github.com/garbas), and [Marc Weber](https://github.com/MarcWeber), and
-* [snippetsEmu](http://www.vim.org/scripts/script.php?script_id=1318) by Felix Ingram.
+* [UltiSnips](https://github.com/SirVer/ultisnips) by [Holger Rapp](https://github.com/SirVer) (recommended)
+* [snipMate](https://github.com/msanders/snipmate.vim) by [Michael Sanders](https://github.com/msanders), [Rok Garbas](https://github.com/garbas), and [Marc Weber](https://github.com/MarcWeber)
 
-For the **UltiSnips** and **snipMate** plug-ins, the following snippets are included in the **UltiSnips** and **snippets** directories respectively:
+The following snippets are available for the **UltiSnips** plug-in in the **UltiSnips** directory:
 
-* **docbk.snippets** — Snippets for the DocBook XML language according to [DocBook: The Definitive Guide, version 2.0.17](http://www.docbook.org/tdg/). See also my [vim-docbk](https://github.com/jhradilek/vim-docbk) repository for an updated syntax file for this language.
-* **mallard.snippets** — Snippets for the Mallard XML language according to [Mallard 1.0 DRAFT (as of 2013-02-11)](http://projectmallard.org/1.0/index.html). See also my [vim-mallard](https://github.com/jhradilek/vim-mallard) repository for a syntax file for this language.
-* **rng.snippets** — Snippets for the RELAX NG schema language for XML. See also my [vim-rng](https://github.com/jhradilek/vim-rng) repository for a syntax file for this language.
+* **docbk.snippets** — Snippets for the DocBook XML language. [Read more…](UltiSnips/docbk.markdown)
+* **mallard.snippets** — Snippets for the Mallard XML language. [Read more…](UltiSnips/mallard.markdown)
+* **rng.snippets** — Snippets for the RELAX NG schema language for XML. [Read more…](UltiSnips/rng.markdown)
 
-For the **snippetsEmu** plug-in, the following legacy snippets are available in the **after/ftplugin/** directory, but are no longer actively developed or maintained:
+The following snippets are available for the **snipMate** plug-in in the **snippets** directories:
 
-* **docbk_snippets.vim** — Snippets for the DocBook XML language according to the [DocBook: The Definitive Guide, version 2.0.17](http://www.docbook.org/tdg/). See also my [vim-docbk](https://github.com/jhradilek/vim-docbk) repository for an updated syntax file for this language.
+* **docbk.snippets** — Snippets for the DocBook XML language.
+* **mallard.snippets** — Snippets for the Mallard XML language. [Read more…](snippets/mallard.markdown)
+* **rng.snippets** — Snippets for the RELAX NG schema language for XML. [Read more…](snippets/rng.markdown)
 
 ## Installation
 
@@ -82,24 +83,14 @@ This copies the selected file to the **~/.vim/snippets/** directory. For example
 
 The snippets are automatically loaded the next time you open a DocBook file.
 
-#### Installing Snippets for the snippetsEmu Plug-in
+## See Also
 
-By default, the snippets for the **snippetsEmu** plug-in are stored in the **~/.vim/after/ftplugin/** directory. To make sure that this directory exists, type the following at a shell prompt:
-
-    install -d ~/.vim/after/ftplugin/
-
-To install any of the available snippets, change into the directory with your local copy of this repository and run the following command:
-
-    cp after/ftplugin/<filetype>_snippets.vim ~/.vim/after/ftplugin/
-
-This copies the selected file to the **~/.vim/after/ftplugin/** directory. For example, to install the snippets for the DocBook XML language, type:
-
-    cp after/ftplugin/docbk_snippets.vim ~/.vim/after/ftplugin/
-
-The snippets are automatically loaded the next time you open a DocBook file.
+* [vim-docbk](https://github.com/jhradilek/vim-docbk) — A syntax file, a filetype plug-in, and omni completion for DocBook 4.5 and 5.0.
+* [vim-mallard](https://github.com/jhradilek/vim-mallard) — A syntax file, a filetype plug-in, and omni completion for Mallard 1.0.
+* [vim-rng](https://github.com/jhradilek/vim-rng) — A syntax file, a filetype plug-in, and omni completion for RELAX NG 1.0.
 
 ## Copyright
 
-Copyright © 2010—2013 Jaromir Hradilek
+Copyright © 2010–2013 Jaromir Hradilek
 
 This program is free software; see the source for copying conditions. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
