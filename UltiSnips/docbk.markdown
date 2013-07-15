@@ -47,7 +47,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>anchor</strong></td>
-    <td><code>&lt;anchor id="..."&gt;...&lt;/anchor&gt;</code></td>
+    <td><code>&lt;anchor id="..." /&gt;</code></td>
   </tr>
   <tr>
     <td><strong>answer</strong></td>
@@ -347,7 +347,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>coref</strong></td>
-    <td><code>&lt;coref label="..." linkend="..."&gt;...&lt;/coref&gt;</code></td>
+    <td><code>&lt;coref label="..." linkend="..." /&gt;</code></td>
   </tr>
   <tr>
     <td><strong>corpauthor</strong></td>
@@ -1479,7 +1479,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>textdata</strong></td>
-    <td><code>&lt;textdata fileref="..."&gt;...&lt;/textdata&gt;</code></td>
+    <td><code>&lt;textdata fileref="..." /&gt;</code></td>
   </tr>
   <tr>
     <td><strong>textobject</strong></td>
