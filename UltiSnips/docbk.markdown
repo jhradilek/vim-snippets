@@ -143,7 +143,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>bibliography</strong></td>
-    <td><code>&lt;bibliography&gt;...&lt;/bibliography&gt;</code></td>
+    <td><code>&lt;bibliography id="..."&gt;...&lt;/bibliography&gt;</code></td>
   </tr>
   <tr>
     <td><strong>biblioid</strong></td>
@@ -163,7 +163,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>bibliomset</strong></td>
-    <td><code>&lt;bibliomset&gt;...&lt;/bibliomset&gt;</code></td>
+    <td><code>&lt;bibliomset relation="..."&gt;...&lt;/bibliomset&gt;</code></td>
   </tr>
   <tr>
     <td><strong>biblioref</strong></td>
@@ -283,7 +283,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>colophon</strong></td>
-    <td><code>&lt;colophon&gt;...&lt;/colophon&gt;</code></td>
+    <td><code>&lt;colophon id="..."&gt;...&lt;/colophon&gt;</code></td>
   </tr>
   <tr>
     <td><strong>colspec</strong></td>
@@ -623,7 +623,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>index</strong></td>
-    <td><code>&lt;index&gt;...&lt;/index&gt;</code></td>
+    <td><code>&lt;index id="..."&gt;...&lt;/index&gt;</code></td>
   </tr>
   <tr>
     <td><strong>indexterm</strong></td>
@@ -983,7 +983,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>preface</strong></td>
-    <td><code>&lt;preface&gt;...&lt;/preface&gt;</code></td>
+    <td><code>&lt;preface id="..."&gt;...&lt;/preface&gt;</code></td>
   </tr>
   <tr>
     <td><strong>primaryie</strong></td>

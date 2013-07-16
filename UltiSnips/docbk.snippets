@@ -174,8 +174,8 @@ snippet biblioentry "<biblioentry>" !w
 </biblioentry>
 endsnippet
 
-snippet bibliography "<bibliography>" !w
-<bibliography>
+snippet bibliography "<bibliography id='...'>" !w
+<bibliography id="$1">
 	${VISUAL}$0
 </bibliography>
 endsnippet
@@ -208,7 +208,7 @@ snippet bibliomixed "<bibliomixed>" !w
 </bibliomixed>
 endsnippet
 
-snippet bibliomset "<bibliomset>" !w
+snippet bibliomset "<bibliomset relation='...'>" !w
 <bibliomset relation="$1">
 	${VISUAL}$0
 </bibliomset>
@@ -368,8 +368,8 @@ snippet collabname "<collabname>" !w
 <collabname>${VISUAL}$1</collabname>$0
 endsnippet
 
-snippet colophon "<colophon>" !w
-<colophon>
+snippet colophon "<colophon id='...'>" !w
+<colophon id="$1">
 	${VISUAL}$0
 </colophon>
 endsnippet
@@ -754,8 +754,8 @@ snippet important "<important>" !w
 </important>
 endsnippet
 
-snippet index "<index>" !w
-<index>
+snippet index "<index id='...'>" !w
+<index id="$1">
 	${VISUAL}$0
 </index>
 endsnippet
@@ -1202,7 +1202,7 @@ snippet postcode "<postcode>" !w
 <postcode>${VISUAL}$1</postcode>$0
 endsnippet
 
-snippet preface "<preface>" !w
+snippet preface "<preface id='...'>" !w
 <preface id="$1">
 	${VISUAL}$0
 </preface>

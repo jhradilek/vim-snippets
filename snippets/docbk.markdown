@@ -139,7 +139,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>bibliography</strong></td>
-    <td><code>&lt;bibliography&gt;...&lt;/bibliography&gt;</code></td>
+    <td><code>&lt;bibliography id="..."&gt;...&lt;/bibliography&gt;</code></td>
   </tr>
   <tr>
     <td><strong>bibliographyinfo</strong></td>
@@ -287,7 +287,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>colophon</strong></td>
-    <td><code>&lt;colophon&gt;...&lt;/colophon&gt;</code></td>
+    <td><code>&lt;colophon id="..."&gt;...&lt;/colophon&gt;</code></td>
   </tr>
   <tr>
     <td><strong>colspec</strong></td>
@@ -611,7 +611,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>index</strong></td>
-    <td><code>&lt;index&gt;...&lt;/index&gt;</code></td>
+    <td><code>&lt;index id="..."&gt;...&lt;/index&gt;</code></td>
   </tr>
   <tr>
     <td><strong>indexdiv</strong></td>
@@ -1111,7 +1111,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>refsect1</strong></td>
-    <td><code>&lt;refsect1&gt;...&lt;/refsect&gt;</code></td>
+    <td><code>&lt;refsect1 id="..."&gt;...&lt;/refsect&gt;</code></td>
   </tr>
   <tr>
     <td><strong>refsect1info</strong></td>
@@ -1119,7 +1119,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>refsect2</strong></td>
-    <td><code>&lt;refsect2&gt;...&lt;/refsect&gt;</code></td>
+    <td><code>&lt;refsect2 id="..."&gt;...&lt;/refsect&gt;</code></td>
   </tr>
   <tr>
     <td><strong>refsect2info</strong></td>
@@ -1127,7 +1127,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>refsect3</strong></td>
-    <td><code>&lt;refsect3&gt;...&lt;/refsect&gt;</code></td>
+    <td><code>&lt;refsect3 id="..."&gt;...&lt;/refsect&gt;</code></td>
   </tr>
   <tr>
     <td><strong>refsect3info</strong></td>
@@ -1219,7 +1219,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>sect1</strong></td>
-    <td><code>&lt;sect1&gt;...&lt;/sect&gt;</code></td>
+    <td><code>&lt;sect1 id="..."&gt;...&lt;/sect&gt;</code></td>
   </tr>
   <tr>
     <td><strong>sect1info</strong></td>
@@ -1227,7 +1227,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>sect2</strong></td>
-    <td><code>&lt;sect2&gt;...&lt;/sect&gt;</code></td>
+    <td><code>&lt;sect2 id="..."&gt;...&lt;/sect&gt;</code></td>
   </tr>
   <tr>
     <td><strong>sect2info</strong></td>
@@ -1235,7 +1235,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>sect3</strong></td>
-    <td><code>&lt;sect3&gt;...&lt;/sect&gt;</code></td>
+    <td><code>&lt;sect3 id="..."&gt;...&lt;/sect&gt;</code></td>
   </tr>
   <tr>
     <td><strong>sect3info</strong></td>
@@ -1243,7 +1243,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>sect4</strong></td>
-    <td><code>&lt;sect4&gt;...&lt;/sect&gt;</code></td>
+    <td><code>&lt;sect4 id="..."&gt;...&lt;/sect&gt;</code></td>
   </tr>
   <tr>
     <td><strong>sect4info</strong></td>
@@ -1251,7 +1251,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>sect5</strong></td>
-    <td><code>&lt;sect5&gt;...&lt;/sect&gt;</code></td>
+    <td><code>&lt;sect5 id="..."&gt;...&lt;/sect&gt;</code></td>
   </tr>
   <tr>
     <td><strong>sect5info</strong></td>
