@@ -1,6 +1,6 @@
 # DocBook 4.5 Snippets for UltiSnips
 
-The **docbk.snippets** file provides a complete set of snippets for the DocBook 4.5 XML language acording to [DocBook: The Definitive Guide](http://www.docbook.org/tdg/), version 2.0.17.
+The **docbk.snippets** file provides a complete set of snippets for the DocBook 4.5 XML language according to [DocBook: The Definitive Guide](http://www.docbook.org/tdg/), version 2.0.17.
 
 ## Snippets for DocBook 4.5 Elements
 
