@@ -1,6 +1,6 @@
 # Mallard 1.0 Snippets for snipMate
 
-The **mallard.snippets** file provides a complete set of snippets for the Mallard XML language according to [Mallard 1.0 DRAFT](http://projectmallard.org/1.0/index.html) as of 11 February 2013.
+The **mallard.snippets** file provides a complete set of snippets for the Mallard XML language according to the [Mallard 1.0](http://projectmallard.org/1.0/index.html) specification.
 
 ## Snippets for Mallard 1.0 Elements
 
