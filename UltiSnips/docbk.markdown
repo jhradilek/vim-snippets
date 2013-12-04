@@ -199,7 +199,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>bridgehead</strong></td>
-    <td><code>&lt;bridgehead id="..."&gt;...&lt;/bridgehead&gt;</code></td>
+    <td><code>&lt;bridgehead renderas="..."&gt;...&lt;/bridgehead&gt;</code></td>
   </tr>
   <tr>
     <td><strong>calloutlist</strong></td>

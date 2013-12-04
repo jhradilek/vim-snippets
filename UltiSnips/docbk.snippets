@@ -2,7 +2,7 @@
 # Copyright (C) 2012, 2013 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 15 March 2013
+# Last Change: 04 December 2013
 
 extends xml
 
@@ -256,8 +256,8 @@ snippet bookinfo "<bookinfo>" !w
 </bookinfo>
 endsnippet
 
-snippet bridgehead "<bridgehead id='...'>" !w
-<bridgehead id="$1">${VISUAL}$2</bridgehead>$0
+snippet bridgehead "<bridgehead renderas='...'>" !w
+<bridgehead renderas="${1:sect3}">${VISUAL}$2</bridgehead>$0
 endsnippet
 
 snippet callout "<callout arearefs='...'>" !w
