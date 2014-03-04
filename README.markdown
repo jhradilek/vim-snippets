@@ -91,6 +91,6 @@ The snippets are automatically loaded the next time you open a DocBook file.
 
 ## Copyright
 
-Copyright © 2010–2013 Jaromir Hradilek
+Copyright © 2010–2014 Jaromir Hradilek
 
 This program is free software; see the source for copying conditions. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
