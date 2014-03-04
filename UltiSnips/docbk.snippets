@@ -1,8 +1,8 @@
 # DocBook 4.5 snippets according to DocBook: The Definitive Guide (v2.0.17)
-# Copyright (C) 2012, 2013 Jaromir Hradilek
+# Copyright (C) 2012-2014 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 04 December 2013
+# Last Change: 04 March 2014
 
 extends xml
 
@@ -1330,8 +1330,8 @@ snippet refentrytitle "<refentrytitle>" !w
 <refentrytitle>${VISUAL}$1</refentrytitle>$0
 endsnippet
 
-snippet reference "<reference>" !w
-<reference>
+snippet reference "<reference id='...'>" !w
+<reference id="$1">
 	${VISUAL}$0
 </reference>
 endsnippet

@@ -1087,7 +1087,7 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
   <tr>
     <td><strong>reference</strong></td>
-    <td><code>&lt;reference&gt;...&lt;/reference&gt;</code></td>
+    <td><code>&lt;reference id="..."&gt;...&lt;/reference&gt;</code></td>
   </tr>
   <tr>
     <td><strong>refmeta</strong></td>
