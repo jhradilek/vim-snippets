@@ -1780,6 +1780,67 @@ The **docbk.snippets** file provides a complete set of snippets for the DocBook 
   </tr>
 </table>
 
+## Supplemental Snippets for DocBook XML Elements
+
+<table>
+  <tr>
+    <th>Trigger</th>
+    <th>Description</th>
+  </tr>
+    <tr>
+      <td><strong>appe</strong></td>
+      <td><code>&lt;appendix id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/appendix&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>bibl</strong></td>
+      <td><code>&lt;bibliography id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/bibliography&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>chap</strong></td>
+      <td><code>&lt;chapter id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/chapter&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>colo</strong></td>
+      <td><code>&lt;colophon id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/colophon&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>exam</strong></td>
+      <td><code>&lt;example id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/example&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>figu</strong></td>
+      <td><code>&lt;figure id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/figure&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>glos</strong></td>
+      <td><code>&lt;glossary id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/glossary&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>inde</strong></td>
+      <td><code>&lt;index id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/index&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>pref</strong></td>
+      <td><code>&lt;preface id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/preface&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>proc</strong></td>
+      <td><code>&lt;procedure id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/procedure&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>refe</strong></td>
+      <td><code>&lt;reference id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/reference&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>sect</strong></td>
+      <td><code>&lt;section id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/section&gt;</code></td>
+    </tr>
+    <tr>
+      <td><strong>tabl</strong></td>
+      <td><code>&lt;table id="..."&gt;&lt;title&gt;...&lt;/title&gt;&lt;/table&gt;</code></td>
+    </tr>
+</table>
+
 ## Snippets for Commonly Used XML Elements
 
 <table>
