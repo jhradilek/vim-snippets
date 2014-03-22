@@ -2,7 +2,7 @@
 # Copyright (C) 2012-2014 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 04 March 2014
+# Last Change: 22 March 2014
 
 extends xml
 
@@ -2176,6 +2176,101 @@ endsnippet
 
 snippet username "<systemitem class='username'>" !w
 <systemitem class="username">${VISUAL}$1</systemitem>$0
+endsnippet
+
+# -------------------------------------------------------------------------
+#                    Supplemental DocBook XML Snippets
+# -------------------------------------------------------------------------
+
+snippet appe "<appendix id='...'><title>" !b
+<appendix id="${2:appe-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</appendix>
+endsnippet
+
+snippet bibl "<bibliography id='...'><title>" !b
+<bibliography id="${2:bibl-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</bibliography>
+endsnippet
+
+snippet chap "<chapter id='...'><title>" !b
+<chapter id="${2:chap-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</chapter>
+endsnippet
+
+snippet colo "<colophon id='...'><title>" !b
+<colophon id="${2:colo-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</colophon>
+endsnippet
+
+snippet exam "<example id='...'><title>" !b
+<example id="${2:exam-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</example>
+endsnippet
+
+snippet figu "<figure id='...'><title>" !b
+<figure id="${2:figu-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</figure>
+endsnippet
+
+snippet glos "<glossary id='...'><title>" !b
+<glossary id="${2:glos-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</glossary>
+endsnippet
+
+snippet inde "<index id='...'><title>" !b
+<index id="${2:inde-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</index>
+endsnippet
+
+snippet pref "<preface id='...'><title>" !b
+<preface id="${2:pref-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</preface>
+endsnippet
+
+snippet proc "<procedure id='...'><title>" !b
+<procedure id="${2:proc-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</procedure>
+endsnippet
+
+snippet refe "<reference id='...'><title>" !b
+<reference id="${2:refe-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</reference>
+endsnippet
+
+snippet sect "<section id='...'><title>" !b
+<section id="${2:sect-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</section>
+endsnippet
+
+snippet tabl "<table id='...'><title>" !b
+<table id="${2:tabl-${1/([\w\d:._-]+)|( )|(<[^>]*>|.)/(?1:$0)(?2:_)(?3:)/g}}">
+	<title>$1</title>
+	${VISUAL}$0
+</table>
 endsnippet
 
 # -------------------------------------------------------------------------
