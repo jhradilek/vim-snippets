@@ -88,9 +88,13 @@ The snippets are automatically loaded the next time you open a DocBook file.
 * [vim-docbk](https://github.com/jhradilek/vim-docbk) — A syntax file, a filetype plug-in, and omni completion for DocBook 4.5 and 5.0.
 * [vim-mallard](https://github.com/jhradilek/vim-mallard) — A syntax file, a filetype plug-in, and omni completion for Mallard 1.0.
 * [vim-rng](https://github.com/jhradilek/vim-rng) — A syntax file, a filetype plug-in, and omni completion for RELAX NG 1.0.
+* [atom-docbook-snippets](https://github.com/pbokoc/atom-docbook-snippets) — A collection of DocBook snippets for **Atom**.
+* [emacs-docbook-snippets](https://github.com/jhradilek/emacs-docbook-snippets) — A collection of DocBook snippets for **Emacs**.
+* [geany-snippets](https://github.com/jhradilek/geany-snippets) — A collection of DocBook and Mallard snippets for **Geany**.
+* [gedit-snippets](https://github.com/jhradilek/gedit-snippets) — A collection of DocBook and Mallard snippets for **Gedit**.
 
 ## Copyright
 
-Copyright © 2010–2014 Jaromir Hradilek
+Copyright © 2010–2015 Jaromir Hradilek
 
 This program is free software; see the source for copying conditions. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
