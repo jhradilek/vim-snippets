@@ -1,0 +1,206 @@
+# AsciiDoc snippets for the UltiSnips plug-in
+# Copyright (C) 2017 Jaromir Hradilek
+
+# Home Page:   https://github.com/jhradilek/vim-snippets
+# Last Change: 30 October 2017
+
+
+# -------------------------------------------------------------------------
+#                           Titles and Sections
+# -------------------------------------------------------------------------
+
+# Level 0 section:
+snippet = "Document Title (Level 0)" !b
+= ${VISUAL}${1:Document Title}
+
+$0
+endsnippet
+
+# Level 0 section - alternative version:
+snippet =0 "Document Title (Level 0)" !b
+= ${VISUAL}${1:Document Title}
+
+$0
+endsnippet
+
+# Level 0 section - alternative version:
+snippet =1 "Document Part (Level 0)" !b
+= ${VISUAL}${1:Document Title}
+
+$0
+endsnippet
+
+# Level 0 section with a custom ID:
+snippet =[ "Document Title (Level 0) with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+= ${VISUAL}${1:Document Title}
+
+$0
+endsnippet
+
+# Level 0 section with a custom ID - alternative version:
+snippet =0[ "Document Title (Level 0) with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+= ${VISUAL}${1:Document Title}
+
+$0
+endsnippet
+
+# Level 0 section with a custom ID - alternative version:
+snippet =1[ "Document Part (Level 0) with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+= ${VISUAL}${1:Document Title}
+
+$0
+endsnippet
+
+# Level 1 section:
+snippet == "Level 1 Section Title" !b
+== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 1 section - alternative version:
+snippet =2 "Level 1 Section Title" !b
+== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 1 section with a custom ID:
+snippet ==[ "Level 1 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 1 section with a custom ID - alternative version:
+snippet =2[ "Level 1 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 2 section:
+snippet === "Level 2 Section Title" !b
+=== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 2 section - alternative version:
+snippet =3 "Level 2 Section Title" !b
+=== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 2 section with a custom ID:
+snippet ===[ "Level 2 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+=== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 2 section with a custom ID - alternative version:
+snippet =3[ "Level 2 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+=== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+
+# Level 3 section:
+snippet ==== "Level 3 Section Title" !b
+==== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 3 section - alternative version:
+snippet =4 "Level 3 Section Title" !b
+==== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 3 section with a custom ID:
+snippet ====[ "Level 3 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+==== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 3 section with a custom ID - alternative version:
+snippet =4[ "Level 3 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+==== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 4 section:
+snippet ===== "Level 4 Section Title" !b
+===== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 4 section - alternative version:
+snippet =5 "Level 4 Section Title" !b
+===== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 4 section with a custom ID:
+snippet =====[ "Level 4 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+===== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 4 section with a custom ID - alternative version:
+snippet =5[ "Level 4 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+===== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 5 section:
+snippet ====== "Level 5 Section Title" !b
+====== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 5 section - alternative version:
+snippet =6 "Level 5 Section Title" !b
+====== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 5 section with a custom ID:
+snippet ======[ "Level 5 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+====== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
+
+# Level 5 section with a custom ID - alternative version:
+snippet =6[ "Level 5 Section Title with Custom ID" !b
+[${2:#${1/([ _]*\{nbsp\}[ _]*|[ _]+)|(\[[^\]]*\][\*_`#]|\{[^\}]*\}[ _]*|[^\w\d:.-]_*)|(.)/(?1:_)(?2:)(?3:\l$0)/g}}]
+====== ${VISUAL}${1:Section Title}
+
+$0
+endsnippet
