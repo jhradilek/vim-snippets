@@ -2,7 +2,16 @@
 # Copyright (C) 2017 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 30 October 2017
+# Last Change: 2 November 2017
+
+# Some snippets are inspired by those included in the AsciiDoc Autocomplete
+# package for Atom [1].  Where possible,  the snippets  also follow Red Hat
+# Documentation Asciidoc Mark-up Conventions [2].
+#
+# References:
+#
+#   [1] https://github.com/asciidoctor/atom-autocomplete-asciidoc
+#   [2] https://github.com/redhat-documentation/asciidoc-markup-conventions
 
 
 # -------------------------------------------------------------------------
@@ -203,4 +212,245 @@ snippet =6[ "Level 5 Section Title with Custom ID" !b
 ====== ${VISUAL}${1:Section Title}
 
 $0
+endsnippet
+
+
+# -------------------------------------------------------------------------
+#                             Block Elements
+# -------------------------------------------------------------------------
+
+# Comment block:
+snippet //// "Comment Block" !b
+////
+${VISUAL}$1
+////
+$0
+endsnippet
+
+# Literal block:
+snippet .... "Literal Block" !b
+....
+${VISUAL}$1
+....
+$0
+endsnippet
+
+# Listing block:
+snippet ---- "Listing Block" !b
+----
+${VISUAL}$1
+----
+$0
+endsnippet
+
+# Open block:
+snippet -- "Open Block" !b
+--
+${VISUAL}$1
+--
+$0
+endsnippet
+
+# Passthrough block:
+snippet ++++ "Passthrough Block" !b
+++++
+${VISUAL}$1
+++++
+$0
+endsnippet
+
+# Quote block:
+snippet ____ "Quote Block" !b
+____
+${VISUAL}$1
+____
+$0
+endsnippet
+
+# Sidebar block:
+snippet **** "Sidebar Block" !b
+****
+${VISUAL}$1
+****
+$0
+endsnippet
+
+# Admonition - caution:
+snippet caution "Admonition: Caution" !b
+[CAUTION]
+====
+${VISUAL}$1
+====
+$0
+endsnippet
+
+# Admonition - important:
+snippet important "Admonition: Important" !b
+[IMPORTANT]
+====
+${VISUAL}$1
+====
+$0
+endsnippet
+
+# Admonition - note:
+snippet note "Admonition: Note" !b
+[NOTE]
+====
+${VISUAL}$1
+====
+$0
+endsnippet
+
+# Admonition - tip:
+snippet tip "Admonition: Tip" !b
+[TIP]
+====
+${VISUAL}$1
+====
+$0
+endsnippet
+
+# Admonition - warning:
+snippet warning "Admonition: Warning" !b
+[WARNING]
+====
+${VISUAL}$1
+====
+$0
+endsnippet
+
+
+# -------------------------------------------------------------------------
+#                          User Interface Macros
+# -------------------------------------------------------------------------
+
+# Button:
+snippet btn "Button" !w
+btn:[${1:${VISUAL}}]$0
+endsnippet
+
+# Keyboard shortcut:
+snippet kbd "Keyboard Shortcut" !w
+kbd:[${1:${VISUAL}}]$0
+endsnippet
+
+# Menu selection:
+snippet menu "Menu Selection" !w
+menu:${1:${VISUAL}}[$2]$0
+endsnippet
+
+
+# -------------------------------------------------------------------------
+#                            Links and Images
+# -------------------------------------------------------------------------
+
+# Link:
+snippet link "Link" !w
+link:$1[${2:${VISUAL}}]$0
+endsnippet
+
+# Email:
+snippet mailto "Email" !w
+mailto:$1[${2:${VISUAL}}]$0
+endsnippet
+
+# Inline image:
+snippet image "Inline Image" !w
+image:$1[${2:${VISUAL}}]$0
+endsnippet
+
+# Inline video:
+snippet video "Inline Video" !w
+video:$1[${2:${VISUAL}}]$0
+endsnippet
+
+
+# -------------------------------------------------------------------------
+#                             Text Formatting
+# -------------------------------------------------------------------------
+
+# Bold text:
+snippet * "Bold Text" !w
+*${1:${VISUAL}}*$0
+endsnippet
+
+# Bold text - unconstrained:
+snippet ** "Bold Text (Unconstrained)" !i
+**${1:${VISUAL}}**$0
+endsnippet
+
+# Italic text:
+snippet _ "Italic Text" !w
+_${1:${VISUAL}}_$0
+endsnippet
+
+# Italic text - unconstrained:
+snippet __ "Italic Text (Unconstrained)" !i
+__${1:${VISUAL}}__$0
+endsnippet
+
+# Monospace text:
+snippet ` "Monospace Text" !w
+\`${1:${VISUAL}}\`$0
+endsnippet
+
+# Monospace text - unconstrained:
+snippet `` "Monospace Text (Unconstrained)" !i
+\`\`${1:${VISUAL}}\`\`$0
+endsnippet
+
+# Superscript text:
+snippet ^ "Superscript Text" !i
+^${1:${VISUAL}}^$0
+endsnippet
+
+# Subscript text:
+snippet ~ "Superscript Text" !i
+~${1:${VISUAL}}~$0
+endsnippet
+
+# Single curved quotes:
+snippet '` "Single Curved Quotes" !w
+'\`${1:${VISUAL}}\`'$0
+endsnippet
+
+# Double curved quotes:
+snippet "` "Double Curved Quotes" !w
+"\`${1:${VISUAL}}\`"$0
+endsnippet
+
+
+# -------------------------------------------------------------------------
+#                             Semantic Markup
+# -------------------------------------------------------------------------
+
+# Command:
+snippet command "Command" !w
+[command]\`${VISUAL}$1\`$0
+endsnippet
+
+# Command - alternative version:
+snippet cmd "Command" !w
+[command]\`${VISUAL}$1\`$0
+endsnippet
+
+# File name:
+snippet filename "File Name" !w
+[filename]\`${VISUAL}$1\`$0
+endsnippet
+
+# Directory name - for convenience:
+snippet directory "Directory Name" !w
+[filename]\`${VISUAL}$1\`$0
+endsnippet
+
+# Package name:
+snippet package "Package Name" !w
+[package]\`${VISUAL}$1\`$0
+endsnippet
+
+# Package alternative version:
+snippet pkg "Package Name" !w
+[package]\`${VISUAL}$1\`$0
 endsnippet
