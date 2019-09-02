@@ -1,17 +1,19 @@
 # AsciiDoc snippets for the UltiSnips plug-in
-# Copyright (C) 2017 Jaromir Hradilek
+# Copyright (C) 2019 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 2 November 2017
+# Last Change: 3 September 2019
 
 # Some snippets are inspired by those included in the AsciiDoc Autocomplete
 # package for Atom [1].  Where possible,  the snippets  also follow Red Hat
-# Documentation Asciidoc Mark-up Conventions [2].
+# Documentation Asciidoc Mark-up Conventions [2]  and try to  be compatible
+# with the Red Hat Modular Documentation Project [3] templates.
 #
 # References:
 #
 #   [1] https://github.com/asciidoctor/atom-autocomplete-asciidoc
 #   [2] https://github.com/redhat-documentation/asciidoc-markup-conventions
+#   [3] https://github.com/redhat-documentation/modular-docs
 
 
 # -------------------------------------------------------------------------
@@ -440,8 +442,18 @@ snippet filename "File Name" !w
 [filename]\`${VISUAL}$1\`$0
 endsnippet
 
+# File name - alternative version:
+snippet file "File Name" !w
+[filename]\`${VISUAL}$1\`$0
+endsnippet
+
 # Directory name - for convenience:
 snippet directory "Directory Name" !w
+[filename]\`${VISUAL}$1\`$0
+endsnippet
+
+# Directory name - alternative version:
+snippet dir "Directory Name" !w
 [filename]\`${VISUAL}$1\`$0
 endsnippet
 
