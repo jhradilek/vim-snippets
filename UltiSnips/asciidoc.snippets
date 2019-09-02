@@ -15,6 +15,20 @@
 #   [2] https://github.com/redhat-documentation/asciidoc-markup-conventions
 #   [3] https://github.com/redhat-documentation/modular-docs
 
+global !p
+whitespace = re.compile('[\s_-]*\{nbsp\}[\s_-]*|[\s_-]+')
+macros     = re.compile('\\bbtn:\[|\\bkbd:\[|\\bmenu:\\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*')
+disallowed = re.compile('[^\w\d.-]')
+
+def compose_id(string):
+	'''Converts an AsciiDoc string to a valid block ID.'''
+	temp = whitespace.sub('-', string)
+	temp = macros.sub('', temp)
+	temp = disallowed.sub('', temp)
+
+	return temp.lower()
+endglobal
+
 
 # -------------------------------------------------------------------------
 #                           Titles and Sections
@@ -43,7 +57,7 @@ endsnippet
 
 # Level 0 section with a custom ID:
 snippet =[ "Document Title (Level 0) with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 = ${VISUAL}${1:Document title}
 
 $0
@@ -51,7 +65,7 @@ endsnippet
 
 # Level 0 section with a custom ID - alternative version:
 snippet =0[ "Document Title (Level 0) with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 = ${VISUAL}${1:Document title}
 
 $0
@@ -59,7 +73,7 @@ endsnippet
 
 # Level 0 section with a custom ID - alternative version:
 snippet =1[ "Document Part (Level 0) with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 = ${VISUAL}${1:Document title}
 
 $0
@@ -81,7 +95,7 @@ endsnippet
 
 # Level 1 section with a custom ID:
 snippet ==[ "Level 1 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 == ${VISUAL}${1:Section title}
 
 $0
@@ -89,7 +103,7 @@ endsnippet
 
 # Level 1 section with a custom ID - alternative version:
 snippet =2[ "Level 1 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 == ${VISUAL}${1:Section title}
 
 $0
@@ -111,7 +125,7 @@ endsnippet
 
 # Level 2 section with a custom ID:
 snippet ===[ "Level 2 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 === ${VISUAL}${1:Section title}
 
 $0
@@ -119,7 +133,7 @@ endsnippet
 
 # Level 2 section with a custom ID - alternative version:
 snippet =3[ "Level 2 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 === ${VISUAL}${1:Section title}
 
 $0
@@ -142,7 +156,7 @@ endsnippet
 
 # Level 3 section with a custom ID:
 snippet ====[ "Level 3 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 ==== ${VISUAL}${1:Section title}
 
 $0
@@ -150,7 +164,7 @@ endsnippet
 
 # Level 3 section with a custom ID - alternative version:
 snippet =4[ "Level 3 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 ==== ${VISUAL}${1:Section title}
 
 $0
@@ -172,7 +186,7 @@ endsnippet
 
 # Level 4 section with a custom ID:
 snippet =====[ "Level 4 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 ===== ${VISUAL}${1:Section title}
 
 $0
@@ -180,7 +194,7 @@ endsnippet
 
 # Level 4 section with a custom ID - alternative version:
 snippet =5[ "Level 4 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 ===== ${VISUAL}${1:Section title}
 
 $0
@@ -202,7 +216,7 @@ endsnippet
 
 # Level 5 section with a custom ID:
 snippet ======[ "Level 5 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 ====== ${VISUAL}${1:Section title}
 
 $0
@@ -210,7 +224,7 @@ endsnippet
 
 # Level 5 section with a custom ID - alternative version:
 snippet =6[ "Level 5 Section Title with Custom ID" !b
-[${2:#${1/([\s_]*\{nbsp\}[\s_]*|[\s_]*>[\s_]*|[\s_]+)|(\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*)|(\[)|([^\w\d.-])/(?1:_)(?2:)(?3:_)(?4:)/g}}]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
 ====== ${VISUAL}${1:Section title}
 
 $0
