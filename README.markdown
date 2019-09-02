@@ -2,15 +2,16 @@
 
 ## Description
 
-The **vim-snippets** repository provides a collection of snippets for **Vim**, namely for the [UltiSnips](https://github.com/SirVer/ultisnips) (recommended) and [snipMate](https://github.com/msanders/snipmate.vim) plug-ins.
+The **vim-snippets** repository provides a collection of snippets for **Vim**, namely for the [UltiSnips](https://github.com/SirVer/ultisnips) and [snipMate](https://github.com/msanders/snipmate.vim) plug-ins.
 
-For **UltiSnips**, the following snippets are available:
+The following snippets are available for **UltiSnips** (recommended):
 
-* **docbk.snippets** — Snippets for the DocBook XML 4.5 language. [Read more…](UltiSnips/docbk.markdown)
-* **mallard.snippets** — Snippets for the Mallard XML language. [Read more…](UltiSnips/mallard.markdown)
+* **asciidoc.snippets** — Snippets for AsciiDoc. [Read more…](UltiSnips/asciidoc.markdown)
+* **docbk.snippets** — Snippets for DocBook XML 4.5. [Read more…](UltiSnips/docbk.markdown)
+* **mallard.snippets** — Snippets for Mallard XML. [Read more…](UltiSnips/mallard.markdown)
 * **rng.snippets** — Snippets for the RELAX NG schema language for XML. [Read more…](UltiSnips/rng.markdown)
 
-For **snipMate**, the following snippets are included:
+The following snippets are available for **snipMate**:
 
 * **docbk.snippets** — Snippets for the DocBook XML language. [Read more…](snippets/docbk.markdown)
 * **mallard.snippets** — Snippets for the Mallard XML language. [Read more…](snippets/mallard.markdown)
