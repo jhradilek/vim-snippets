@@ -272,6 +272,24 @@ ____
 …</pre></td>
   </tr>
   <tr>
+    <td><strong>literal</strong></td>
+    <td>Literal Block with Quotes Substitutions</td>
+    <td><pre>[literal,subs="…"]
+----
+…
+----
+…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>source</strong></td>
+    <td>Source Code Block</td>
+    <td><pre>[source,…]
+----
+…
+----
+…</pre></td>
+  </tr>
+  <tr>
     <td><strong>caution</strong></td>
     <td>Admonition: Caution</td>
     <td><pre>[CAUTION]
@@ -402,12 +420,12 @@ ____
     <td><pre>__…__…</pre></td>
   </tr>
   <tr>
-    <td><strong>\`</strong></td>
+    <td><strong>`</strong></td>
     <td>Monospace Text</td>
     <td><pre>`…`…</pre></td>
   </tr>
   <tr>
-    <td><strong>\`\`</strong></td>
+    <td><strong>``</strong></td>
     <td>Monospace Text (Unconstrained)</td>
     <td><pre>``…``…</pre></td>
   </tr>
@@ -422,12 +440,12 @@ ____
     <td><pre>~…~…</pre></td>
   </tr>
   <tr>
-    <td><strong>'\`</strong></td>
+    <td><strong>'`</strong></td>
     <td>Single Curved Quotes</td>
     <td><pre>'`…`'…</pre></td>
   </tr>
   <tr>
-    <td><strong>"\`</strong></td>
+    <td><strong>"`</strong></td>
     <td>Double Curved Quotes</td>
     <td><pre>"`…`"…</pre></td>
   </tr>
@@ -442,7 +460,26 @@ ____
     <th>Expands to</th>
   </tr>
   <tr>
-
+  <tr>
+    <td><strong>application</strong></td>
+    <td>Application Name</td>
+    <td><pre>[application]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>app</strong></td>
+    <td>Application Name</td>
+    <td><pre>[application]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>citetitle</strong></td>
+    <td>Cited Work Title</td>
+    <td><pre>[citetitle]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>cite</strong></td>
+    <td>Cited Work Title</td>
+    <td><pre>[citetitle]`…`…</pre></td>
+  </tr>
   <tr>
     <td><strong>command</strong></td>
     <td>Command</td>
@@ -452,16 +489,6 @@ ____
     <td><strong>cmd</strong></td>
     <td>Command</td>
     <td><pre>[command]`…`…</pre></td>
-  </tr>
-  <tr>
-    <td><strong>filename</strong></td>
-    <td>File Name</td>
-    <td><pre>[filename]`…`…</pre></td>
-  </tr>
-  <tr>
-    <td><strong>file</strong></td>
-    <td>File Name</td>
-    <td><pre>[filename]`…`…</pre></td>
   </tr>
   <tr>
     <td><strong>directory</strong></td>
@@ -474,6 +501,41 @@ ____
     <td><pre>[filename]`…`…</pre></td>
   </tr>
   <tr>
+    <td><strong>filename</strong></td>
+    <td>File Name</td>
+    <td><pre>[filename]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>file</strong></td>
+    <td>File Name</td>
+    <td><pre>[filename]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>function</strong></td>
+    <td>Function Name</td>
+    <td><pre>[function]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>func</strong></td>
+    <td>Function Name</td>
+    <td><pre>[function]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>gui</strong></td>
+    <td>GUI Element Name</td>
+    <td><pre>[gui]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>option</strong></td>
+    <td>Option Name</td>
+    <td><pre>[option]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>opt</strong></td>
+    <td>Option Name</td>
+    <td><pre>[option]`…`…</pre></td>
+  </tr>
+  <tr>
     <td><strong>package</strong></td>
     <td>Package Name</td>
     <td><pre>[package]`…`…</pre></td>
@@ -482,5 +544,25 @@ ____
     <td><strong>pkg</strong></td>
     <td>Package Name</td>
     <td><pre>[package]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>parameter</strong></td>
+    <td>Parameter Name</td>
+    <td><pre>[parameter]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>param</strong></td>
+    <td>Parameter Name</td>
+    <td><pre>[parameter]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>systemitem</strong></td>
+    <td>System Item</td>
+    <td><pre>[systemitem]`…`…</pre></td>
+  </tr>
+  <tr>
+    <td><strong>sys</strong></td>
+    <td>System Item</td>
+    <td><pre>[systemitem]`…`…</pre></td>
   </tr>
 </table>

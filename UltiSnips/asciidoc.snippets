@@ -2,7 +2,7 @@
 # Copyright (C) 2019 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 3 September 2019
+# Last Change: 5 September 2019
 
 # Some snippets are inspired by those included in the AsciiDoc Autocomplete
 # package for Atom [1].  Where possible,  the snippets  also follow Red Hat
@@ -291,6 +291,24 @@ ${VISUAL}$1
 $0
 endsnippet
 
+# Literal block with quotes substitutions:
+snippet literal "Literal Block with Quotes Substitutions" !b
+[literal,subs="${1:+quotes}"]
+----
+${VISUAL}$2
+----
+$0
+endsnippet
+
+# Source code block:
+snippet source "Source Code Block" !b
+[source,${1:python}]
+----
+${VISUAL}$2
+----
+$0
+endsnippet
+
 # Admonition - caution:
 snippet caution "Admonition: Caution" !b
 [CAUTION]
@@ -441,6 +459,26 @@ endsnippet
 #                             Semantic Markup
 # -------------------------------------------------------------------------
 
+# Application name:
+snippet application "Application Name" !w
+[application]\`${VISUAL}$1\`$0
+endsnippet
+
+# Application name - alternative version:
+snippet app "Application Name" !w
+[application]\`${VISUAL}$1\`$0
+endsnippet
+
+# Cited work title:
+snippet citetitle "Cited Work Title" !w
+[citetitle]\`${VISUAL}$1\`$0
+endsnippet
+
+# Cited work title - alternative version:
+snippet cite "Cited Work Title" !w
+[citetitle]\`${VISUAL}$1\`$0
+endsnippet
+
 # Command:
 snippet command "Command" !w
 [command]\`${VISUAL}$1\`$0
@@ -471,12 +509,57 @@ snippet dir "Directory Name" !w
 [filename]\`${VISUAL}$1\`$0
 endsnippet
 
+# Function name:
+snippet function "Function Name" !w
+[function]\`${VISUAL}$1\`$0
+endsnippet
+
+# Function name - alternative version:
+snippet func "Function Name" !w
+[function]\`${VISUAL}$1\`$0
+endsnippet
+
+# GUI element name:
+snippet gui "GUI Element Name" !w
+[gui]\`${VISUAL}$1\`$0
+endsnippet
+
+# Option name:
+snippet option "Option Name" !w
+[option]\`${VISUAL}$1\`$0
+endsnippet
+
+# Option name - alternative version:
+snippet opt "Option Name" !w
+[option]\`${VISUAL}$1\`$0
+endsnippet
+
 # Package name:
 snippet package "Package Name" !w
 [package]\`${VISUAL}$1\`$0
 endsnippet
 
-# Package alternative version:
+# Package name - alternative version:
 snippet pkg "Package Name" !w
 [package]\`${VISUAL}$1\`$0
+endsnippet
+
+# Parameter name:
+snippet parameter "Parameter Name" !w
+[parameter]\`${VISUAL}$1\`$0
+endsnippet
+
+# Parameter name - alternative version:
+snippet param "Parameter Name" !w
+[parameter]\`${VISUAL}$1\`$0
+endsnippet
+
+# System item:
+snippet systemitem "System Item" !w
+[systemitem]\`${VISUAL}$1\`$0
+endsnippet
+
+# System item - alternative version:
+snippet sys "System Item" !w
+[systemitem]\`${VISUAL}$1\`$0
 endsnippet
