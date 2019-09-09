@@ -381,13 +381,13 @@ ____
   </tr>
   <tr>
     <td><strong>image</strong></td>
-    <td>Inline Image</td>
-    <td><pre>image:…[…]…</pre></td>
+    <td>Block Image</td>
+    <td><pre>image::…[…]…</pre></td>
   </tr>
   <tr>
     <td><strong>video</strong></td>
-    <td>Inline Video</td>
-    <td><pre>video:…[…]…</pre></td>
+    <td>Video</td>
+    <td><pre>video::…[…]…</pre></td>
   </tr>
 </table>
 
