@@ -275,9 +275,9 @@ ____
     <td><strong>literal</strong></td>
     <td>Literal Block with Quotes Substitutions</td>
     <td><pre>[literal,subs="…"]
-----
+....
 …
-----
+....
 …</pre></td>
   </tr>
   <tr>
