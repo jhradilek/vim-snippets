@@ -391,6 +391,21 @@ ____
   </tr>
 </table>
 
+## Directives
+
+<table>
+  <tr>
+    <th>Trigger</th>
+    <th>Description</th>
+    <th>Expands to</th>
+  </tr>
+  <tr>
+    <td><strong>include</strong></td>
+    <td>Include Directive</td>
+    <td><pre>include::…[…]…</pre></td>
+  </tr>
+</table>
+
 ## Text Formatting
 
 <table>
