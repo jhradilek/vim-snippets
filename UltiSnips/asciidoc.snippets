@@ -406,7 +406,31 @@ endsnippet
 
 # Include directive:
 snippet include "Include Directive" !b
-include::${1:${VISUAL}}[${2:leveloffset=+1}]$0
+include::${VISUAL}$1[${2:leveloffset=+1}]$0
+endsnippet
+
+# ifdef directive:
+snippet ifdef "ifdef Directive" !b
+ifdef::$1[]
+${VISUAL}$2
+endif::[]
+$0
+endsnippet
+
+# ifndef directive:
+snippet ifndef "ifndef Directive" !b
+ifndef::$1[]
+${VISUAL}$2
+endif::[]
+$0
+endsnippet
+
+# ifeval directive:
+snippet ifeval "ifeval Directive" !b
+ifeval::[$1]
+${VISUAL}$2
+endif::[]
+$0
 endsnippet
 
 
