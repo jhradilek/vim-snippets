@@ -1,8 +1,8 @@
 # AsciiDoc snippets for the UltiSnips plug-in
-# Copyright (C) 2019 Jaromir Hradilek
+# Copyright (C) 2019, 2023 Jaromir Hradilek
 
 # Home Page:   https://github.com/jhradilek/vim-snippets
-# Last Change: 12 September 2019
+# Last Change: 5 June 2023
 
 # Some snippets are inspired by those included in the AsciiDoc Autocomplete
 # package for Atom [1].  Where possible,  the snippets  also follow Red Hat
@@ -57,7 +57,7 @@ endsnippet
 
 # Level 0 section with a custom ID:
 snippet =[ "Document Title (Level 0) with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 = ${VISUAL}${1:Document title}
 
 $0
@@ -65,7 +65,7 @@ endsnippet
 
 # Level 0 section with a custom ID - alternative version:
 snippet =0[ "Document Title (Level 0) with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 = ${VISUAL}${1:Document title}
 
 $0
@@ -73,7 +73,7 @@ endsnippet
 
 # Level 0 section with a custom ID - alternative version:
 snippet =1[ "Document Part (Level 0) with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 = ${VISUAL}${1:Document title}
 
 $0
@@ -95,7 +95,7 @@ endsnippet
 
 # Level 1 section with a custom ID:
 snippet ==[ "Level 1 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 == ${VISUAL}${1:Section title}
 
 $0
@@ -103,7 +103,7 @@ endsnippet
 
 # Level 1 section with a custom ID - alternative version:
 snippet =2[ "Level 1 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 == ${VISUAL}${1:Section title}
 
 $0
@@ -125,7 +125,7 @@ endsnippet
 
 # Level 2 section with a custom ID:
 snippet ===[ "Level 2 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 === ${VISUAL}${1:Section title}
 
 $0
@@ -133,7 +133,7 @@ endsnippet
 
 # Level 2 section with a custom ID - alternative version:
 snippet =3[ "Level 2 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 === ${VISUAL}${1:Section title}
 
 $0
@@ -156,7 +156,7 @@ endsnippet
 
 # Level 3 section with a custom ID:
 snippet ====[ "Level 3 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 ==== ${VISUAL}${1:Section title}
 
 $0
@@ -164,7 +164,7 @@ endsnippet
 
 # Level 3 section with a custom ID - alternative version:
 snippet =4[ "Level 3 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 ==== ${VISUAL}${1:Section title}
 
 $0
@@ -186,7 +186,7 @@ endsnippet
 
 # Level 4 section with a custom ID:
 snippet =====[ "Level 4 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 ===== ${VISUAL}${1:Section title}
 
 $0
@@ -194,7 +194,7 @@ endsnippet
 
 # Level 4 section with a custom ID - alternative version:
 snippet =5[ "Level 4 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 ===== ${VISUAL}${1:Section title}
 
 $0
@@ -216,7 +216,7 @@ endsnippet
 
 # Level 5 section with a custom ID:
 snippet ======[ "Level 5 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 ====== ${VISUAL}${1:Section title}
 
 $0
@@ -224,7 +224,7 @@ endsnippet
 
 # Level 5 section with a custom ID - alternative version:
 snippet =6[ "Level 5 Section Title with Custom ID" !b
-[id="${2:`!p snip.rv = compose_id(t[1])`}${3:-\{context\}}"]
+[id="${2:`!p snip.rv = compose_id(t[1])`}${3:_\{context\}}"]
 ====== ${VISUAL}${1:Section title}
 
 $0
