@@ -16,9 +16,9 @@
 #   [3] https://github.com/redhat-documentation/modular-docs
 
 global !p
-whitespace = re.compile('[\s_-]*\{nbsp\}[\s_-]*|[\s_-]+')
-macros     = re.compile('\\bbtn:\[|\\bkbd:\[|\\bmenu:\\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*')
-disallowed = re.compile('[^\w\d.-]')
+whitespace = re.compile(r'[\s_-]*\{nbsp\}[\s_-]*|[\s_-]+')
+macros     = re.compile(r'\\bbtn:\[|\\bkbd:\[|\\bmenu:\\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*')
+disallowed = re.compile(r'[^\w\d.-]')
 
 def compose_id(string):
 	'''Converts an AsciiDoc string to a valid block ID.'''
