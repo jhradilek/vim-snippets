@@ -17,7 +17,7 @@
 
 global !p
 whitespace = re.compile(r'[\s_-]*\{nbsp\}[\s_-]*|[\s_-]+')
-macros     = re.compile(r'\\bbtn:\[|\\bkbd:\[|\\bmenu:\\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*')
+macros     = re.compile(r'\bbtn:\[|\bkbd:\[|\bmenu:\b|\[[^\]]*\][\*_`#]|\{[^\}]*\}[\s_]*')
 disallowed = re.compile(r'[^\w\d.-]')
 
 def compose_id(string):
